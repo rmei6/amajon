@@ -1,0 +1,1 @@
+json.extract! obj, :id, :name

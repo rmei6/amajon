@@ -25,7 +25,7 @@ const receiveSessionErrors = (errors) => {
 };
 
 export const login = (formUser) => {
-    debugger;
+    // debugger;
     return (dispatch) => {
         return SessionApiUtil.login(formUser)
             .then(user => dispatch(receiveCurrentUser(user)))

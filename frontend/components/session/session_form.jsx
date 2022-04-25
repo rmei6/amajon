@@ -9,9 +9,9 @@ class SessionForm extends React.Component{
             password: ''
             } :
             {
-                email: '',
-                name: '',
-                password: ''
+                email:"",
+                name:"",
+                password:""
             };
         // debugger;
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -28,17 +28,23 @@ class SessionForm extends React.Component{
         e.preventDefault()
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
-        .then(() => this.props.history.push('/'))
+        // .then(() => this.props.history.push('/'))
     }
 
     handleDemo(e){
         e.preventDefault()
+        let that = this;
         if (this.props.formType === 'signup'){
-            this.setState({name: 'Demo',email: 'demo@gmail.com', password: 'password'});
+            this.setState({'name': 'Demo','email': 'demo@gmail.com', 'password': 'password'}, () => {
+                that.props.loginDemo(that.state)
+                // .then(() => this.props.history.push('/'))
+            });
         }else{
-            this.setState({email: 'demo@gmail.com', password: 'password'});
+            this.setState({'email': 'demo@gmail.com', 'password': 'password'}, () => {
+                that.props.loginDemo(that.state)
+                // .then(() => this.props.history.push('/'))
+            });
         }
-        this.props.loginDemo(this.state);
     }
 
     render(){

@@ -7,14 +7,15 @@ class Greeting extends React.Component {
     }
 
     render(){
-        const { currentUser } = this.props
+        const { currentUser,logout } = this.props
         const greeting = currentUser ? (
         <div>
             <h2>Hi, {currentUser.name}!</h2>
-            <button onClick={this.props.logout}>Log out</button>
+            <button onClick={logout}>Log out</button>
         </div>
         ) : (
         <div className='header-nav'>
+            <h2>Hello, Guest</h2>
             <Link to='/login'>Login</Link> or <Link to='/signup'>Sign Up</Link> 
         </div>
         )

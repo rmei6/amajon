@@ -79,7 +79,7 @@ class SessionForm extends React.Component{
         return(
             <div>
                 <Link to='/'>
-                    <img className="signin-logo" src={window.blacklogoURL} alt="Amajon"/>
+                    <img className="logo" src={window.blacklogoURL} alt="Amajon"/>
                 </Link>
                 {errors}
                 <div className="form-container">

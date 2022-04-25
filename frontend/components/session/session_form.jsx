@@ -77,9 +77,9 @@ class SessionForm extends React.Component{
             (null)
         const linkText = this.props.formType === 'Create Account' ? 'Already have an account?' : 'New to Amajon?'
         return(
-            <div>
-                <Link to='/'>
-                    <img className="logo" src={window.blacklogoURL} alt="Amajon"/>
+            <div className='session-form'>
+                <Link to='/' className='logo'>
+                    <img className="signin-logo" src={window.blacklogoURL} alt="Amajon"/>
                 </Link>
                 {errors}
                 <div className="form-container">

@@ -1,0 +1,41 @@
+.home-logo{
+    height: 45px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.home-logo,.greeting,.search-bar,.cart{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.home-logo:hover,.greeting:hover,.search-bar:hover,.cart:hover{
+    border-color: white;
+
+}
+
+.header {
+    background-color: #090a17;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.login,.signup,.logout {
+    text-decoration: none;
+}
+
+.login:visited,.signup:visited,.logout:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.login:hover,.signup:hover,.logout:hover{
+    color: orange;
+}
+

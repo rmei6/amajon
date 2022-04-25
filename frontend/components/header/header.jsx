@@ -14,9 +14,9 @@ class Header extends React.Component {
                 <Link to='/' className="logo">
                     <img className="home-logo" src={window.whitelogoURL} alt="Amajon"/>
                 </Link>
-                <p>Search Bar Here</p>
+                <p className="search-bar">Search Bar Here</p>
                 <GreetingContainer />
-                <p>Cart Here</p>
+                <p className="cart">Cart Here</p>
             </div>
         )
     }

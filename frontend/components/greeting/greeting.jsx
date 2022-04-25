@@ -9,15 +9,16 @@ class Greeting extends React.Component {
     render(){
         const { currentUser,logout } = this.props
         const greeting = currentUser ? (
-        <div>
+        <div className='greeting'>
             <h2>Hi, {currentUser.name}!</h2>
             {/* <button onClick={logout}>Log out</button> */}
-            <Link to='/' className='signout-button' onClick={logout}>Log out</Link>
+            <Link to='/' className='logout' onClick={logout}>Log out</Link>
         </div>
         ) : (
-        <div className='header-nav'>
-            <h2>Hello, Guest</h2>
-            <Link to='/login'>Login</Link> or <Link to='/signup'>Sign Up</Link> 
+        <div className='greeting'>
+            <h2>Hello,
+            <Link className='login' to='/login'> Sign in</Link> 
+            </h2>
         </div>
         )
         return(

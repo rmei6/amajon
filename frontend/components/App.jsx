@@ -10,15 +10,15 @@ import { Switch } from "react-router-dom";
 
 const App = () => (
   <div>
-    <header>
+    {/* <header> */}
       {/* <img src={amajon_logo} /> */}
-      <HeaderContainer />
+      {/* <HeaderContainer /> */}
       {/* <img className="home-logo" src={require('../../app/assets/images/amajonlogowhite.png')} alt="Amajon"/> */}
-    </header>
+    {/* </header> */}
     <Switch>
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
-      {/* <Route path='/' component={Header} /> */}
+      <Route path='/' component={HeaderContainer} />
     </Switch>
     
   </div>

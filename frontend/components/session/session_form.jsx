@@ -57,7 +57,7 @@ class SessionForm extends React.Component{
             <button className='account-button'>Create an Account</button>
         </Link>
         )
-            debugger
+            // debugger
 
         const errors = this.props.errors.length > 0 ? (
             <div className='error-box'>

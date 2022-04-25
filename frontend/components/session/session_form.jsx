@@ -61,7 +61,10 @@ class SessionForm extends React.Component{
 
         const errors = this.props.errors.length > 0 ? (
             <div className='error-box'>
-                <p className='error-message'>There was a problem</p>
+                <div className='error-header'>
+                    <p className='error-symbol'>&#9888;</p>
+                    <p className='error-message'> There was a problem</p>
+                </div>
                 <div>
                     <ul className='error-list'>
                     {this.props.errors.map((err, idx) => <li key={idx}>{err}</li>)}
@@ -70,14 +73,14 @@ class SessionForm extends React.Component{
             </div>
             ) : (null)
         const name_form = this.props.formType === 'Create Account' ? 
-            <label>Name:
+            <label className='session-input'>Name:
                 <input type="text" value={this.state.name} onChange={this.update('name')}/>
             </label> 
             :
             (null)
         const linkText = this.props.formType === 'Create Account' ? 'Already have an account?' : 'New to Amajon?'
         return(
-            <div className='session-form'>
+            <div className='session'>
                 <Link to='/' className='logo'>
                     <img className="signin-logo" src={window.blacklogoURL} alt="Amajon"/>
                 </Link>
@@ -85,19 +88,19 @@ class SessionForm extends React.Component{
                 <div className="form-container">
                     <form onSubmit={this.handleSubmit} className='session-form'>
                     {/* <h2>Welcome to Amajon!</h2> */}
-                    <h2>{this.props.formType}</h2>
+                    <h2 className='form-title'>{this.props.formType}</h2>
                     {name_form}
-                    <label>Email:
+                    <label className='session-input'>Email:
                         <input type="text" value={this.state.email} onChange={this.update('email')}/>
                     </label>
-                    <label>Password:
+                    <label className='session-input'>Password:
                         <input type="password" value={this.state.password} onChange={this.update('password')}/>
                     </label>
                     <input className='account-button' type="submit" value={this.props.formType} />
                     <button className="account-button" onClick={this.handleDemo}>Demo</button>
                     </form>
-                    <div>
-                        <p>{linkText}</p>
+                    <div className='other-options'>
+                        <p className='link-text'>{linkText}</p>
                         {link}
                     </div>
                 </div>

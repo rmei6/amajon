@@ -16,8 +16,8 @@ const App = () => (
       {/* <img className="home-logo" src={require('../../app/assets/images/amajonlogowhite.png')} alt="Amajon"/> */}
     {/* </header> */}
     <Switch>
-      <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
+      <AuthRoute path="/login" component={LoginFormContainer} />
       <Route path='/' component={HeaderContainer} />
     </Switch>
     

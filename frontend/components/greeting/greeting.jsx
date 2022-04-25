@@ -11,7 +11,8 @@ class Greeting extends React.Component {
         const greeting = currentUser ? (
         <div>
             <h2>Hi, {currentUser.name}!</h2>
-            <button onClick={logout}>Log out</button>
+            {/* <button onClick={logout}>Log out</button> */}
+            <Link to='/' className='signout-button' onClick={logout}>Log out</Link>
         </div>
         ) : (
         <div className='header-nav'>

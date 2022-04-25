@@ -4,11 +4,14 @@ import GreetingContainer from "./greeting/greeting_container";
 import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
 import { AuthRoute } from "../util/route_util";
+// import amajon_logo from '../../app/assets/images/amajon_logo.png';
 
 const App = () => (
   <div>
     <header>
-      <h1>Amajon</h1>
+      {/* <img src={amajon_logo} /> */}
+      <img className="home-logo" src={window.whitelogoURL} alt="Amajon"/>
+      {/* <img className="home-logo" src={require('../../app/assets/images/amajonlogowhite.png')} alt="Amajon"/> */}
     </header>
     <GreetingContainer />
 

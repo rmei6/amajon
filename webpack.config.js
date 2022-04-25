@@ -23,6 +23,7 @@ module.exports = {
         exclude: /(node_modules)/, //ignore these files
         use: {
           loader: 'babel-loader', //the name of the loader we are going to use (babel-loader).
+          // loader: 'file-loader',
           options: { // options for the loader
             presets: ['@babel/env', '@babel/react'] //tells loader to use @babel/env which transpiles back to es5 and @babel/react which converts jsx code
           }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class SessionForm extends React.Component{
     constructor(props){
         super(props)
-        this.state = props.formType === 'login' ? {
+        this.state = props.formType === 'Sign-in' ? {
             email: '',
             password: ''
             } :
@@ -34,7 +34,7 @@ class SessionForm extends React.Component{
     handleDemo(e){
         e.preventDefault()
         let that = this;
-        if (this.props.formType === 'signup'){
+        if (this.props.formType === 'Create Account'){
             this.setState({'name': 'Demo','email': 'demo@gmail.com', 'password': 'password'}, () => {
                 that.props.loginDemo(that.state)
                 // .then(() => this.props.history.push('/'))
@@ -48,32 +48,44 @@ class SessionForm extends React.Component{
     }
 
     render(){
-        const link = this.props.formType === 'signup' ? (
-            <Link to='/login'>Click here to login</Link>
+        const link = this.props.formType === 'Create Account' ? (
+            <Link  to='/login'>
+                <button className='account-button'>Click here to Sign-in</button>
+            </Link>
         ): (
-        <Link to='/signup'>Click here to signup</Link>
+        <Link to='/signup'>
+            <button className='account-button'>Create an Account</button>
+        </Link>
         )
+            debugger
 
-        const errors = this.props.errors ? (
-            <ul>
-            {this.props.errors.map((err, idx) => <li key={idx}>{err}</li>)}
-            </ul>
+        const errors = this.props.errors.length > 0 ? (
+            <div className='error-box'>
+                <p className='error-message'>There was a problem</p>
+                <div>
+                    <ul className='error-list'>
+                    {this.props.errors.map((err, idx) => <li key={idx}>{err}</li>)}
+                    </ul>
+                </div>
+            </div>
             ) : (null)
-        const name_form = this.props.formType === 'signup' ? 
+        const name_form = this.props.formType === 'Create Account' ? 
             <label>Name:
                 <input type="text" value={this.state.name} onChange={this.update('name')}/>
             </label> 
             :
             (null)
-        const linkText = this.props.formType === 'signup' ? 'Already have an account?' : 'New to Amajon?'
+        const linkText = this.props.formType === 'Create Account' ? 'Already have an account?' : 'New to Amajon?'
         return(
             <div>
-                <Link to='/'>Amajon</Link>
+                <Link to='/'>
+                    <img className="signin-logo" src={window.blacklogoURL} alt="Amajon"/>
+                </Link>
+                {errors}
                 <div className="form-container">
                     <form onSubmit={this.handleSubmit} className='session-form'>
                     {/* <h2>Welcome to Amajon!</h2> */}
                     <h2>{this.props.formType}</h2>
-                    {errors}
                     {name_form}
                     <label>Email:
                         <input type="text" value={this.state.email} onChange={this.update('email')}/>
@@ -81,8 +93,8 @@ class SessionForm extends React.Component{
                     <label>Password:
                         <input type="password" value={this.state.password} onChange={this.update('password')}/>
                     </label>
-                    <input type="submit" value={this.props.formType} />
-                    <button onClick={this.handleDemo}>Demo</button>
+                    <input className='account-button' type="submit" value={this.props.formType} />
+                    <button className="account-button" onClick={this.handleDemo}>Demo</button>
                     </form>
                     <div>
                         <p>{linkText}</p>

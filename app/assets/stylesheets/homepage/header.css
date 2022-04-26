@@ -9,6 +9,7 @@
     margin-bottom: 5px;
     padding: 10px;
     border: 1px solid transparent;
+    border-radius: 5px;
 }
 
 .home-logo:hover,.greeting:hover,.search-bar:hover,.cart:hover{

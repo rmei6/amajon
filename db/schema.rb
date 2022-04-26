@@ -10,18 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_26_133832) do
+ActiveRecord::Schema.define(version: 2022_04_26_152854) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "departments", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name", null: false
     t.text "description", null: false
-    t.string "department", null: false
     t.float "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "department_id", null: false
+    t.index ["department_id"], name: "index_products_on_department_id"
     t.index ["name"], name: "index_products_on_name"
   end
 

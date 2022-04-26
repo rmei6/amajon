@@ -15,15 +15,15 @@ class Api::ProductsController < ApplicationController
     def show
         @product = Product.find_by(id: params[:id])
         if @product
-            render :index
+            render :show
         else
-            render json: ['Product does not exist']
+            render json: ['Product does not exist'], status: 404
         end
     end
 
     private
 
     def product_params
-        params.require(:product).permit(:name,:description,:department,:price)
+        params.require(:product).permit(:name,:description,:department_id,:price)
     end
 end

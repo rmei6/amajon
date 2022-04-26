@@ -7,4 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-demo = User.create({'name': 'Demo', 'email': 'demo@gmail.com', 'password': 'password'})
+Department.destroy_all
+Product.destroy_all
+
+demo = User.create!('name': 'Demo', 'email': 'demo@gmail.com', 'password': 'password')
+
+beauty = Department.create!(name: 'Beauty')
+food = Department.create!(name: 'Food')
+kitchen = Department.create!(name: 'Kitchen')
+attire = Department.create!(name: 'Clothing, Shoes and Jewelry')
+garden = Department.create!(name: 'Gardening')
+toys = Department.create!(name: 'Toys and Games')
+gifts = Department.create!(name: 'Traditional Gifts')
+health = Department.create!(name: 'Health')
+art = Department.create!(name: 'Art')
+

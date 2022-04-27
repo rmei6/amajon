@@ -1,30 +1,31 @@
 .home-logo{
-    height: 45px;
+    height: 30px;
+    width: auto;
     margin-left: 5px;
-    padding: 10px;
+    padding: 3px;
 }
 
-.home-logo,.greeting,.search-bar,.cart{
+.home-logo,.greeting,.search-bar,.cart,.deliver,.region,.returns{
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
-.home-logo:hover,.greeting:hover,.search-bar:hover,.cart:hover{
+.home-logo:hover,.greeting:hover,.search-bar:hover,.cart:hover,.deliver:hover,.region:hover,.returns:hover{
     border-color: white;
 
 }
 
 .header {
-    background-color: #090a17;
+    background-color: #131921;
     display: flex;
     flex-direction: row;
     color: white;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 60px;
 }
 
 .login,.signup,.logout {
@@ -38,5 +39,19 @@
 
 .login:hover,.signup:hover,.logout:hover{
     color: orange;
+}
+
+.deliver{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.deliver-message{
+    color: #ccc;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
 }
 

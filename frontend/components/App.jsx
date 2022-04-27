@@ -15,11 +15,11 @@ const App = () => (
       {/* <HeaderContainer /> */}
       {/* <img className="home-logo" src={require('../../app/assets/images/amajonlogowhite.png')} alt="Amajon"/> */}
     {/* </header> */}
-    <Switch>
+    {/* <Switch> */}
+      <Route exact path='/' component={HeaderContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <AuthRoute path="/login" component={LoginFormContainer} />
-      <Route path='/' component={HeaderContainer} />
-    </Switch>
+    {/* </Switch> */}
     
   </div>
 );

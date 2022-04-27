@@ -38,7 +38,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 15px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px; */
 }
+
+/* .divide{
+    color: black;
+    height: 2px;
+    border-radius: 1px;
+    flex-grow: 1;
+    background-color: gainsboro;
+} */
 
 .link-text{
     font-size: 12px;
@@ -99,6 +113,25 @@
     /* background-color: rgba(255, 166, 0, 0.777); */
     cursor: pointer;
     background:  rgb(235, 188, 69);
+}
+
+.switch-button{
+    font-size: 12px;
+    height: 27px;
+    background: #e7e9ec;
+    /* background-image: linear-gradient(rgb(247, 223, 165), rgb(240, 193, 75)); */
+    border: 1px solid;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-radius: 3px;
+    margin-top: 7px;
+    /* width: 98%;    */
+    margin-bottom: 7px;
+    width: 300px;
+}
+
+.switch-button:hover{
+    cursor: pointer;
+    background: #d9dce0;
 }
 
 .session-text{

@@ -1,5 +1,3 @@
 class Product < ApplicationRecord
-    validates :name,:description,:department_id,:price, presence:true
-
-    belongs_to :department
+    validates :name,:description,:department,:price, presence:true
 end

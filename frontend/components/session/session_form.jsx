@@ -50,11 +50,11 @@ class SessionForm extends React.Component{
     render(){
         const link = this.props.formType === 'Create Account' ? (
             <Link  to='/login'>
-                <button className='account-button'>Click here to Sign-in</button>
+                <button className='switch-button'>Sign-in</button>
             </Link>
         ): (
         <Link to='/signup'>
-            <button className='account-button'>Create an Account</button>
+            <button className='switch-button'>Create your Amajon account</button>
         </Link>
         )
             // debugger
@@ -99,11 +99,15 @@ class SessionForm extends React.Component{
                     <input className='account-button' type="submit" value={this.props.formType} />
                     <button className="account-button" onClick={this.handleDemo}>Demo</button>
                     </form>
+                </div>
                     <div className='other-options'>
+                        <div>
+                        <div className='divide'></div>
                         <p className='link-text'>{linkText}</p>
+                        <div className='divide'></div>
+                        </div>
                         {link}
                     </div>
-                </div>
             </div>
         )
     }

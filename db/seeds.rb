@@ -16,7 +16,7 @@ beauty = Department.create!(name: 'beauty')
 food = Department.create!(name: 'food-and-groceries')
 kitchen = Department.create!(name: 'kitchen')
 attire = Department.create!(name: 'clothing-shoes-and-jewelry')
-garden = Department.create!(name: 'gardening')
+garden = Department.create!(name: 'garden')
 toys = Department.create!(name: 'toys-and-games')
 traditional = Department.create!(name: 'traditional')
 health = Department.create!(name: 'health')
@@ -34,313 +34,381 @@ p1 = Product.create!('name': 'Korean Skin Care K Beauty - 20% Vitamin C Hyaluron
     'price': 18.00)
 # https://www.amazon.com/Celavi-Collagen-12-Sheets-Classic-Skincare/dp/B07ZQQDZ7S/ref=sr_1_10?keywords=korean&qid=1650995701&s=beauty&sr=1-10
 p2 = Product.create!('name': '24PCS NEW Celavi Collagen Facial Face Mask (12-Sheets) Classic Korean Skincare',
-    'description': "Naturally Brighter Skin Tone - Authentic Korean facial masks, when used regularly they can help diminish signs of dark spots, pigmentation, circles, and puffiness.
-    \nInfused with Anti-Aging Antioxidants - A truly age-reversing formula, our collagen face masks help create firmer, healthier, more balanced skin for radiant confidence.
-    \nMoisturizing Hydration - Infused with natural botanical ingredients like tea tree, cucumber, honey, charcoal, and avocado, it's gentle on dry, oily, or sensitive skin.
-    \nRevitalizing Skin Therapy - A deeply-hydrating experience, our face mask sheets infuse your skin with vital moisture while helping improve overall tone and firmness.
-    \nPremier Face Mask Quality - Celavi Korean sheet masks offer safe, natural support, include 12 total face mask packs and 1 Thai Tea Pack, and come backed by a satisfaction guarantee you can trust.",
+    'description': "- Naturally Brighter Skin Tone - Authentic Korean facial masks, when used regularly they can help diminish signs of dark spots, pigmentation, circles, and puffiness.
+    \n- Infused with Anti-Aging Antioxidants - A truly age-reversing formula, our collagen face masks help create firmer, healthier, more balanced skin for radiant confidence.
+    \n- Moisturizing Hydration - Infused with natural botanical ingredients like tea tree, cucumber, honey, charcoal, and avocado, it's gentle on dry, oily, or sensitive skin.
+    \n- Revitalizing Skin Therapy - A deeply-hydrating experience, our face mask sheets infuse your skin with vital moisture while helping improve overall tone and firmness.
+    \n- Premier Face Mask Quality - Celavi Korean sheet masks offer safe, natural support, include 12 total face mask packs and 1 Thai Tea Pack, and come backed by a satisfaction guarantee you can trust.",
     'department': beauty.name,
     'price': 21.99)
 # https://www.amazon.com/Etude-House-Moistfull-Collagen-Sleeping/dp/B009SD1LK8/ref=sr_1_50?keywords=korean&qid=1650995701&s=beauty&sr=1-50
 p3 = Product.create!('name': 'Etude House Moistfull Collagen Sleeping Pack, 3.38 Ounce',
-    'description': "Overnight leave-in treatment creates a protective barrier on your skin
-    \nThe sleeping pack makes skin feel hydrated and elastic by forming a moisturizing layer over the skin
-    \nBottle : 100 ml",
+    'description': "- Overnight leave-in treatment creates a protective barrier on your skin
+    \n- The sleeping pack makes skin feel hydrated and elastic by forming a moisturizing layer over the skin
+    \n- Bottle : 100 ml",
     'department': beauty.name,
     'price': 15.90)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty_sr_pg1_1?ie=UTF8&adId=A0035362103G0585W4U8B&qualifier=1650995701&id=3940331144248043&widgetName=sp_btf&url=%2Fmixsoon-MIXSOON-Bean-Essence%2Fdp%2FB08ZXVVY8M%2Fref%3Dsr_1_58_sspa%3Fkeywords%3Dkorean%26qid%3D1650995701%26s%3Dbeauty%26sr%3D1-58-spons%26psc%3D1
 p4 = Product.create!('name': 'MIXSOON Bean Essence',
-    'description': "Consists of bean, pear, barley, and pomegranates extract fermented with lactobacillus. No alcohol. No fragrance. A reliable EWG green grade essence that is also supplied to postpartum care centers, facials and spas.
-    \nClinical Trial Conducted: Proved to remove the Blackhead & Dead skin & Sebum and Hydrate skin
-    \nUSE AS Exfoliant: Prep your face with warm water. Gently massage your skin in circular motion. Rinse off the dead skin cell with toner or mixsoon facial essence.
-    \nFOR DAILY USE: After toner step > apply appropriate amount of the essence. Do gentle massage in 3 -5 mins until fully absorbed.
-    \nNOTE: Please notice that ON our Product pakage: MFD is Manufacturing date and EXP is Expiration date. *** Products' shelf life: 2 years from MFD.",
+    'description': "- Consists of bean, pear, barley, and pomegranates extract fermented with lactobacillus. No alcohol. No fragrance. A reliable EWG green grade essence that is also supplied to postpartum care centers, facials and spas.
+    \n- Clinical Trial Conducted: Proved to remove the Blackhead & Dead skin & Sebum and Hydrate skin
+    \n- USE AS Exfoliant: Prep your face with warm water. Gently massage your skin in circular motion. Rinse off the dead skin cell with toner or mixsoon facial essence.
+    \n- FOR DAILY USE: After toner step > apply appropriate amount of the essence. Do gentle massage in 3 -5 mins until fully absorbed.
+    \n- NOTE: Please notice that ON our Product pakage: MFD is Manufacturing date and EXP is Expiration date. *** Products' shelf life: 2 years from MFD.",
     'department': beauty.name,
     'price': 32.00)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty_sr_pg1_1?ie=UTF8&adId=A01066613RD0C00J8BV44&qualifier=1650995701&id=3940331144248043&widgetName=sp_btf&url=%2FBIOHEAL-BOH-Derma-Water-Ceramide%2Fdp%2FB09HMKTJVQ%2Fref%3Dsr_1_55_sspa%3Fkeywords%3Dkorean%26qid%3D1650995701%26s%3Dbeauty%26sr%3D1-55-spons%26psc%3D1
 p5 = Product.create!('name': 'BIOHEAL BOH Derma Water Ceramide Gel Cream 2 for 1 Edition (3.35 oz * 2 pcs)',
-    'description': "A refreshing gel cream soothes and moisturizes the skin for hydrated and healthy complexion.
-    \nWater Ceramide: Reinforces the skin's barrier and locks in moisture.
-    \nAquaxyl: A combination of plant-derived ingredients that target dry and dehydrated skin by improving water circulation and reserves.
-    \nThose with the skin irritated and blushed by sun exposure.",
+    'description': "- A refreshing gel cream soothes and moisturizes the skin for hydrated and healthy complexion.
+    \n- Water Ceramide: Reinforces the skin's barrier and locks in moisture.
+    \n- Aquaxyl: A combination of plant-derived ingredients that target dry and dehydrated skin by improving water circulation and reserves.
+    \n- Those with the skin irritated and blushed by sun exposure.",
     'department': beauty.name,
     'price': 29.00)
 # https://www.amazon.com/moisturizing-dehydrated-sensitive-skin-10-rosegold/dp/B09L4L68M5/ref=sr_1_51?keywords=korean&qid=1650995701&s=beauty&sr=1-51
 p6 = Product.create!('name': 'Papa Recipe Bombee Sheet Mask, Korean moisturizing honey mask pack for dehydrated and sensitive skin.10 sheets (rosegold+green)',
-    'description': "Bombee Rose Gold Mask Pack moisturizes the skin with the gold-honeycom sheet generously soaked with richly hydrating propolis extract, 24K gold and essence.
-    \nBombee Green Honey Mask Pack moisturizes the skin as well as nourishing with plant originated ingredients.
-    \nHYPOALLERGENIC: Papa Recipe sheet masks are beauty products designed to be hypoallergenic and suitable for all skin types, including the most sensitive of skin. Helps improve skin's overall appearance, giving you that youthful glow, without heavy cream, lotion, gel, oil, clay, charcoal, mud, or harsh exfoliating scrub or peel off masks
-    \nSKIN BENEFITS: The bombee honey masks has anti aging, hydrating properties to help even out skin tone, acts as a dark or age spot corrector or pore minimizer, decreases the look of fine lines, wrinkles, and redness, brighten dull looking skin, and can even calm mild problematic (acne or acne scars) or flaky skin around the eye, nose, and mouth
-    \nPERFECT GIFT: This Korean Moisturizer skincare product makes a great gift or stocking stuffer add on gift for women, men, teens, girls, or holidays (Christmas, Easter, Birthday, Bachelorette, Spa Day and more). Be sure to check out the rest of the Papa Recipe skincare line, sold separately",
+    'description': "- Bombee Rose Gold Mask Pack moisturizes the skin with the gold-honeycom sheet generously soaked with richly hydrating propolis extract, 24K gold and essence.
+    \n- Bombee Green Honey Mask Pack moisturizes the skin as well as nourishing with plant originated ingredients.
+    \n- HYPOALLERGENIC: Papa Recipe sheet masks are beauty products designed to be hypoallergenic and suitable for all skin types, including the most sensitive of skin. Helps improve skin's overall appearance, giving you that youthful glow, without heavy cream, lotion, gel, oil, clay, charcoal, mud, or harsh exfoliating scrub or peel off masks
+    \n- SKIN BENEFITS: The bombee honey masks has anti aging, hydrating properties to help even out skin tone, acts as a dark or age spot corrector or pore minimizer, decreases the look of fine lines, wrinkles, and redness, brighten dull looking skin, and can even calm mild problematic (acne or acne scars) or flaky skin around the eye, nose, and mouth
+    \n- PERFECT GIFT: This Korean Moisturizer skincare product makes a great gift or stocking stuffer add on gift for women, men, teens, girls, or holidays (Christmas, Easter, Birthday, Bachelorette, Spa Day and more). Be sure to check out the rest of the Papa Recipe skincare line, sold separately",
     'department': beauty.name,
     'price': 19.99)
 # https://www.amazon.com/Korean-Skin-Care-K-Beauty-Moisturizer/dp/B09FSW9ZT7/ref=sr_1_58?keywords=korean&qid=1650995829&s=beauty&sr=1-58
 p7 = Product.create!('name': 'Korean Skin Care K-Beauty Moisturizer for Oily Skin: DERMA ORGANIC Vitamin C Serum For Face with Hyaluronic Acid, CE, Ferulic Acid Korean Skincare',
-    'description': "Great on Oily Skin: It is light on skin and leaves no residues, makes skin pores tight.
-    \nOil Free Formula: We replaced pore clogging Tocopherol, or Vitamin E oil with Vitamin B & E enriched pure organic Aloe Vera Juice.
-    \nNO Oxidation up to 18 months: Unlike the ordinary Vitamin C Serum, it doesn't oxidize under sun, air, even vanity light.
-    \nPerfect for Sensitive Skin: It is even safe on child's skin, it doesn't have any harmful ingredients such as Phenoxyethanol, Propylene glycol or Triethanolamine that you see on other popular Vitamin C serums,
-    \nNo artificial fragrance, color, nor alcohol is added, so it is clear in color with no smell as pure vitamin C should be.",
+    'description': "- Great on Oily Skin: It is light on skin and leaves no residues, makes skin pores tight.
+    \n- Oil Free Formula: We replaced pore clogging Tocopherol, or Vitamin E oil with Vitamin B & E enriched pure organic Aloe Vera Juice.
+    \n- NO Oxidation up to 18 months: Unlike the ordinary Vitamin C Serum, it doesn't oxidize under sun, air, even vanity light.
+    \n- Perfect for Sensitive Skin: It is even safe on child's skin, it doesn't have any harmful ingredients such as Phenoxyethanol, Propylene glycol or Triethanolamine that you see on other popular Vitamin C serums,
+    \n- No artificial fragrance, color, nor alcohol is added, so it is clear in color with no smell as pure vitamin C should be.",
     'department': beauty.name,
     'price': 35.99)
 # https://www.amazon.com/flavors-Essence-exfoliate-hydrate-brighten/dp/B0725J9C92/ref=sr_1_67?keywords=korean&qid=1650995829&s=beauty&sr=1-67
 p8 = Product.create!('name': "A'pieu Milk Sheet Mask (7 flavors in 1 pack) with Milk Essence to mildly exfoliate, hydrate, and brighten - Korean skincare for normal to dry skin.",
-    'description': "A'pieu Milk Mask hydrates and brightens your skin in one go. Soaked in real milk protein extract that nourishes normal to dry skin types.
-    \nThe milk-protein-infused daily sheet mask helps restore dry and dull skin.
-    \nOn a clean and dry face, apply the sheet evenly. Remove after 10-15 minutes.
-    \nTHE BEST OF K-BEAUTY: A'PIEU brings the very best in Korean beauty to the rest of the world with luxury skincare products that are trendy, effective, and formulated for all skin types.",
+    'description': "- A'pieu Milk Mask hydrates and brightens your skin in one go. Soaked in real milk protein extract that nourishes normal to dry skin types.
+    \n- The milk-protein-infused daily sheet mask helps restore dry and dull skin.
+    \n- On a clean and dry face, apply the sheet evenly. Remove after 10-15 minutes.
+    \n- THE BEST OF K-BEAUTY: A'PIEU brings the very best in Korean beauty to the rest of the world with luxury skincare products that are trendy, effective, and formulated for all skin types.",
     'department': beauty.name,
     'price': 14.00)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg1_1?ie=UTF8&adId=A0286062OR158T9K9I9P&qualifier=1650995884&id=4591473942581459&widgetName=sp_btf&url=%2FSulwhasoo-Essential-Comfort-Moisture-Cream%2Fdp%2FB09VP4WMCY%2Fref%3Dsr_1_30_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995884%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-30-spons%26psc%3D1
 p9 = Product.create!('name': 'Sulwhasoo Essential Comfort Moisture Cream: Hydrate, Moisturize, and Dewy Glow, 1.69 fl. oz.',
-    'description': "A breathable, quenching gel cream that hydrates and comforts skin for a dewy, healthy glow. Powered by JAUM Moisturizing Complex™, a powerhouse of hydrating and nourishing Herbs, Yam, Arrowroot flowers plus Hyaluronic Acid.",
+    'description': "- A breathable, quenching gel cream that hydrates and comforts skin for a dewy, healthy glow. Powered by JAUM Moisturizing Complex™, a powerhouse of hydrating and nourishing Herbs, Yam, Arrowroot flowers plus Hyaluronic Acid.",
     'department': beauty.name,
     'price': 80.00)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg1_1?ie=UTF8&adId=A10288002U2YI1MRBHV0L&qualifier=1650995884&id=4591473942581459&widgetName=sp_btf&url=%2FDaandanbit-Contains-Anti-winkle-functional-Traditional%2Fdp%2FB09FDP7CBZ%2Fref%3Dsr_1_29_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995884%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-29-spons%26psc%3D1
 p10 = Product.create!('name': 'Daandanbit [DAANDAN BIT] Boyun Firming Cream 50ml / 1.7fl oz Contains camellia sinensis callus culture extract Anti-winkle functional Korean Traditional Herbal Cream 1.7 Ounce',
-    'description': "Boyun Firming Cream 50ml / 1.7fl oz
-    \n(Functional cosmetics for the improvement of wrinkles)
-    \nThis is a cream for elasticity that thoroughly rejuvinates skin elasticity with the combination of natural ingredients and the concentrated nutrients that deliver natural energy to the skin
-    \nCamellia Sinensis Callus Culture Extract and vegetable extracts keep the skin fresh and healthy Based on an herbal formula, each of the precious ingredients is carefully selected and blended to erase the traces of time on the skin
-    \nDuring the last step of skincare, apply the appropriate amount to the face and neck areas as if you are massaging your face, and then press it with both hands to encourage absorption",
+    'description': "- Boyun Firming Cream 50ml / 1.7fl oz
+    \n- (Functional cosmetics for the improvement of wrinkles)
+    \n- This is a cream for elasticity that thoroughly rejuvinates skin elasticity with the combination of natural ingredients and the concentrated nutrients that deliver natural energy to the skin
+    \n- Camellia Sinensis Callus Culture Extract and vegetable extracts keep the skin fresh and healthy Based on an herbal formula, each of the precious ingredients is carefully selected and blended to erase the traces of time on the skin
+    \n- During the last step of skincare, apply the appropriate amount to the face and neck areas as if you are massaging your face, and then press it with both hands to encourage absorption",
     'department': beauty.name,
     'price': 14.99)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_beauty-intl-ship_sr_pg2_1?ie=UTF8&adId=A07075922H5TXAQGKNHBN&qualifier=1650995927&id=2536864278273078&widgetName=sp_atf_next&url=%2FEmulsion-Wrinkle-Nourishing-Moisturizing-Cosmetics%2Fdp%2FB09PKYXD2V%2Fref%3Dsr_1_25_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995927%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-25-spons%26psc%3D1
 p11 = Product.create!('name': 'YEDAM YUN BIT Prime Luxury Gold Women Skin Care 4 Set With Skin, Emulsion, Cream, BB Cream,Wrinkle Care Nourishing And Moisturizing, Calming Korea Cosmetics',
-    'description': "Korea Skin Care Set: Skin, Emulsion, Cream, BB Cream + 4 Sample
-    \nPrime Luxury Gold Intensive Skin: With appropriate mixture of gold powder(99.9% of purity) and phyto placenta extracts, it prevents the loss of moisture on skin and keeps moisturized condition for dried and tough skin to provide more refresh and vitalized skin
-    \nPrime Luxury Gold Intensive Emulsion: Both phyto placenta and royal jelly extracts provide abundant nutritions to dried skin and relaxed and smooth feeling to form moisturized membrane on the skin so as to make you feel moisturized, refined and soft skin.
-    \nPrime Luxury Gold Intensive Lifting Cream: It is a wrinkle-improving functional cream that corrects the balance of loose skin with adenosine that gives elasticity to the skin and keeps the pure gold(99.9%) and phyto placenta extract moist for a long time.
-    \nPrime Luxury Gold Intensive BB Cream: The niacinamide elements prevents the deposition of melanin pigments on the skin and restraints generation of dried skin and skin troubles and the adenosine elements provides resilience to the skin.",
+    'description': "- Korea Skin Care Set: Skin, Emulsion, Cream, BB Cream + 4 Sample
+    \n- Prime Luxury Gold Intensive Skin: With appropriate mixture of gold powder(99.9% of purity) and phyto placenta extracts, it prevents the loss of moisture on skin and keeps moisturized condition for dried and tough skin to provide more refresh and vitalized skin
+    \n- Prime Luxury Gold Intensive Emulsion: Both phyto placenta and royal jelly extracts provide abundant nutritions to dried skin and relaxed and smooth feeling to form moisturized membrane on the skin so as to make you feel moisturized, refined and soft skin.
+    \n- Prime Luxury Gold Intensive Lifting Cream: It is a wrinkle-improving functional cream that corrects the balance of loose skin with adenosine that gives elasticity to the skin and keeps the pure gold(99.9%) and phyto placenta extract moist for a long time.
+    \n- Prime Luxury Gold Intensive BB Cream: The niacinamide elements prevents the deposition of melanin pigments on the skin and restraints generation of dried skin and skin troubles and the adenosine elements provides resilience to the skin.",
     'department': beauty.name,
     'price': 46.99)
 # https://www.amazon.com/Face-Shop-Water-Bright-Cleansing/dp/B00FJ2LU2Q/ref=sr_1_28?crid=1JMZJLOAX3UQ0&keywords=korean&qid=1650995927&s=beauty-intl-ship&sprefix=korean%2Cbeauty-intl-ship%2C79&sr=1-28
 p12 = Product.create!('name': 'THEFACESHOP Rice Water Bright Foam Cleanser 150ml',
-    'description': "Foaming cleanser with Rice Extract gently moisturizes skin with its rich, dense foam.",
+    'description': "- Foaming cleanser with Rice Extract gently moisturizes skin with its rich, dense foam.",
     'department': beauty.name,
     'price': 13.00)
 # https://www.amazon.com/Korean-Skin-Care-Glycolic-Exfoliating/dp/B07WKDR1BL/ref=sr_1_27?crid=1JMZJLOAX3UQ0&keywords=korean&qid=1650995927&s=beauty-intl-ship&sprefix=korean%2Cbeauty-intl-ship%2C79&sr=1-27
 p13 = Product.create!('name': 'Korean Skin Care - Dr Song Glycolic Acid Face Wash - Exfoliating Face Wash with 10% Glycolic Acid, AHA for Anti Aging, Acne and Wrinkles Korean Beauty',
-    'description': "Deep Pore Cleanser and Natural Exfoliation - Lift away dirt, oils, makeup and impurities from your pores with a revitalizing glycolic acid gel that helps clean and clarify your skin while restoring essential moisture and hydration.
-    \nFight Blemishes and Improve Clarity - This glycolic acid facial cleanser can help reduce acne breakouts by toning and tightening pores, reducing whiteheads and blackheads, and restoring healthy, glowing radiance.
-    \nSoft, Soothing, Non-Drying Formula - Dr Song glycolic acid exfoliating cleanser is safe on dry, oily, sensitive, irritated, and combination skin and leaves skin feeling softer, suppler, and firmer to the touch for youthful balance.
-    \nAge-Defying Antioxidants - A natural anti-inflammatory our glycolic cleanser also helps reduce redness and irritation while also diminishing discoloration, dark bags under your eyes, and hyperpigmentation.
-    \nDr Song Brand Guarantee - Every bottle of glycolic cleanser 10% formula, as well as our other skincare products, is backed by our responsive customer support, superior skin-safe purity, and reliable effectiveness to ensure your satisfaction.",
+    'description': "- Deep Pore Cleanser and Natural Exfoliation - Lift away dirt, oils, makeup and impurities from your pores with a revitalizing glycolic acid gel that helps clean and clarify your skin while restoring essential moisture and hydration.
+    \n- Fight Blemishes and Improve Clarity - This glycolic acid facial cleanser can help reduce acne breakouts by toning and tightening pores, reducing whiteheads and blackheads, and restoring healthy, glowing radiance.
+    \n- Soft, Soothing, Non-Drying Formula - Dr Song glycolic acid exfoliating cleanser is safe on dry, oily, sensitive, irritated, and combination skin and leaves skin feeling softer, suppler, and firmer to the touch for youthful balance.
+    \n- Age-Defying Antioxidants - A natural anti-inflammatory our glycolic cleanser also helps reduce redness and irritation while also diminishing discoloration, dark bags under your eyes, and hyperpigmentation.
+    \n- Dr Song Brand Guarantee - Every bottle of glycolic cleanser 10% formula, as well as our other skincare products, is backed by our responsive customer support, superior skin-safe purity, and reliable effectiveness to ensure your satisfaction.",
     'department': beauty.name,
     'price': 7.99)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg2_1?ie=UTF8&adId=A00670702RMK6348PLH66&qualifier=1650995927&id=2536864278273078&widgetName=sp_btf&url=%2FSulwhasoo-Essential-Comfort-Balancing-Water%2Fdp%2FB09VPBR3LT%2Fref%3Dsr_1_45_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995927%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-45-spons%26psc%3D1
 p14 = Product.create!('name': 'Sulwhasoo Essential Comfort Balancing Water: Hydrate, Soothe, and Nourish, 5.07 fl. oz.',
-    'description': "A quick-absorbing moisturizing toner that delivers an instant surge of hydration while helping to balance the skin content for silky, radiant-looking skin.",
+    'description': "- A quick-absorbing moisturizing toner that delivers an instant surge of hydration while helping to balance the skin content for silky, radiant-looking skin.",
     'department': beauty.name,
     'price': 68.00)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_beauty-intl-ship_sr_pg4_1?ie=UTF8&adId=A0800730365OEGHETHKW3&qualifier=1650996042&id=6281052555721938&widgetName=sp_atf_next&url=%2FDONGINBI-Defense-Anti-aging-Anti-Wrinkle-Antioxidant%2Fdp%2FB09HJP68L6%2Fref%3Dsr_1_75_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650996042%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-75-spons%26psc%3D1
 p15 = Product.create!('name': 'DONGINBI Daily Defense Cream, Anti-aging, Anti-Wrinkle & Antioxidant Face Cream, Korean Red Ginseng Skin Care - 25ml',
-    'description': "PENETRATES DEEPLY TO AWAKEN YOUTHFUL SKIN: Infused with our advanced self-sustaining Red Ginseng formula, the daily defense cream effectively returns your skin to its natural condition. It fights aging to awaken firm, youthful skin.
-    \nANTI-AGING FACE CREAM: The Core RG Ginseno-Biome technology follows a three-phased approach to reverse aging and give you firm, supple skin. It strengthens skin barrier and enhances the skin's ability to heal itself. Wrinkles are reduced and your skin is firm with a youthful glow.
-    \nFIRMING & LIFTING SKIN: Our anti-aging daily defense cream is clinically proven to help smooth wrinkles, promote an even skin tone, and visibly firm & lift skin for a difference you can see in just as little as 4 weeks, revealing smoother and younger-looking skin. It can reduce wrinkles by 20.7%, moisturize skin by 10.6%, and improve skin barrier by 11.2%.
-    \nMOISTURIZING & NOURISHING: Dense creamy texture, yet lightweight, enriched with Red Ginseng that moisturizes and nourishes the skin. Your skin will not only look better, but will also be healthier.
-    \nREJUVENATING KOREAN RED GINSENG: Long-established since 1899, DONGINBI is a reputed skin care brand of the Korean Ginseng Corp. We are dedicated to offering luxurious skin care, and have honed our Red Ginseng processing and refining technology to effectively capture its nourishing and anti-aging properties.",
+    'description': "- PENETRATES DEEPLY TO AWAKEN YOUTHFUL SKIN: Infused with our advanced self-sustaining Red Ginseng formula, the daily defense cream effectively returns your skin to its natural condition. It fights aging to awaken firm, youthful skin.
+    \n- ANTI-AGING FACE CREAM: The Core RG Ginseno-Biome technology follows a three-phased approach to reverse aging and give you firm, supple skin. It strengthens skin barrier and enhances the skin's ability to heal itself. Wrinkles are reduced and your skin is firm with a youthful glow.
+    \n- FIRMING & LIFTING SKIN: Our anti-aging daily defense cream is clinically proven to help smooth wrinkles, promote an even skin tone, and visibly firm & lift skin for a difference you can see in just as little as 4 weeks, revealing smoother and younger-looking skin. It can reduce wrinkles by 20.7%, moisturize skin by 10.6%, and improve skin barrier by 11.2%.
+    \n- MOISTURIZING & NOURISHING: Dense creamy texture, yet lightweight, enriched with Red Ginseng that moisturizes and nourishes the skin. Your skin will not only look better, but will also be healthier.
+    \n- REJUVENATING KOREAN RED GINSENG: Long-established since 1899, DONGINBI is a reputed skin care brand of the Korean Ginseng Corp. We are dedicated to offering luxurious skin care, and have honed our Red Ginseng processing and refining technology to effectively capture its nourishing and anti-aging properties.",
     'department': beauty.name,
     'price': 65.99)
 
 
 # Food
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_grocery_sr_pg1_1?ie=UTF8&adId=A02640903T6S41CIJ8L42&qualifier=1650996083&id=2763272442096322&widgetName=sp_atf&url=%2FSempio-Pepper-Paste-Gochujang-6-1-Pounds%2Fdp%2FB004R9GFJU%2Fref%3Dsr_1_1_sspa%3Fkeywords%3Dkorean%2Bfood%26qid%3D1650996083%26s%3Dgrocery%26sprefix%3Dkorean%252Cgrocery%252C97%26sr%3D1-1-spons%26psc%3D1%26smid%3DA3QMA05TS4QA12
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p16 = Product.create!('name': 'Sempio Gochujang, Hot Pepper Paste (Korean Chili Paste)_6.1lbs (2.8KG)_All Purpose',
+    'description': "- WELCOME ADDITION TO ANY FOOD : Great for stir-frying, dipping, marinating, or combining with other condiments like mayo, ketchup, or salsa to spice them up. The thick consistency and heat level give it a spicy kick that makes your dishes more special.
+    \n- SMOKY HEAT FLAVOR : Sempio Gochujang is characterized by its distinctive ‘smoky heat’ that adds a deep complex spiciness to the dishes. It will add a spicy Korean flavor to your dishes, giving them an exquisitely distinct touch.
+    \n- PRODUCT OF 'SEMPIO' : 'SEMPIO' has been making high quality soybean products for over 70 years, since 1946. Through our accumulated know-how and technology, we have mastered the art of soybean fermentation, producing products with an incomparably deep & rich flavor.
+    \n- SAFE & HEALTHY : Made with carefully selected sun-dried red chilies and rice, providing an umami-rich sweet heat.
+    \n- VEGAN & SQF CERTIFIED : Sempio Gochujang is Vegan and a SQF(Safe Quality Food) certified product.
+    \n- PRODUCT OF KOREA",
+    'department': food.name,
+    'price': 22.32)
 # https://www.amazon.com/Fruits-Mochi-Daifuku-Ichigo-7-4oz/dp/B071HR77KX/ref=sr_1_5?keywords=korean+food&qid=1650996083&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-5
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p17 = Product.create!('name': 'Fruits Mochi Daifuku Ichigo 7.4oz/210g',
+    'description': "- Kubota Fruit Daifuku (Ichigo / Strawberry)",
+    'department': food.name,
+    'price': 6.88)
 # https://www.amazon.com/Jaeraesik-Soybean-Paste-CJ-Haechandle/dp/B00EZX6X04/ref=sr_1_8?keywords=korean+food&qid=1650996083&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-8
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p18 = Product.create!('name': 'CJ Haechandle Soybean Paste, Korean Doenjang, 500g (1lb),',
+    'description': "- Korea's no.1 doenjang (Soybean paste)
+    \n- Made in traditional fermentation method for the best flavor and taste loved by many for hundreds of years;
+    \n- Good on almost any Korean dish especially stew, soup, mixed food, and fusion entrees.
+    \n- No preservatives; no artificial flavors;
+    \n- 500g (1.1 lb); product of South Korea",
+    'department': food.name,
+    'price': 6.85)
 # https://www.amazon.com/Samyang-Buldark-Chicken-overseas-shipment/dp/B07N8TQSBT/ref=sr_1_19?keywords=korean+food&qid=1650996083&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-19
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p19 = Product.create!('name': '[Samyang] Buldark Spicy Chicken Roasted Sauce 200g×2 / Korean food / Korean sauce / Asian dishes (overseas direct shipment)',
+    'description': "- Original sauce of Bulldark Spicy Chicken Roasted Noodle Soup
+    \n- Makes all the dishes delicious and spicy.
+    \n- Types of Food : Sauces
+    \n- Manufacturer : Samyang (Korea)
+    \n- Capacity : 200g×2",
+    'department': food.name,
+    'price': 11.85)
 # https://www.amazon.com/Premium-Korean-Balloon-Flower-Ginger/dp/B087ZFBHWD/ref=sr_1_25?keywords=korean+food&qid=1650996083&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-25
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p20 = Product.create!('name': 'Premium Real Korean Pear, Balloon Flower Root, & Ginger Juice - No Preservatives or Artificial Additives - Natural and Pure - Health Care for Changing Season - for Men and Women of All Ages',
+    'description': "- WHY GINGER BELLFLOWER ROOT PEAR HEALTHY JUICE: Provides nutrients such as magnesium, vitamin C, potassium, calcium, iron, good source of fiber, and other compounds and antioxidants
+    \n- OUR SUPPLEMENTS: No Water, No Sugar, No Addictives, and No presevatives or artificial additives
+    \n- ON-THE-GO: 30 Individually packed pouches included. Enjoy it anywhere you go!
+    \n- INGREDIENTS: Pear 97%, Balloon Flower Root 2%, Ginger 1% (Farm Produces as a good quality)
+    \n- PRODUCT PACKAGING: 100ml x 30 pouches (1 Box) / 100% Cold Pressed Juice(착즙한 도라지 배즙)",
+    'department': food.name,
+    'price': 35.99)
 # https://www.amazon.com/Korea-Seasoned-Dried-Flower-%EA%BD%83%EB%B3%B4%EB%8B%A4%EC%98%A4%EC%A7%95%EC%96%B4/dp/B07X3WJJ86/ref=sr_1_27?keywords=korean+food&qid=1650996083&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-27
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p21 = Product.create!('name': 'Korea Seasoned Dried Squid Snack Squid Over Flower 15g X 10 Pack 꽃보다오징어',
+    'description': "- Dried squid with special seasoning 15g / 0.5oz X 10 Pack
+    \n- Sweet & salty dried squid",
+    'department': food.name,
+    'price': 18.88)
 # https://www.amazon.com/Yopokki-Jjajang-Rabokki-Ramen-Noodle/dp/B09L496VZ6/ref=sr_1_29?keywords=korean+food&qid=1650996179&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-29
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p22 = Product.create!('name': 'Yopokki Jjajang Rabokki Cup I Ramen Noodle Rice Cakes (Jjajang taste, 2 Cup)',
+    'description': "- A TASTE OF KOREA - We have captured the delicious taste of various Korean dishes so that they can be prepared in minutes but accessible anywhere in the world. This particular dish has a soft texture mixed with a spicy and sweet sauce!
+    \n- Precautions - Do not eat deoxidizer packaged with rice cake.
+    \n- Precautions - If you smell an unpleasant odor, it will be removed during the cooking process.
+    \n- Precautions - Some spots on the surface of the product are part of the rice, so please eat with confidence",
+    'department': food.name,
+    'price': 11.99)
 # https://www.amazon.com/Kewpie-Mayonaise-17-64-Ounce-Tubes-Pack/dp/B003NRLLLE/ref=sr_1_30?keywords=korean+food&qid=1650996179&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-30
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p23 = Product.create!('name': 'Kewpie Mayonaise, 17.64-Ounce Tubes (Pack of 2)',
+    'description': "- Flavor:   Egg
+    \n- Brand:  Kikkoman
+    \n- Package Information:    Tube
+    \n- Package Weight:    0.52 Kilograms
+    \n- Material Feature:   Gluten Free",
+    'department': food.name,
+    'price': 15.19)
 # https://www.amazon.com/Tae-kyung-Korean-Pepper-Flakes-Gochugaru/dp/B099FKF9N6/ref=sr_1_39?keywords=korean+food&qid=1650996179&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-39
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p24 = Product.create!('name': 'Tae-kyung Korean Red Chili Pepper Flakes Powder Gochugaru, 1 Lb-1',
+    'description': "- Korean Red Chili Pepper Powder you can sprinkle over anything if you want to add Spicy
+    \n- Affordable choice for budget conscious buyers - 1lb Pack with resealable
+    \n- SPICE UP YOUR RECIPE: Red dry chili flakes is used to make kimchi, hot chili oil and hot sauce. Add red chili powder to casseroles, curries, stews, pizza, salads, tacos, soups and barbecue spice rubs with a strong kick.
+    \n- This Red Pepper Flakes is 100% natural and non-irradiated. We never add any other ingredients in any proccess. All chilies are natural without additive, coloring or gmo.
+    \n- 100% premium quality south korea origin topokki vegetarian vegan food keto diet nutritional asian cuisine organic fresh dinner kfood kpop japanese Chinese dry buldak best product tteokbokki non GMO Gluten free foreign zipper bag coarse kimchi seasoning fine type sun dried original peppers natural pure flavor ramen Cheong Yang famous coarsely taste kosher no additives grind convenient reuse reusable BBQ soup dips stir fry fried pizza salad barbecue rubs chicken sauce sprinkle freshly sprinkled
+    \n- homemade extra strong spice dish essential safe bulk health healthy packaged international k-food delicious cooking crushed paleo seasoned meals naturally",
+    'department': food.name,
+    'price': 11.84)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_grocery_sr_pg3_1?ie=UTF8&adId=A0092745HBOEWVWOCOA7&qualifier=1650996257&id=4601855170084462&widgetName=sp_btf&url=%2Fbibigo-Korean-Pre-Made-Packaged-Seaweed%2Fdp%2FB07R1J915H%2Fref%3Dsr_1_71_sspa%3Fkeywords%3Dkorean%2Bfood%26qid%3D1650996257%26s%3Dgrocery%26sprefix%3Dkorean%252Cgrocery%252C97%26sr%3D1-71-spons%26psc%3D1%26smid%3DAT03FDQZB4H70
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p25 = Product.create!('name': 'bibigo Korean Pre-Made Packaged Seaweed Soup 500g 미역국',
+    'description': "- Flavor:   Seaweed
+    \n- Item Weight:    500 Grams
+    \n- Brand:  CJ Bibigo
+    \n- Package Weight: 0.52 Kilograms",
+    'department': food.name,
+    'price': 12.94)
 # https://www.amazon.com/Palkin-flavors-Korean-overseas-shipment/dp/B07NJDHZVX/ref=sr_1_78?keywords=korean+food&qid=1650996274&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-78
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p26 = Product.create!('name': '[Palkin] Korea Ramen Tea Bag 16ea (8 hot&spicy flavors + 8 mild flavors) / Korean food / Korean tea / Korean Ramen / Would you like a cup of ramen? (overseas direct shipment)',
+    'description': "- Would you like a cup of ramen?
+    \n- No MSG, delicious Korean ramen soup tea
+    \n- Manufacturer: Palkin (Korea)
+    \n- Capacity : 16ea (8 hot&spicy flavors + 8 mild flavors)
+    \n- Recipe : Put 1 tea bag to hot water (110ml), then eat after 30 ~40s.",
+    'department': food.name,
+    'price': 19.90)
 # https://www.amazon.com/CJ-Beksul-Furikake-Seasoning-Vegetable/dp/B01JW1EBIY/ref=sr_1_110?keywords=korean+food&qid=1650996318&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-110
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p27 = Product.create!('name': 'CJ New Beksul Furikake Rice Seasoning Mix 밥이랑, 0.85Oz (Vegetable Mix, 1 Pack)',
+    'description': "- CJ Beksul Furikake Rice Seasoning Mix
+    \n- Assorted Vegetable Mix
+    \n- Contains 3 individual package (8g each)
+    \n- Easy to make lunch box!
+    \n- 1 Pack",
+    'department': food.name,
+    'price': 6.95)
 # https://www.amazon.com/Dongsuh-Peanut-cereals-overseas-shipment/dp/B08C9SDF6X/ref=sr_1_126?keywords=korean+food&qid=1650996318&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-126
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p28 = Product.create!('name': '[Dongsuh] Post Peanut Butter Oreo o\'s 400g / Korean cereals (overseas direct shipment)',
+    'description': "- Korean limited edition cereals made of peanut butter
+    \n- Capacity : 400g
+    \n-  Manufacturer : Dongsuh Food (Korea)
+    \n- Ingredients : Corn flour, brown rice flour, barley flour, rye flour, whole wheat flour, peanut powder, peanut butter, etc.",
+    'department': food.name,
+    'price': 29.58)
 # https://www.amazon.com/Bonjuk-Premium-Korean-Porridge-Seafood/dp/B085VQM4BG/ref=sr_1_164?keywords=korean+food&qid=1650996358&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-164
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p29 = Product.create!('name': 'Bonjuk Premium Korean Porridge New Flavor 17.6oz, Pack (Seafood)',
+    'description': "- Easy to cook!
+    \n- Boiling water and Microwavable package
+    \n- 1 pack (17.6oz) per order",
+    'department': food.name,
+    'price': 9.99)
 # https://www.amazon.com/Crispy-Potato-Korean-Flavour-Medium/dp/B09BBFTXPC/ref=sr_1_184?keywords=korean+food&qid=1650996376&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-184
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p30 = Product.create!('name': 'LAYS Brand , Crispy Potato Chips Spicy Korean Ramen Flavour, 50g X 3 Packs, Medium',
+    'description': "- Don't miss one of Lay's tasty Popular menu in Korean style . Made from real potatoes.
+    \n- Made from quality ingredients and Through clean and standardized production processes.
+    \n- Inspired by the hottest famous menu in Korea Spicy Korean Ramen, Mellow soup mixed with Korean style spicy sauce ''Hot and Spicy'' delicious to the original taste. a new flavour that everyone should not miss!
+    \n- Ideal for any time of the day.
+    \n- Allergen information: soy
+    \n- Flavor name: Garlic
+    \n- Ingredients: Potato, Seasoning, Vegetable Oil",
+    'department': food.name,
+    'price': 14.99)
 # https://www.amazon.com/Official-HBAF-Seasoned-Almonds-Chicken/dp/B09XB6RZNN/ref=sr_1_224?keywords=korean+food&qid=1650996444&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-224
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p31 = Product.create!('name': 'Official Gilim HBAF Brand Korean Seasoned Almonds 3 Flavor Pack Mix (1 Honey Butter, 1 x 210g, 1 Garlic Bread, 1 x 210g, 1 Hot and Spicy Chicken, 1 x 210g)',
+    'description': "- One (1) pack of 7.4 oz (210 gram) HBAF Honey Butter Almond. The signature flavor of HBAF! Its sweet, savory, and butter goodness are loved by everyone.
+    \n- One (1) pack of 7.4 oz (210 gram) HBAF Garlic Bread Almond. Enjoy the butter garlic almonds with real garlic bread bites. Your mind will explode with happiness!
+    \n- One (1) pack of 7.4 oz (210 gram) HBAF Hot and Spicy Chicken Flavor. Bold collaboration with Korean heavily spiced fire chicken dish, Buldak. Challenge the super spicy taste and relieve the stress!
+    \n- All packs provide a great source of protein to your daily life.
+    \n- All packs have a zip seal, perfect for storing after opening. Enjoy!",
+    'department': food.name,
+    'price': 26.97)
 
 # Kitchen
 # https://www.amazon.com/Crazy-Korean-Cooking-Sizzling-Bibimbap/dp/B00KFMTLOO/ref=sr_1_2?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-2
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p32 = Product.create!('name': 'Crazy Korean Cooking Korean Stone Bowl (Dolsot), Sizzling Hot Pot for Bibimbap and Soup - Premium Ceramic (Large with Lid)',
+    'description': "- Premium stoneware (100% ceramics) made from high quality fine clay, glaze-fired twice with a natural glaze. Simple yet elegant design makes your food stand out and look beautiful. Very giftable packaging.
+    \n- MADE IN KOREA. Lead free, cadmium free, arsenic free. Tested regularly for regulated heavy metals.
+    \n- Use directly on gas or electric stovetops, in ovens, broilers and microwaves. Dishwasher safe. Hand-washing preferable for long-lasting appearance.
+    \n- 1 bowl, 1 lid, 1 black plastic trivet/coaster included. Plastic trivet is heat resistant. Hot stone bowl can go on the trivet straight from the stove or oven. Do not place plastic trivet directly on the stove or in the oven.
+    \n- No seasoning or pre-soaking necessary. Easy to maintain, and more sanitary and long-lasting compared to bowls made with natural stone.
+    \n- Food tastes better and retains more nutrients due to the even distribution of heat and the emission of far-infrared heat. Does not taint taste or look of the food like metal pots do.
+    \n- Cook and serve in the same bowl. Perfect for sizzling dolsot bibimbap and serving stews or soups hot and delicious. Keeps the food sizzling and hot while eating.
+    \n- Versatile: Great for soups, noodle soups, stews, rice, risotto, baked pastas, chili, casserole dishes, pot pies, beans, vegetables, hot pot table cooking, stir-fry.
+    \n- volume: 44 fl oz (1300 ml), about 5.4 cups, inner diameter: 6.5” (16.5 cm), outer diameter: 7.75” (19.7 cm), width with handles: 8.75” (22.2 cm), bowl height: 3.12 (8 cm), lid height: 2.37(6 cm).",
+    'department': kitchen.name,
+    'price': 46.99)
 # https://www.amazon.com/Korean-Ramen-Cooking-Pot-Chopsticks-Heating-Kitchen-Cookware/dp/B08G1CM3XX/ref=sr_1_6?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-6
-# p = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p33 = Product.create!('name': 'AHIER Ramen Pot, Korean Ramen Cooking Pot With Lid Spoon and Chopsticks (1pair), Korean Ramen Noodle Pot Fast Heating For Kitchen Cookware (Double handle) (6.3in)',
+    'description': "- 【Korean Yellow Ramen Pot】: Korean pot for ramen is Korean cookware made of aluminum，Additional free components Spoon&Chopsticks are provided， which is perfect for ramyun, instant curry, kimchi jjigae, soup, stew, more dishes, etc. 
+    \n- 【Lightweight】: Korean ramen noodle pot is lightweight and stackable, so it is perfect for camping, hiking, picnic, backyard parties, beach, patio, dinner party, etc.
+    \n- 【Fast Heating】: Korean ramen noodle pot material has strong thermal conductivity and heats up quickly. When heating, the pot body and handle are scorching, please pay attention to heat insulation.
+    \n- 【Durable and Easy To Clean】: Ramen pot gold is easy to clean, does not rust, is durable, and is used for a long time as new
+    \n- 【Direct Heating】: The Korean ramen pot can be directly heated by an open flame and electric ceramic furnace convenient to use.",
+    'department': kitchen.name,
+    'price': 16.99)
 # https://www.amazon.com/TeChef-Tamagoyaki-Japanese-Collection-Non-stick/dp/B00N4N2EP4/ref=sr_1_7?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-7
-# p = Product.create!('name': '',
+# p34 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/Spoons-pieces-Stainless-Kitchen-Restaurant/dp/B083LV6S6Q/ref=sr_1_10?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-10
-# p = Product.create!('name': '',
+# p35 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg1_1?ie=UTF8&adId=A043440539AZ5QGAC648B&qualifier=1650996487&id=8124655637283983&widgetName=sp_mtf&url=%2FCooker-Intelligent-Digital-Preset-Stainless%2Fdp%2FB09JSDM8KH%2Fref%3Dsr_1_13_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996487%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-13-spons%26psc%3D1%26smid%3DAJ83XRP02KL30
-# p = Product.create!('name': '',
+# p36 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/Stirring-Cooking-Japanese-ADLORYEA-friendly/dp/B07CXNKTD4/ref=sr_1_16?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-16
-# p = Product.create!('name': '',
+# p37 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/TeChef-Stovetop-Non-Stick-Coating-Technology/dp/B00JT8ZYCS/ref=sr_1_19?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-19
-# p = Product.create!('name': '',
+# p38 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/Barbecue-Cutting-Serrated-Stainless-Scissors/dp/B01MYTIC16/ref=sr_1_24?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996563&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-24
-# p = Product.create!('name': '',
+# p39 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg1_1?ie=UTF8&adId=A05863291JYM0BW39FK24&qualifier=1650996563&id=2534797092238754&widgetName=sp_btf&url=%2FElectric-Portable-Nonstick-Multifunction-Saucepan%2Fdp%2FB09GN7JKJ9%2Fref%3Dsr_1_30_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996563%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-30-spons%26psc%3D1
-# p = Product.create!('name': '',
+# p40 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A0757546O810UQ8S79OY&qualifier=1650996580&id=2330488405705501&widgetName=sp_atf_next&url=%2FMDLUU-Dolsot-Bibimbap-Granite-Korean%2Fdp%2FB085VWTFCQ%2Fref%3Dsr_1_27_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-27-spons%26psc%3D1
-# p = Product.create!('name': '',
+# p41 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/Cleaver-Butcher-Vegetable-Kitchen-Camping/dp/B08JHWYXB1/ref=sr_1_25?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996580&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-25
-# p = Product.create!('name': '',
+# p42 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A0192276FBJBOSPPLRYL&qualifier=1650996580&id=2330488405705501&widgetName=sp_mtf&url=%2FTobyan-Soft-Cotton-Linen-Apron%2Fdp%2FB09PMTG2KM%2Fref%3Dsr_1_30_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-30-spons%26psc%3D1
-# p = Product.create!('name': '',
+# p43 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/Wooden-Long-Spoons-Natural-Cooking/dp/B09PZ6FM39/ref=sr_1_37?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996580&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-37
-# p = Product.create!('name': '',
+# p44 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A021592422Z25NWKYDI0Z&qualifier=1650996580&id=2330488405705501&widgetName=sp_btf&url=%2FSanbege-Ceramic-Sizzling-Bibimbap-Casserole%2Fdp%2FB09MCY4ZV2%2Fref%3Dsr_1_45_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-45-spons%26psc%3D1
-# p = Product.create!('name': '',
+# p45 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_kitchen-intl-ship_sr_pg3_1?ie=UTF8&adId=A05884062QA2NW4EKL7RS&qualifier=1650996673&id=993139042312979&widgetName=sp_atf_next&url=%2FCooking-Capacity-Ceramic-Casserole-23-6fl%2Fdp%2FB09NNG724R%2Fref%3Dsr_1_50_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996673%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-50-spons%26psc%3D1
-# p = Product.create!('name': '',
+# p46 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg3_1?ie=UTF8&adId=A022863726U8CT6HRJH5D&qualifier=1650996673&id=993139042312979&widgetName=sp_mtf&url=%2FElinCube-Premium-Platter-Cooking-Bibimbap%2Fdp%2FB08R3DCF6V%2Fref%3Dsr_1_56_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996673%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-56-spons%26psc%3D1
-# p = Product.create!('name': '',
+# p47 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/Excelife-86150-Folding-Wooden-Korean/dp/B0722TZ48M/ref=sr_1_73?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-73
-# p = Product.create!('name': '',
+# p48 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/AGAINATURE-Kitchen-Reusable-Absorbing-Eco-Friendly/dp/B093KHRVDZ/ref=sr_1_81?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-81
-# p = Product.create!('name': '',
+# p49 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/Cuckoo-CR-0655F-Cooker-Liters-Quarts/dp/B01MQWFGKG/ref=sr_1_77?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-77
-# p = Product.create!('name': '',
+# p50 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/SASTYBALE-Japanese-Waitress-Painting-Gardening%EF%BC%88Gray%EF%BC%8CMedium%EF%BC%89/dp/B08FSTK6C6/ref=sr_1_86?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-86
-# p = Product.create!('name': '',
+# p51 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/imarku-Removable-Multifunctional-Stainless-Sharpening/dp/B088D82YDZ/ref=sr_1_88?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-88
-# p = Product.create!('name': '',
+# p52 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg4_1?ie=UTF8&adId=A04626432Y0KUJOUNKLDV&qualifier=1650996706&id=8056718172970346&widgetName=sp_btf&url=%2FLavensi-Tamagoyaki-Japanese-Omelette-Non-stick%2Fdp%2FB098KYBY28%2Fref%3Dsr_1_94_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996706%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-94-spons%26psc%3D1
-# p = Product.create!('name': '',
+# p53 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg5_1?ie=UTF8&adId=A01510603EIXORTNPLW09&qualifier=1650996783&id=7561152989686588&widgetName=sp_mtf&url=%2FSEAAN-Portable-Electric-Non-stick-Temperature%2Fdp%2FB08VJ52XWV%2Fref%3Dsr_1_103_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996783%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-103-spons%26psc%3D1
-# p = Product.create!('name': '',
+# p54 = Product.create!('name': '',
 #     'description': "",
-#     'department': ,
+#     'department': kitchen.name,
 #     'price': )
 
 # Attire

@@ -5,7 +5,7 @@
     padding: 3px;
 }
 
-.home-logo,.greeting,.search-bar,.cart,.deliver,.region,.returns{
+.home-logo,.greeting,.cart,.deliver,.region,.returns{
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
@@ -13,7 +13,7 @@
     border-radius: 2px;
 }
 
-.home-logo:hover,.greeting:hover,.search-bar:hover,.cart:hover,.deliver:hover,.region:hover,.returns:hover{
+.home-logo:hover,.greeting:hover,.cart:hover,.deliver:hover,.region:hover,.returns:hover{
     border-color: white;
 
 }
@@ -55,3 +55,6 @@
     font-weight: 400;
 }
 
+.search-bar-input{
+    width: 500px;
+}

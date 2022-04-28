@@ -1,0 +1,27 @@
+.nav-list {
+    background-color: #232f3e;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 39px;
+}
+
+.nav-link-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.nav-link-container:hover {
+    border-color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+

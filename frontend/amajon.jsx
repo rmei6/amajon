@@ -4,6 +4,7 @@ import { login, logout } from "./actions/session_actions";
 import Root from "./components/root";
 import configureStore from "./store/store";
 import {fetchProducts} from "./actions/products_actions";
+// import '../app/assets/fonts/AmazonEmber_Rg.ttf';
 
 
 document.addEventListener("DOMContentLoaded", () => {

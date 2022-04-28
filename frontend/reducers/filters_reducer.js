@@ -6,5 +6,12 @@ const defaultState = Object.freeze({
 
 const filtersReducer = (state = defaultState,action) => {
     Object.freeze(state);
-    
+    switch(action.type){
+        case UPDATE_FILTER:
+            
+        default:
+            return state;
+    }
 }
+
+export default filtersReducer;

@@ -1,8 +1,8 @@
-export const getProducts = (department) => {
+export const getProducts = () => {
+    // debugger;
     return $.ajax({
         method: 'GET',
-        url: `/api/products`,
-        data: {department: department}
+        url: `/api/products`
     })
 }
 

@@ -15,8 +15,8 @@ export const receiveProduct = (product) => ({
 })
 
 
-export const fetchProducts = (department) => dispatch => {
-    return ProductsUtil.getProducts(department)
+export const fetchProducts = () => dispatch => {
+    return ProductsUtil.getProducts()
         .then(products => dispatch(receiveProducts(products)))
 }
 

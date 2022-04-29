@@ -40,10 +40,10 @@ class ProductShow extends React.Component {
             var dayslater = product.delivery_days;         //add shipping time column to products table?
             var date = new Date();
             var nextdate = new Date(date.getFullYear(), date.getMonth(), date.getDate() + product.delivery_days);
-            debugger;
+            // debugger;
             var nextdate_word = nextdate.toLocaleString('en-us',{day: 'numeric', month: 'short'})
             var deliverday = `${dayslater === 1 ? 'Tomorrow' : weekdays[nextdate.getDay()]}, ${nextdate_word}`;
-            debugger;
+            // debugger;
             return (
                 <div className="product-show">
                     <div className="product-info">
@@ -83,7 +83,7 @@ class ProductShow extends React.Component {
                                 <div className="product-show-description-container">
                                     <p className="product-show-description-title">About this Item</p>
                                     <div className="product-show-description">
-                                        {product.description.split('*').map(line => <span>{line}<br/></span>)}
+                                        {product.description.split('*').map((line,idx) => <span key={`${product.id}-des-line-${idx}`}>{line}<br/></span>)}
                                     </div>
                                     <div className="product-show-review-info">
                                         <p>review info?</p>

@@ -12,7 +12,7 @@ const ProductIndexItem = ({product}) => {
         imageurl = window.flatproductURL;
     }
     var weekdays = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat'];
-    var dayslater = Math.floor(Math.random() * 14) + 1;         //add shipping time column to products table?
+    var dayslater = product.delivery_days;         //add shipping time column to products table?
     var date = new Date();
     var nextdate = new Date(date.getFullYear(), date.getMonth(), date.getDate()+dayslater);
     var nextdate_word = nextdate.toLocaleString('en-us',{day: 'numeric', month: 'short'})
@@ -30,13 +30,13 @@ const ProductIndexItem = ({product}) => {
                 </Link>
             </div>
             <div className="product-index-item-reviews-container">
-                <span>Review Start Placeholder</span>
+                <span>Review Stars Placeholder</span>
             </div>
             <div className="product-index-item-price-container">
                 <Link className="product-index-item-price" to={`/products/${product.id}`}>
                     <span className="index-dollar-sign">$</span>
                     <span className="index-price-dollars">{Math.floor(product.price)}</span>
-                    <span className="index-price-cents">{(product.price % 1) === 0 ? '00' : (product.price % 1).toFixed(2) * 100}</span>
+                    <span className="index-price-cents">{(product.price % 1) === 0 ? '00' : (product.price % 1).toFixed(2).slice(2)}</span>
                 </Link>
             </div>
             <div className="product-index-item-shipping-container">

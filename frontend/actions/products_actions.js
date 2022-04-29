@@ -22,6 +22,7 @@ export const fetchProducts = () => dispatch => {
 
 
 export const fetchProduct = (product_id) => dispatch => {
+    // debugger;
     return ProductsUtil.getProduct(product_id)
         .then(product => dispatch(receiveProduct(product)))
 }

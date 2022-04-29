@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { login, logout } from "./actions/session_actions";
 import Root from "./components/root";
 import configureStore from "./store/store";
-import {fetchProducts} from "./actions/products_actions";
+import {fetchProducts, fetchProduct} from "./actions/products_actions";
 // import '../app/assets/fonts/AmazonEmber_Rg.ttf';
 
 
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.dispatch = store.dispatch;
 
   window.fetchProducts = fetchProducts;
+  window.fetchProduct = fetchProduct;
 
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store}/>, root);

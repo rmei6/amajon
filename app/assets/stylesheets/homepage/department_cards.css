@@ -1,0 +1,55 @@
+.department-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    float: left;
+    background-color: rgb(233, 230, 230);
+}
+
+.department-promo{
+    background-color: white;
+    color: black;
+    margin: 20px;
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 420px;
+    z-index: 3;
+    text-align: center;
+}
+
+.department-promo:first-child{
+    margin-left: 50px;
+}
+
+.department-promo:nth-child(4n + 1){
+    margin-left: 55px;
+}
+
+.department-image{
+    width: auto;
+    height: auto;
+    max-height: 130px;
+    max-width: 130px;
+    margin: 15px;
+}
+
+.promo-links{
+    /* display: grid;
+    float: left; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+}
+
+.promo-message{
+    font-weight: bold;
+    font-size: 21px;
+    /* margin: 20px; */
+    line-height: 60px;
+}
+
+.department-image-link{
+    width: 50%;
+    height: 50%;
+}

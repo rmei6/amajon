@@ -11,34 +11,34 @@ class ProductIndex extends React.Component {
     }
 
     componentDidMount(){
-        debugger;
+        // debugger;
         dispatch(this.props.fetchProducts(window.location.href.slice(window.location.href.indexOf('#')+2)))
         // this.props.fetchProducts(window.location.href.slice(window.location.href.indexOf('#')+2))
     }
 
     componentDidUpdate(){
-        debugger;
+        // debugger;
         // if(this.props.products.length === 0 || this.props.products[0].department !== this.state.department){
         if (window.location.href.slice(window.location.href.indexOf('#')+2) === 'products'){
             if (this.props.products.length < 50){
                 dispatch(this.props.fetchProducts(window.location.href.slice(window.location.href.indexOf('#')+2)))
             }
         }else{
-            if(this.props.products.length === 0 || this.props.products[this.props.products.length-1].department !== window.location.href.slice(window.location.href.indexOf('#')+2)){
-                debugger;
+            if(this.props.products.length === 0 || this.props.products.some(product => product.department !== window.location.href.slice(window.location.href.indexOf('#')+2))){
+                // debugger;
                 dispatch(this.props.fetchProducts(window.location.href.slice(window.location.href.indexOf('#')+2)))
             }
         }
     }
 
     setDepartment(dep){
-        debugger;
+        // debugger;
         this.setState({department: dep})
     }
 
     render(){
-        debugger;
-        if(this.props.products.length === 0 || (this.props.products[this.props.products.length-1].department !== window.location.href.slice(window.location.href.indexOf('#')+2) && window.location.href.slice(window.location.href.indexOf('#')+2) !== 'products')){
+        // debugger;
+        if(this.props.products.length === 0 || (this.props.products.some(product => product.department !== window.location.href.slice(window.location.href.indexOf('#')+2)) && window.location.href.slice(window.location.href.indexOf('#')+2) !== 'products')){
             return (
                 // <div>
                     <HeaderContainer setDepartment = {this.setDepartment}/>
@@ -53,7 +53,7 @@ class ProductIndex extends React.Component {
         }
         else{
             return (
-                <div>
+                <div className="index-container">
                     <HeaderContainer setDepartment = {this.setDepartment}/>
                     <div className="result-summary-container">
                         <span className="result-summary">1 - {this.props.products.length} of {this.props.products.length} results</span>

@@ -18,6 +18,7 @@ class Api::ProductsController < ApplicationController
             @products = Product.select(:id,:name,:description,:department,:delivery_days,:price).where(department: params[:department])
         else
             redirect_to '/'
+            # return Redirect("http://localhost:3000/#/");
         end
         render :index
     end

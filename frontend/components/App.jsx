@@ -6,6 +6,7 @@ import SignupFormContainer from "./session/signup_form_container";
 import HeaderContainer from "./header/header_container";
 import SearchContainer from "./product/search_container";
 import ProductShowContainer from "./product/product_show_container";
+import MainContainer from "./main/main_container";
 import { AuthRoute } from "../util/route_util";
 import { Switch } from "react-router-dom";
 // import amajon_logo from '../../app/assets/images/amajon_logo.png';
@@ -32,7 +33,7 @@ const App = () => {
           <Route exact path="/products" component={SearchContainer} />
           <Route path="/products/:id" component={ProductShowContainer} />
           <Route path='/:department' component={SearchContainer}/>
-          <Route exact path='/' component={HeaderContainer} />
+          <Route exact path='/' component={MainContainer} />
           {/* <Route exact path={department_paths} component={SearchContainer}/> */}
           {/* <Route path='/' component={FooterContainer} /> */}
 

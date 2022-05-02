@@ -83,82 +83,82 @@ p6 = Product.create!('name': 'Papa Recipe Bombee Sheet Mask, Korean moisturizing
     'delivery_days': rand(max_days) + 1,
     'price': 19.99)
 # https://www.amazon.com/Korean-Skin-Care-K-Beauty-Moisturizer/dp/B09FSW9ZT7/ref=sr_1_58?keywords=korean&qid=1650995829&s=beauty&sr=1-58
-p7 = Product.create!('name': 'Korean Skin Care K-Beauty Moisturizer for Oily Skin: DERMA ORGANIC Vitamin C Serum For Face with Hyaluronic Acid, CE, Ferulic Acid Korean Skincare',
-    'description': "- Great on Oily Skin: It is light on skin and leaves no residues, makes skin pores tight.
-    *- Oil Free Formula: We replaced pore clogging Tocopherol, or Vitamin E oil with Vitamin B & E enriched pure organic Aloe Vera Juice.
-    *- NO Oxidation up to 18 months: Unlike the ordinary Vitamin C Serum, it doesn't oxidize under sun, air, even vanity light.
-    *- Perfect for Sensitive Skin: It is even safe on child's skin, it doesn't have any harmful ingredients such as Phenoxyethanol, Propylene glycol or Triethanolamine that you see on other popular Vitamin C serums,
-    *- No artificial fragrance, color, nor alcohol is added, so it is clear in color with no smell as pure vitamin C should be.",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 35.99)
-# https://www.amazon.com/flavors-Essence-exfoliate-hydrate-brighten/dp/B0725J9C92/ref=sr_1_67?keywords=korean&qid=1650995829&s=beauty&sr=1-67
-p8 = Product.create!('name': "A'pieu Milk Sheet Mask (7 flavors in 1 pack) with Milk Essence to mildly exfoliate, hydrate, and brighten - Korean skincare for normal to dry skin.",
-    'description': "- A'pieu Milk Mask hydrates and brightens your skin in one go. Soaked in real milk protein extract that nourishes normal to dry skin types.
-    *- The milk-protein-infused daily sheet mask helps restore dry and dull skin.
-    *- On a clean and dry face, apply the sheet evenly. Remove after 10-15 minutes.
-    *- THE BEST OF K-BEAUTY: A'PIEU brings the very best in Korean beauty to the rest of the world with luxury skincare products that are trendy, effective, and formulated for all skin types.",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 14.00)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg1_1?ie=UTF8&adId=A0286062OR158T9K9I9P&qualifier=1650995884&id=4591473942581459&widgetName=sp_btf&url=%2FSulwhasoo-Essential-Comfort-Moisture-Cream%2Fdp%2FB09VP4WMCY%2Fref%3Dsr_1_30_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995884%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-30-spons%26psc%3D1
-p9 = Product.create!('name': 'Sulwhasoo Essential Comfort Moisture Cream: Hydrate, Moisturize, and Dewy Glow, 1.69 fl. oz.',
-    'description': "- A breathable, quenching gel cream that hydrates and comforts skin for a dewy, healthy glow. Powered by JAUM Moisturizing Complex™, a powerhouse of hydrating and nourishing Herbs, Yam, Arrowroot flowers plus Hyaluronic Acid.",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 80.00)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg1_1?ie=UTF8&adId=A10288002U2YI1MRBHV0L&qualifier=1650995884&id=4591473942581459&widgetName=sp_btf&url=%2FDaandanbit-Contains-Anti-winkle-functional-Traditional%2Fdp%2FB09FDP7CBZ%2Fref%3Dsr_1_29_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995884%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-29-spons%26psc%3D1
-p10 = Product.create!('name': 'Daandanbit [DAANDAN BIT] Boyun Firming Cream 50ml / 1.7fl oz Contains camellia sinensis callus culture extract Anti-winkle functional Korean Traditional Herbal Cream 1.7 Ounce',
-    'description': "- Boyun Firming Cream 50ml / 1.7fl oz
-    *- (Functional cosmetics for the improvement of wrinkles)
-    *- This is a cream for elasticity that thoroughly rejuvinates skin elasticity with the combination of natural ingredients and the concentrated nutrients that deliver natural energy to the skin
-    *- Camellia Sinensis Callus Culture Extract and vegetable extracts keep the skin fresh and healthy Based on an herbal formula, each of the precious ingredients is carefully selected and blended to erase the traces of time on the skin
-    *- During the last step of skincare, apply the appropriate amount to the face and neck areas as if you are massaging your face, and then press it with both hands to encourage absorption",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 14.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_beauty-intl-ship_sr_pg2_1?ie=UTF8&adId=A07075922H5TXAQGKNHBN&qualifier=1650995927&id=2536864278273078&widgetName=sp_atf_next&url=%2FEmulsion-Wrinkle-Nourishing-Moisturizing-Cosmetics%2Fdp%2FB09PKYXD2V%2Fref%3Dsr_1_25_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995927%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-25-spons%26psc%3D1
-p11 = Product.create!('name': 'YEDAM YUN BIT Prime Luxury Gold Women Skin Care 4 Set With Skin, Emulsion, Cream, BB Cream,Wrinkle Care Nourishing And Moisturizing, Calming Korea Cosmetics',
-    'description': "- Korea Skin Care Set: Skin, Emulsion, Cream, BB Cream + 4 Sample
-    *- Prime Luxury Gold Intensive Skin: With appropriate mixture of gold powder(99.9% of purity) and phyto placenta extracts, it prevents the loss of moisture on skin and keeps moisturized condition for dried and tough skin to provide more refresh and vitalized skin
-    *- Prime Luxury Gold Intensive Emulsion: Both phyto placenta and royal jelly extracts provide abundant nutritions to dried skin and relaxed and smooth feeling to form moisturized membrane on the skin so as to make you feel moisturized, refined and soft skin.
-    *- Prime Luxury Gold Intensive Lifting Cream: It is a wrinkle-improving functional cream that corrects the balance of loose skin with adenosine that gives elasticity to the skin and keeps the pure gold(99.9%) and phyto placenta extract moist for a long time.
-    *- Prime Luxury Gold Intensive BB Cream: The niacinamide elements prevents the deposition of melanin pigments on the skin and restraints generation of dried skin and skin troubles and the adenosine elements provides resilience to the skin.",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 46.99)
-# https://www.amazon.com/Face-Shop-Water-Bright-Cleansing/dp/B00FJ2LU2Q/ref=sr_1_28?crid=1JMZJLOAX3UQ0&keywords=korean&qid=1650995927&s=beauty-intl-ship&sprefix=korean%2Cbeauty-intl-ship%2C79&sr=1-28
-p12 = Product.create!('name': 'THEFACESHOP Rice Water Bright Foam Cleanser 150ml',
-    'description': "- Foaming cleanser with Rice Extract gently moisturizes skin with its rich, dense foam.",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 13.00)
-# https://www.amazon.com/Korean-Skin-Care-Glycolic-Exfoliating/dp/B07WKDR1BL/ref=sr_1_27?crid=1JMZJLOAX3UQ0&keywords=korean&qid=1650995927&s=beauty-intl-ship&sprefix=korean%2Cbeauty-intl-ship%2C79&sr=1-27
-p13 = Product.create!('name': 'Korean Skin Care - Dr Song Glycolic Acid Face Wash - Exfoliating Face Wash with 10% Glycolic Acid, AHA for Anti Aging, Acne and Wrinkles Korean Beauty',
-    'description': "- Deep Pore Cleanser and Natural Exfoliation - Lift away dirt, oils, makeup and impurities from your pores with a revitalizing glycolic acid gel that helps clean and clarify your skin while restoring essential moisture and hydration.
-    *- Fight Blemishes and Improve Clarity - This glycolic acid facial cleanser can help reduce acne breakouts by toning and tightening pores, reducing whiteheads and blackheads, and restoring healthy, glowing radiance.
-    *- Soft, Soothing, Non-Drying Formula - Dr Song glycolic acid exfoliating cleanser is safe on dry, oily, sensitive, irritated, and combination skin and leaves skin feeling softer, suppler, and firmer to the touch for youthful balance.
-    *- Age-Defying Antioxidants - A natural anti-inflammatory our glycolic cleanser also helps reduce redness and irritation while also diminishing discoloration, dark bags under your eyes, and hyperpigmentation.
-    *- Dr Song Brand Guarantee - Every bottle of glycolic cleanser 10% formula, as well as our other skincare products, is backed by our responsive customer support, superior skin-safe purity, and reliable effectiveness to ensure your satisfaction.",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 7.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg2_1?ie=UTF8&adId=A00670702RMK6348PLH66&qualifier=1650995927&id=2536864278273078&widgetName=sp_btf&url=%2FSulwhasoo-Essential-Comfort-Balancing-Water%2Fdp%2FB09VPBR3LT%2Fref%3Dsr_1_45_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995927%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-45-spons%26psc%3D1
-p14 = Product.create!('name': 'Sulwhasoo Essential Comfort Balancing Water: Hydrate, Soothe, and Nourish, 5.07 fl. oz.',
-    'description': "- A quick-absorbing moisturizing toner that delivers an instant surge of hydration while helping to balance the skin content for silky, radiant-looking skin.",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 68.00)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_beauty-intl-ship_sr_pg4_1?ie=UTF8&adId=A0800730365OEGHETHKW3&qualifier=1650996042&id=6281052555721938&widgetName=sp_atf_next&url=%2FDONGINBI-Defense-Anti-aging-Anti-Wrinkle-Antioxidant%2Fdp%2FB09HJP68L6%2Fref%3Dsr_1_75_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650996042%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-75-spons%26psc%3D1
-p15 = Product.create!('name': 'DONGINBI Daily Defense Cream, Anti-aging, Anti-Wrinkle & Antioxidant Face Cream, Korean Red Ginseng Skin Care - 25ml',
-    'description': "- PENETRATES DEEPLY TO AWAKEN YOUTHFUL SKIN: Infused with our advanced self-sustaining Red Ginseng formula, the daily defense cream effectively returns your skin to its natural condition. It fights aging to awaken firm, youthful skin.
-    *- ANTI-AGING FACE CREAM: The Core RG Ginseno-Biome technology follows a three-phased approach to reverse aging and give you firm, supple skin. It strengthens skin barrier and enhances the skin's ability to heal itself. Wrinkles are reduced and your skin is firm with a youthful glow.
-    *- FIRMING & LIFTING SKIN: Our anti-aging daily defense cream is clinically proven to help smooth wrinkles, promote an even skin tone, and visibly firm & lift skin for a difference you can see in just as little as 4 weeks, revealing smoother and younger-looking skin. It can reduce wrinkles by 20.7%, moisturize skin by 10.6%, and improve skin barrier by 11.2%.
-    *- MOISTURIZING & NOURISHING: Dense creamy texture, yet lightweight, enriched with Red Ginseng that moisturizes and nourishes the skin. Your skin will not only look better, but will also be healthier.
-    *- REJUVENATING KOREAN RED GINSENG: Long-established since 1899, DONGINBI is a reputed skin care brand of the Korean Ginseng Corp. We are dedicated to offering luxurious skin care, and have honed our Red Ginseng processing and refining technology to effectively capture its nourishing and anti-aging properties.",
-    'department': beauty.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 65.99)
+# p7 = Product.create!('name': 'Korean Skin Care K-Beauty Moisturizer for Oily Skin: DERMA ORGANIC Vitamin C Serum For Face with Hyaluronic Acid, CE, Ferulic Acid Korean Skincare',
+#     'description': "- Great on Oily Skin: It is light on skin and leaves no residues, makes skin pores tight.
+#     *- Oil Free Formula: We replaced pore clogging Tocopherol, or Vitamin E oil with Vitamin B & E enriched pure organic Aloe Vera Juice.
+#     *- NO Oxidation up to 18 months: Unlike the ordinary Vitamin C Serum, it doesn't oxidize under sun, air, even vanity light.
+#     *- Perfect for Sensitive Skin: It is even safe on child's skin, it doesn't have any harmful ingredients such as Phenoxyethanol, Propylene glycol or Triethanolamine that you see on other popular Vitamin C serums,
+#     *- No artificial fragrance, color, nor alcohol is added, so it is clear in color with no smell as pure vitamin C should be.",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 35.99)
+# # https://www.amazon.com/flavors-Essence-exfoliate-hydrate-brighten/dp/B0725J9C92/ref=sr_1_67?keywords=korean&qid=1650995829&s=beauty&sr=1-67
+# p8 = Product.create!('name': "A'pieu Milk Sheet Mask (7 flavors in 1 pack) with Milk Essence to mildly exfoliate, hydrate, and brighten - Korean skincare for normal to dry skin.",
+#     'description': "- A'pieu Milk Mask hydrates and brightens your skin in one go. Soaked in real milk protein extract that nourishes normal to dry skin types.
+#     *- The milk-protein-infused daily sheet mask helps restore dry and dull skin.
+#     *- On a clean and dry face, apply the sheet evenly. Remove after 10-15 minutes.
+#     *- THE BEST OF K-BEAUTY: A'PIEU brings the very best in Korean beauty to the rest of the world with luxury skincare products that are trendy, effective, and formulated for all skin types.",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 14.00)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg1_1?ie=UTF8&adId=A0286062OR158T9K9I9P&qualifier=1650995884&id=4591473942581459&widgetName=sp_btf&url=%2FSulwhasoo-Essential-Comfort-Moisture-Cream%2Fdp%2FB09VP4WMCY%2Fref%3Dsr_1_30_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995884%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-30-spons%26psc%3D1
+# p9 = Product.create!('name': 'Sulwhasoo Essential Comfort Moisture Cream: Hydrate, Moisturize, and Dewy Glow, 1.69 fl. oz.',
+#     'description': "- A breathable, quenching gel cream that hydrates and comforts skin for a dewy, healthy glow. Powered by JAUM Moisturizing Complex™, a powerhouse of hydrating and nourishing Herbs, Yam, Arrowroot flowers plus Hyaluronic Acid.",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 80.00)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg1_1?ie=UTF8&adId=A10288002U2YI1MRBHV0L&qualifier=1650995884&id=4591473942581459&widgetName=sp_btf&url=%2FDaandanbit-Contains-Anti-winkle-functional-Traditional%2Fdp%2FB09FDP7CBZ%2Fref%3Dsr_1_29_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995884%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-29-spons%26psc%3D1
+# p10 = Product.create!('name': 'Daandanbit [DAANDAN BIT] Boyun Firming Cream 50ml / 1.7fl oz Contains camellia sinensis callus culture extract Anti-winkle functional Korean Traditional Herbal Cream 1.7 Ounce',
+#     'description': "- Boyun Firming Cream 50ml / 1.7fl oz
+#     *- (Functional cosmetics for the improvement of wrinkles)
+#     *- This is a cream for elasticity that thoroughly rejuvinates skin elasticity with the combination of natural ingredients and the concentrated nutrients that deliver natural energy to the skin
+#     *- Camellia Sinensis Callus Culture Extract and vegetable extracts keep the skin fresh and healthy Based on an herbal formula, each of the precious ingredients is carefully selected and blended to erase the traces of time on the skin
+#     *- During the last step of skincare, apply the appropriate amount to the face and neck areas as if you are massaging your face, and then press it with both hands to encourage absorption",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 14.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_beauty-intl-ship_sr_pg2_1?ie=UTF8&adId=A07075922H5TXAQGKNHBN&qualifier=1650995927&id=2536864278273078&widgetName=sp_atf_next&url=%2FEmulsion-Wrinkle-Nourishing-Moisturizing-Cosmetics%2Fdp%2FB09PKYXD2V%2Fref%3Dsr_1_25_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995927%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-25-spons%26psc%3D1
+# p11 = Product.create!('name': 'YEDAM YUN BIT Prime Luxury Gold Women Skin Care 4 Set With Skin, Emulsion, Cream, BB Cream,Wrinkle Care Nourishing And Moisturizing, Calming Korea Cosmetics',
+#     'description': "- Korea Skin Care Set: Skin, Emulsion, Cream, BB Cream + 4 Sample
+#     *- Prime Luxury Gold Intensive Skin: With appropriate mixture of gold powder(99.9% of purity) and phyto placenta extracts, it prevents the loss of moisture on skin and keeps moisturized condition for dried and tough skin to provide more refresh and vitalized skin
+#     *- Prime Luxury Gold Intensive Emulsion: Both phyto placenta and royal jelly extracts provide abundant nutritions to dried skin and relaxed and smooth feeling to form moisturized membrane on the skin so as to make you feel moisturized, refined and soft skin.
+#     *- Prime Luxury Gold Intensive Lifting Cream: It is a wrinkle-improving functional cream that corrects the balance of loose skin with adenosine that gives elasticity to the skin and keeps the pure gold(99.9%) and phyto placenta extract moist for a long time.
+#     *- Prime Luxury Gold Intensive BB Cream: The niacinamide elements prevents the deposition of melanin pigments on the skin and restraints generation of dried skin and skin troubles and the adenosine elements provides resilience to the skin.",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 46.99)
+# # https://www.amazon.com/Face-Shop-Water-Bright-Cleansing/dp/B00FJ2LU2Q/ref=sr_1_28?crid=1JMZJLOAX3UQ0&keywords=korean&qid=1650995927&s=beauty-intl-ship&sprefix=korean%2Cbeauty-intl-ship%2C79&sr=1-28
+# p12 = Product.create!('name': 'THEFACESHOP Rice Water Bright Foam Cleanser 150ml',
+#     'description': "- Foaming cleanser with Rice Extract gently moisturizes skin with its rich, dense foam.",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 13.00)
+# # https://www.amazon.com/Korean-Skin-Care-Glycolic-Exfoliating/dp/B07WKDR1BL/ref=sr_1_27?crid=1JMZJLOAX3UQ0&keywords=korean&qid=1650995927&s=beauty-intl-ship&sprefix=korean%2Cbeauty-intl-ship%2C79&sr=1-27
+# p13 = Product.create!('name': 'Korean Skin Care - Dr Song Glycolic Acid Face Wash - Exfoliating Face Wash with 10% Glycolic Acid, AHA for Anti Aging, Acne and Wrinkles Korean Beauty',
+#     'description': "- Deep Pore Cleanser and Natural Exfoliation - Lift away dirt, oils, makeup and impurities from your pores with a revitalizing glycolic acid gel that helps clean and clarify your skin while restoring essential moisture and hydration.
+#     *- Fight Blemishes and Improve Clarity - This glycolic acid facial cleanser can help reduce acne breakouts by toning and tightening pores, reducing whiteheads and blackheads, and restoring healthy, glowing radiance.
+#     *- Soft, Soothing, Non-Drying Formula - Dr Song glycolic acid exfoliating cleanser is safe on dry, oily, sensitive, irritated, and combination skin and leaves skin feeling softer, suppler, and firmer to the touch for youthful balance.
+#     *- Age-Defying Antioxidants - A natural anti-inflammatory our glycolic cleanser also helps reduce redness and irritation while also diminishing discoloration, dark bags under your eyes, and hyperpigmentation.
+#     *- Dr Song Brand Guarantee - Every bottle of glycolic cleanser 10% formula, as well as our other skincare products, is backed by our responsive customer support, superior skin-safe purity, and reliable effectiveness to ensure your satisfaction.",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 7.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_beauty-intl-ship_sr_pg2_1?ie=UTF8&adId=A00670702RMK6348PLH66&qualifier=1650995927&id=2536864278273078&widgetName=sp_btf&url=%2FSulwhasoo-Essential-Comfort-Balancing-Water%2Fdp%2FB09VPBR3LT%2Fref%3Dsr_1_45_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650995927%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-45-spons%26psc%3D1
+# p14 = Product.create!('name': 'Sulwhasoo Essential Comfort Balancing Water: Hydrate, Soothe, and Nourish, 5.07 fl. oz.',
+#     'description': "- A quick-absorbing moisturizing toner that delivers an instant surge of hydration while helping to balance the skin content for silky, radiant-looking skin.",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 68.00)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_beauty-intl-ship_sr_pg4_1?ie=UTF8&adId=A0800730365OEGHETHKW3&qualifier=1650996042&id=6281052555721938&widgetName=sp_atf_next&url=%2FDONGINBI-Defense-Anti-aging-Anti-Wrinkle-Antioxidant%2Fdp%2FB09HJP68L6%2Fref%3Dsr_1_75_sspa%3Fcrid%3D1JMZJLOAX3UQ0%26keywords%3Dkorean%26qid%3D1650996042%26s%3Dbeauty-intl-ship%26sprefix%3Dkorean%252Cbeauty-intl-ship%252C79%26sr%3D1-75-spons%26psc%3D1
+# p15 = Product.create!('name': 'DONGINBI Daily Defense Cream, Anti-aging, Anti-Wrinkle & Antioxidant Face Cream, Korean Red Ginseng Skin Care - 25ml',
+#     'description': "- PENETRATES DEEPLY TO AWAKEN YOUTHFUL SKIN: Infused with our advanced self-sustaining Red Ginseng formula, the daily defense cream effectively returns your skin to its natural condition. It fights aging to awaken firm, youthful skin.
+#     *- ANTI-AGING FACE CREAM: The Core RG Ginseno-Biome technology follows a three-phased approach to reverse aging and give you firm, supple skin. It strengthens skin barrier and enhances the skin's ability to heal itself. Wrinkles are reduced and your skin is firm with a youthful glow.
+#     *- FIRMING & LIFTING SKIN: Our anti-aging daily defense cream is clinically proven to help smooth wrinkles, promote an even skin tone, and visibly firm & lift skin for a difference you can see in just as little as 4 weeks, revealing smoother and younger-looking skin. It can reduce wrinkles by 20.7%, moisturize skin by 10.6%, and improve skin barrier by 11.2%.
+#     *- MOISTURIZING & NOURISHING: Dense creamy texture, yet lightweight, enriched with Red Ginseng that moisturizes and nourishes the skin. Your skin will not only look better, but will also be healthier.
+#     *- REJUVENATING KOREAN RED GINSENG: Long-established since 1899, DONGINBI is a reputed skin care brand of the Korean Ginseng Corp. We are dedicated to offering luxurious skin care, and have honed our Red Ginseng processing and refining technology to effectively capture its nourishing and anti-aging properties.",
+#     'department': beauty.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 65.99)
 
 
 # Food
@@ -217,103 +217,103 @@ p21 = Product.create!('name': 'Korea Seasoned Dried Squid Snack Squid Over Flowe
     'delivery_days': rand(max_days) + 1,
     'price': 18.88)
 # https://www.amazon.com/Yopokki-Jjajang-Rabokki-Ramen-Noodle/dp/B09L496VZ6/ref=sr_1_29?keywords=korean+food&qid=1650996179&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-29
-p22 = Product.create!('name': 'Yopokki Jjajang Rabokki Cup I Ramen Noodle Rice Cakes (Jjajang taste, 2 Cup)',
-    'description': "- A TASTE OF KOREA - We have captured the delicious taste of various Korean dishes so that they can be prepared in minutes but accessible anywhere in the world. This particular dish has a soft texture mixed with a spicy and sweet sauce!
-    *- Precautions - Do not eat deoxidizer packaged with rice cake.
-    *- Precautions - If you smell an unpleasant odor, it will be removed during the cooking process.
-    *- Precautions - Some spots on the surface of the product are part of the rice, so please eat with confidence",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 11.99)
+# p22 = Product.create!('name': 'Yopokki Jjajang Rabokki Cup I Ramen Noodle Rice Cakes (Jjajang taste, 2 Cup)',
+#     'description': "- A TASTE OF KOREA - We have captured the delicious taste of various Korean dishes so that they can be prepared in minutes but accessible anywhere in the world. This particular dish has a soft texture mixed with a spicy and sweet sauce!
+#     *- Precautions - Do not eat deoxidizer packaged with rice cake.
+#     *- Precautions - If you smell an unpleasant odor, it will be removed during the cooking process.
+#     *- Precautions - Some spots on the surface of the product are part of the rice, so please eat with confidence",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 11.99)
 # https://www.amazon.com/Kewpie-Mayonaise-17-64-Ounce-Tubes-Pack/dp/B003NRLLLE/ref=sr_1_30?keywords=korean+food&qid=1650996179&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-30
-p23 = Product.create!('name': 'Kewpie Mayonaise, 17.64-Ounce Tubes (Pack of 2)',
-    'description': "- Flavor:   Egg
-    *- Brand:  Kikkoman
-    *- Package Information:    Tube
-    *- Package Weight:    0.52 Kilograms
-    *- Material Feature:   Gluten Free",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 15.19)
-# https://www.amazon.com/Tae-kyung-Korean-Pepper-Flakes-Gochugaru/dp/B099FKF9N6/ref=sr_1_39?keywords=korean+food&qid=1650996179&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-39
-p24 = Product.create!('name': 'Tae-kyung Korean Red Chili Pepper Flakes Powder Gochugaru, 1 Lb-1',
-    'description': "- Korean Red Chili Pepper Powder you can sprinkle over anything if you want to add Spicy
-    *- Affordable choice for budget conscious buyers - 1lb Pack with resealable
-    *- SPICE UP YOUR RECIPE: Red dry chili flakes is used to make kimchi, hot chili oil and hot sauce. Add red chili powder to casseroles, curries, stews, pizza, salads, tacos, soups and barbecue spice rubs with a strong kick.
-    *- This Red Pepper Flakes is 100% natural and non-irradiated. We never add any other ingredients in any proccess. All chilies are natural without additive, coloring or gmo.
-    *- 100% premium quality south korea origin topokki vegetarian vegan food keto diet nutritional asian cuisine organic fresh dinner kfood kpop japanese Chinese dry buldak best product tteokbokki non GMO Gluten free foreign zipper bag coarse kimchi seasoning fine type sun dried original peppers natural pure flavor ramen Cheong Yang famous coarsely taste kosher no additives grind convenient reuse reusable BBQ soup dips stir fry fried pizza salad barbecue rubs chicken sauce sprinkle freshly sprinkled
-    *- homemade extra strong spice dish essential safe bulk health healthy packaged international k-food delicious cooking crushed paleo seasoned meals naturally",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 11.84)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_grocery_sr_pg3_1?ie=UTF8&adId=A0092745HBOEWVWOCOA7&qualifier=1650996257&id=4601855170084462&widgetName=sp_btf&url=%2Fbibigo-Korean-Pre-Made-Packaged-Seaweed%2Fdp%2FB07R1J915H%2Fref%3Dsr_1_71_sspa%3Fkeywords%3Dkorean%2Bfood%26qid%3D1650996257%26s%3Dgrocery%26sprefix%3Dkorean%252Cgrocery%252C97%26sr%3D1-71-spons%26psc%3D1%26smid%3DAT03FDQZB4H70
-p25 = Product.create!('name': 'bibigo Korean Pre-Made Packaged Seaweed Soup 500g 미역국',
-    'description': "- Flavor:   Seaweed
-    *- Item Weight:    500 Grams
-    *- Brand:  CJ Bibigo
-    *- Package Weight: 0.52 Kilograms",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 12.94)
-# https://www.amazon.com/Palkin-flavors-Korean-overseas-shipment/dp/B07NJDHZVX/ref=sr_1_78?keywords=korean+food&qid=1650996274&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-78
-p26 = Product.create!('name': '[Palkin] Korea Ramen Tea Bag 16ea (8 hot&spicy flavors + 8 mild flavors) / Korean food / Korean tea / Korean Ramen / Would you like a cup of ramen? (overseas direct shipment)',
-    'description': "- Would you like a cup of ramen?
-    *- No MSG, delicious Korean ramen soup tea
-    *- Manufacturer: Palkin (Korea)
-    *- Capacity : 16ea (8 hot&spicy flavors + 8 mild flavors)
-    *- Recipe : Put 1 tea bag to hot water (110ml), then eat after 30 ~40s.",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 19.90)
-# https://www.amazon.com/CJ-Beksul-Furikake-Seasoning-Vegetable/dp/B01JW1EBIY/ref=sr_1_110?keywords=korean+food&qid=1650996318&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-110
-p27 = Product.create!('name': 'CJ New Beksul Furikake Rice Seasoning Mix 밥이랑, 0.85Oz (Vegetable Mix, 1 Pack)',
-    'description': "- CJ Beksul Furikake Rice Seasoning Mix
-    *- Assorted Vegetable Mix
-    *- Contains 3 individual package (8g each)
-    *- Easy to make lunch box!
-    *- 1 Pack",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 6.95)
-# https://www.amazon.com/Dongsuh-Peanut-cereals-overseas-shipment/dp/B08C9SDF6X/ref=sr_1_126?keywords=korean+food&qid=1650996318&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-126
-p28 = Product.create!('name': '[Dongsuh] Post Peanut Butter Oreo o`s 400g / Korean cereals (overseas direct shipment)',
-    'description': "- Korean limited edition cereals made of peanut butter
-    *- Capacity : 400g
-    *-  Manufacturer : Dongsuh Food (Korea)
-    *- Ingredients : Corn flour, brown rice flour, barley flour, rye flour, whole wheat flour, peanut powder, peanut butter, etc.",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 29.58)
-# https://www.amazon.com/Bonjuk-Premium-Korean-Porridge-Seafood/dp/B085VQM4BG/ref=sr_1_164?keywords=korean+food&qid=1650996358&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-164
-p29 = Product.create!('name': 'Bonjuk Premium Korean Porridge New Flavor 17.6oz, Pack (Seafood)',
-    'description': "- Easy to cook!
-    *- Boiling water and Microwavable package
-    *- 1 pack (17.6oz) per order",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 9.99)
-# https://www.amazon.com/Crispy-Potato-Korean-Flavour-Medium/dp/B09BBFTXPC/ref=sr_1_184?keywords=korean+food&qid=1650996376&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-184
-p30 = Product.create!('name': 'LAYS Brand , Crispy Potato Chips Spicy Korean Ramen Flavour, 50g X 3 Packs, Medium',
-    'description': "- Don't miss one of Lay's tasty Popular menu in Korean style . Made from real potatoes.
-    *- Made from quality ingredients and Through clean and standardized production processes.
-    *- Inspired by the hottest famous menu in Korea Spicy Korean Ramen, Mellow soup mixed with Korean style spicy sauce ''Hot and Spicy'' delicious to the original taste. a new flavour that everyone should not miss!
-    *- Ideal for any time of the day.
-    *- Allergen information: soy
-    *- Flavor name: Garlic
-    *- Ingredients: Potato, Seasoning, Vegetable Oil",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 14.99)
-# https://www.amazon.com/Official-HBAF-Seasoned-Almonds-Chicken/dp/B09XB6RZNN/ref=sr_1_224?keywords=korean+food&qid=1650996444&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-224
-p31 = Product.create!('name': 'Official Gilim HBAF Brand Korean Seasoned Almonds 3 Flavor Pack Mix (1 Honey Butter, 1 x 210g, 1 Garlic Bread, 1 x 210g, 1 Hot and Spicy Chicken, 1 x 210g)',
-    'description': "- One (1) pack of 7.4 oz (210 gram) HBAF Honey Butter Almond. The signature flavor of HBAF! Its sweet, savory, and butter goodness are loved by everyone.
-    *- One (1) pack of 7.4 oz (210 gram) HBAF Garlic Bread Almond. Enjoy the butter garlic almonds with real garlic bread bites. Your mind will explode with happiness!
-    *- One (1) pack of 7.4 oz (210 gram) HBAF Hot and Spicy Chicken Flavor. Bold collaboration with Korean heavily spiced fire chicken dish, Buldak. Challenge the super spicy taste and relieve the stress!
-    *- All packs provide a great source of protein to your daily life.
-    *- All packs have a zip seal, perfect for storing after opening. Enjoy!",
-    'department': food.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 26.97)
+# p23 = Product.create!('name': 'Kewpie Mayonaise, 17.64-Ounce Tubes (Pack of 2)',
+#     'description': "- Flavor:   Egg
+#     *- Brand:  Kikkoman
+#     *- Package Information:    Tube
+#     *- Package Weight:    0.52 Kilograms
+#     *- Material Feature:   Gluten Free",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 15.19)
+# # https://www.amazon.com/Tae-kyung-Korean-Pepper-Flakes-Gochugaru/dp/B099FKF9N6/ref=sr_1_39?keywords=korean+food&qid=1650996179&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-39
+# p24 = Product.create!('name': 'Tae-kyung Korean Red Chili Pepper Flakes Powder Gochugaru, 1 Lb-1',
+#     'description': "- Korean Red Chili Pepper Powder you can sprinkle over anything if you want to add Spicy
+#     *- Affordable choice for budget conscious buyers - 1lb Pack with resealable
+#     *- SPICE UP YOUR RECIPE: Red dry chili flakes is used to make kimchi, hot chili oil and hot sauce. Add red chili powder to casseroles, curries, stews, pizza, salads, tacos, soups and barbecue spice rubs with a strong kick.
+#     *- This Red Pepper Flakes is 100% natural and non-irradiated. We never add any other ingredients in any proccess. All chilies are natural without additive, coloring or gmo.
+#     *- 100% premium quality south korea origin topokki vegetarian vegan food keto diet nutritional asian cuisine organic fresh dinner kfood kpop japanese Chinese dry buldak best product tteokbokki non GMO Gluten free foreign zipper bag coarse kimchi seasoning fine type sun dried original peppers natural pure flavor ramen Cheong Yang famous coarsely taste kosher no additives grind convenient reuse reusable BBQ soup dips stir fry fried pizza salad barbecue rubs chicken sauce sprinkle freshly sprinkled
+#     *- homemade extra strong spice dish essential safe bulk health healthy packaged international k-food delicious cooking crushed paleo seasoned meals naturally",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 11.84)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_grocery_sr_pg3_1?ie=UTF8&adId=A0092745HBOEWVWOCOA7&qualifier=1650996257&id=4601855170084462&widgetName=sp_btf&url=%2Fbibigo-Korean-Pre-Made-Packaged-Seaweed%2Fdp%2FB07R1J915H%2Fref%3Dsr_1_71_sspa%3Fkeywords%3Dkorean%2Bfood%26qid%3D1650996257%26s%3Dgrocery%26sprefix%3Dkorean%252Cgrocery%252C97%26sr%3D1-71-spons%26psc%3D1%26smid%3DAT03FDQZB4H70
+# p25 = Product.create!('name': 'bibigo Korean Pre-Made Packaged Seaweed Soup 500g 미역국',
+#     'description': "- Flavor:   Seaweed
+#     *- Item Weight:    500 Grams
+#     *- Brand:  CJ Bibigo
+#     *- Package Weight: 0.52 Kilograms",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 12.94)
+# # https://www.amazon.com/Palkin-flavors-Korean-overseas-shipment/dp/B07NJDHZVX/ref=sr_1_78?keywords=korean+food&qid=1650996274&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-78
+# p26 = Product.create!('name': '[Palkin] Korea Ramen Tea Bag 16ea (8 hot&spicy flavors + 8 mild flavors) / Korean food / Korean tea / Korean Ramen / Would you like a cup of ramen? (overseas direct shipment)',
+#     'description': "- Would you like a cup of ramen?
+#     *- No MSG, delicious Korean ramen soup tea
+#     *- Manufacturer: Palkin (Korea)
+#     *- Capacity : 16ea (8 hot&spicy flavors + 8 mild flavors)
+#     *- Recipe : Put 1 tea bag to hot water (110ml), then eat after 30 ~40s.",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 19.90)
+# # https://www.amazon.com/CJ-Beksul-Furikake-Seasoning-Vegetable/dp/B01JW1EBIY/ref=sr_1_110?keywords=korean+food&qid=1650996318&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-110
+# p27 = Product.create!('name': 'CJ New Beksul Furikake Rice Seasoning Mix 밥이랑, 0.85Oz (Vegetable Mix, 1 Pack)',
+#     'description': "- CJ Beksul Furikake Rice Seasoning Mix
+#     *- Assorted Vegetable Mix
+#     *- Contains 3 individual package (8g each)
+#     *- Easy to make lunch box!
+#     *- 1 Pack",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 6.95)
+# # https://www.amazon.com/Dongsuh-Peanut-cereals-overseas-shipment/dp/B08C9SDF6X/ref=sr_1_126?keywords=korean+food&qid=1650996318&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-126
+# p28 = Product.create!('name': '[Dongsuh] Post Peanut Butter Oreo o`s 400g / Korean cereals (overseas direct shipment)',
+#     'description': "- Korean limited edition cereals made of peanut butter
+#     *- Capacity : 400g
+#     *-  Manufacturer : Dongsuh Food (Korea)
+#     *- Ingredients : Corn flour, brown rice flour, barley flour, rye flour, whole wheat flour, peanut powder, peanut butter, etc.",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 29.58)
+# # https://www.amazon.com/Bonjuk-Premium-Korean-Porridge-Seafood/dp/B085VQM4BG/ref=sr_1_164?keywords=korean+food&qid=1650996358&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-164
+# p29 = Product.create!('name': 'Bonjuk Premium Korean Porridge New Flavor 17.6oz, Pack (Seafood)',
+#     'description': "- Easy to cook!
+#     *- Boiling water and Microwavable package
+#     *- 1 pack (17.6oz) per order",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 9.99)
+# # https://www.amazon.com/Crispy-Potato-Korean-Flavour-Medium/dp/B09BBFTXPC/ref=sr_1_184?keywords=korean+food&qid=1650996376&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-184
+# p30 = Product.create!('name': 'LAYS Brand , Crispy Potato Chips Spicy Korean Ramen Flavour, 50g X 3 Packs, Medium',
+#     'description': "- Don't miss one of Lay's tasty Popular menu in Korean style . Made from real potatoes.
+#     *- Made from quality ingredients and Through clean and standardized production processes.
+#     *- Inspired by the hottest famous menu in Korea Spicy Korean Ramen, Mellow soup mixed with Korean style spicy sauce ''Hot and Spicy'' delicious to the original taste. a new flavour that everyone should not miss!
+#     *- Ideal for any time of the day.
+#     *- Allergen information: soy
+#     *- Flavor name: Garlic
+#     *- Ingredients: Potato, Seasoning, Vegetable Oil",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 14.99)
+# # https://www.amazon.com/Official-HBAF-Seasoned-Almonds-Chicken/dp/B09XB6RZNN/ref=sr_1_224?keywords=korean+food&qid=1650996444&s=grocery&sprefix=korean%2Cgrocery%2C97&sr=1-224
+# p31 = Product.create!('name': 'Official Gilim HBAF Brand Korean Seasoned Almonds 3 Flavor Pack Mix (1 Honey Butter, 1 x 210g, 1 Garlic Bread, 1 x 210g, 1 Hot and Spicy Chicken, 1 x 210g)',
+#     'description': "- One (1) pack of 7.4 oz (210 gram) HBAF Honey Butter Almond. The signature flavor of HBAF! Its sweet, savory, and butter goodness are loved by everyone.
+#     *- One (1) pack of 7.4 oz (210 gram) HBAF Garlic Bread Almond. Enjoy the butter garlic almonds with real garlic bread bites. Your mind will explode with happiness!
+#     *- One (1) pack of 7.4 oz (210 gram) HBAF Hot and Spicy Chicken Flavor. Bold collaboration with Korean heavily spiced fire chicken dish, Buldak. Challenge the super spicy taste and relieve the stress!
+#     *- All packs provide a great source of protein to your daily life.
+#     *- All packs have a zip seal, perfect for storing after opening. Enjoy!",
+#     'department': food.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 26.97)
 
 # Kitchen
 # https://www.amazon.com/Crazy-Korean-Cooking-Sizzling-Bibimbap/dp/B00KFMTLOO/ref=sr_1_2?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-2
@@ -380,177 +380,177 @@ p37 = Product.create!('name': 'Wooden Spoons, 6 Pieces 9 Inch Wood Soup Spoons f
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'price': 16.99)
-# https://www.amazon.com/TeChef-Stovetop-Non-Stick-Coating-Technology/dp/B00JT8ZYCS/ref=sr_1_19?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-19
-p38 = Product.create!('name': 'TECHEF - Stovetop Korean BBQ Non-Stick Grill Pan with New Safe Teflon Select Non-Stick Coating (PFOA Free) (Grill Pan)',
-    'description': "- BEST NONSTICK - New Safe PFOA Free Teflon Select / Coated 5 times with Teflon Print Designs
-    *- GOOD INNOVATION - The unique swirled channel design helps oils drain slowly to give food more flavor.
-    *- HEALTHY COOKING - Fat/Grease Draining System - Good for Pork Belly or Any Type of Meat
-    *- MADE IN KOREA - Delivers outstanding performance and exceptional quality
-    *- OVEN/DISHWASHER SAFE - Oven safe up to 450ºF and are dishwasher safe for easy cleaning",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 39.99)
-# https://www.amazon.com/Barbecue-Cutting-Serrated-Stainless-Scissors/dp/B01MYTIC16/ref=sr_1_24?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996563&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-24
-p39 = Product.create!('name': 'Korean Barbecue Kalbi Rib Meat Cutting Shears/Serrated 3T Blade/Quality Stainless Steel Scissors Large 10 1/4 Inches',
-    'description': "- Quality Stainless Steel Material Construction - Sturdy and Durable
-    *- Serrated Blade - To prevent meat from slipping
-    *- Dimensions: Total Length: 10 1/4 Inches; Blade Thickness: 3T (3mm)
-    *- Suitable for cutting all kinds of meat, especially Korean Barbecue Ribs 'Kalbi'",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 5.89)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg1_1?ie=UTF8&adId=A05863291JYM0BW39FK24&qualifier=1650996563&id=2534797092238754&widgetName=sp_btf&url=%2FElectric-Portable-Nonstick-Multifunction-Saucepan%2Fdp%2FB09GN7JKJ9%2Fref%3Dsr_1_30_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996563%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-30-spons%26psc%3D1
-p40 = Product.create!('name': 'Hytric Electric Hot Pot with Steamer, 1.5L Portable Nonstick Frying Pan for Sauté, Multifunction Electric Skillet for Fry, Mini Ramen Cooker with Dual Power Control for Dorm, Electric Saucepan, White',
-    'description': "- Multi-Function Electric Hot Pot - This multi-functional electric hot pot is an essential appliance for every kitchen. It can replace various traditional stove kitchenware because it can be used as a sauté pan, frying pan, cooking pot, and steamer. It has an adjustable power knob, you can use the low-power mode(300W) for cooking ramen, scrambled eggs, pancake. Meanwhile, you can cook spaghetti, steak, salmon, hot pot, sauté with the high-power mode(600W).
-    *- Stainless Steel Steamer - This mini pot comes with a food-grade stainless steel steamer. While cooking with this pot, you can also use the steamer to heat or steam food. This 1.5L electric cooker has a mini size (14.4 in x 7.7 in x 5.1 in) for easy to store and portable, particularly useful in a small space without a kitchen like studio apartments, offices, and dorms. If you are a travel lover, you can bring it with you to go on a trip and can cook your favorite food in a tourist place.
-    *- Healthy Non-Stick Coating - Hytric electric frying pan surface is made of food-grade nonstick coating which has the features to provide an effortless release and easy cleaning. You can sauté your foods smoothly on the pan to prevent sticking and cook foods at a low level of fat and oil to make your foods healthier. After cooking, easy clean up the surface with water and a rag.
-    *- Rapid Heating and Safe - We use round-shaped embedded heating element technology on our electric hot pot. This technology will keep your food heated evenly, not only make your tasty foods done more rapidly than traditional stove kitchenware but also prevent the foods from burning. In addition, Hytric electric hot pot has overheating protection, it will automatically power off when the pot at the dry burning and overheating status.
-    *- Good Gift Choice - Hytric electric cooker has an elegant look and humanized design, it can be your good gift choice for those who love cooking. The electric cooker has an anti-scalding long handle for you to hold it easily and we use the high-quality tempered glass lid to let you check the cooking process through the glass lid.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 33.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A0757546O810UQ8S79OY&qualifier=1650996580&id=2330488405705501&widgetName=sp_atf_next&url=%2FMDLUU-Dolsot-Bibimbap-Granite-Korean%2Fdp%2FB085VWTFCQ%2Fref%3Dsr_1_27_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-27-spons%26psc%3D1
-p41 = Product.create!('name': 'MDLUU 2 Pcs Dolsot Bibimbap Bowl 32 Oz, Granite Stone Bowl with Wood Base, Dolsot Pot for Korean Soup, Rice and Stew',
-    'description': "- MATERIAL: Made of natural granite. Each product is examined to ensure the quality before selling, natural patterns and colors do not affect the usage
-    *- SIZE: 7.08 inches in diameter, 3.03 inches in height (Capacity: 32oz)
-    *- RETAINS HEAT: Natural granite retains heat well, safe to use on open flames, cook food in a quicker and more effective way, keep the food warm and help further slow cooks
-    *- CREATES AN EARTHY SMORKY FLAVOR：While reheating the rice, coating a layer of sesame oil on the bowl helps to form a nice crisp crust and inherit an earthy smoky flavor
-    *- CLEAN AND CARE: The package comes with detailed instructions for how to use stone bowls",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 45.89)
-# https://www.amazon.com/Cleaver-Butcher-Vegetable-Kitchen-Camping/dp/B08JHWYXB1/ref=sr_1_25?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996580&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-25
-p42 = Product.create!('name': 'Viking Knife Meat Cleaver Knife Hand Forged Boning Knife with Sheath Butcher Knives High Carbon Steel Fillet Knife Chef Knives for Kitchen, Camping, BBQ',
-    'description': "- Premium Quality – Keep in mind that this handmade high carbon steel boning knife is not dishwasher-safe. You will need to hand-wash it and keep it clean and dry to resist rust after each use. Compared with meat knives made by general stainless steel, our forged kitchen knives have an extraordinary performance in edge-retention and a longer service life. The 6-inch sturdy blade passed multiple hand-grinding processes for an incredibly sharp cutting edge.
-    *- Unique Leather Sheath -- The outdoor chef knife is equipped with a practical soft leather sheath to protect the blade. You can put a belt on it for easy carrying when camping outdoor. The portable camping knife is your ideal assistant for Butchering, Fishing, Camping, and Outdoor BBQ activities.
-    *- Stylish & Practical – Unique hammered texture on the blade make it beautiful to behold and corrosion resistant while it also helps to prevent foods from sticking. Curved wood handle and large finger hole on the blade provides a secure grip for excellent control while filleting fish, chopping vegetables and deboning meat. The Full Tang design prevent this fillet knife from falling easily.
-    *- Multipurpose -- This handmade meat cleaver is classified as a multi-function kitchen knife. The curved blade is perfect for many kitchen tasks like trimming brisket, slicing meat, and chopping vegetables, breaking down a whole chicken and deboning of lamb ribs.
-    *- Well Packaged – All of our boning knives pass strict quality control before shipped and well packaged in an elegant box. We provide 100% SATISFACTION WARRANTY and 30-day money back guarantee for quality issues. It’s definitely an ideal gift for your lovers, family members and friends who loves cooking and knives.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 25.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A0192276FBJBOSPPLRYL&qualifier=1650996580&id=2330488405705501&widgetName=sp_mtf&url=%2FTobyan-Soft-Cotton-Linen-Apron%2Fdp%2FB09PMTG2KM%2Fref%3Dsr_1_30_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-30-spons%26psc%3D1
-p43 = Product.create!('name': 'Tobyan Soft Cotton Linen Apron - Retro Linen Art Apron, Adjustable Casual Apron with Towel, Great for Florist, Coffee House and Kitchen (Grey)',
-    'description': "- Linen
-    *- Material: Exquisite workmanship Tobyan Bib Apron is made from fabric of cotton linen, which comfortable and soft, does not look swollen after wearing.
-    *- Design: Simple, fashion and natural art apron will bring your house life more charming. 3 front square pockets, convenient temporary storage of the required items. In addition, this apron is also equipped with absorbent towel, so that you can wipe the water stains on the table at any time.
-    *- Adjustable Size: Unique design with an adjustable neck strap and waist strap, you can adjust neck length and waist looseness according to your needs. This apron is suitable for most people.
-    *- Easy To Clean: This casual apron is machine washable, fade-proof. Do not use bleach. Wash with cold water and air dry naturally.
-    *- Widely used: Retro art cotton apron, suitable for cooking, baking, painting, crafts, gardening, barbecue, and house cleaning. This is a great gift for family or friends.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 17.69)
-# https://www.amazon.com/Wooden-Long-Spoons-Natural-Cooking/dp/B09PZ6FM39/ref=sr_1_37?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996580&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-37
-p44 = Product.create!('name': 'Wooden Soup Spoon, 2PCS Wooden Long Spoons Korean Style Natural Wood Long Handle Round Spoons Long Soup Spoons for Soup Cooking Mixing Stirrer Kitchen Tools',
-    'description': "- 2 PIECES LONG WOODEN SPOONS, salad spoon,cooking spoon, soup spoons, Simple and plain, 10.9 inches LENGTH, natural color and elegant.
-    *- LONG KOREAN STYLE SPOON Perfect for Soup Cooking Stirrer Mixing Eating Kitchen Tools Utensils. Great for hiking, mountain hiking, camping, lake fishing, construction site lunch or picnicking.
-    *- WOOD SPOON SET is made of natural Nanmu wood, durable and sturdy body, the skin is smooth and clear. Healthy, Natural Painted. w/o BPA, PVC, or phthalates.
-    *- WOOD KITCHEN TOOLS are safe to use on cups, dishes and bowls, as well as scratch-resistant they are. it may not frostbite or scald your hands,no matter how cold or hot the water is.
-    *- SPOONS DISHWASHER SAFE easy to clean and reusable Safe for non-stick surfaces, safe, healthier, it can't heated by microwave.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 10.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A021592422Z25NWKYDI0Z&qualifier=1650996580&id=2330488405705501&widgetName=sp_btf&url=%2FSanbege-Ceramic-Sizzling-Bibimbap-Casserole%2Fdp%2FB09MCY4ZV2%2Fref%3Dsr_1_45_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-45-spons%26psc%3D1
-p45 = Product.create!('name': 'Sanbege Large Korean Ceramic Bowl with Lid and Trivet, 54 oz Sizzling Hot Pot with Double Handles for Cooking and Serving Dolsot Bibimbap, Soup, Rice, Stew, Casserole, Noodle',
-    'description': "- PREMIUM MATERIAL: This Korean ceramic bowl is fired from fine clay at high temperature and well glazed the surface in smooth finish, which is non-toxic and evenly conducts heat to cook better
-    *- DETAILED DESIGN: The curve shaped double handles and heat-resistant melamine trivet, are safe and convenient for you to grip and keep your table top from heat; The lid air vent and extra high bowl rim can prevent boiling over; The slightly rough rim of the lid and bottom make stably covering and sitting on table
-    *- CONVENIENT USAGE: Can be used for serving food and cooking directly on gas stovetop, electric glass cooktop (Not for induction burner); Also safe for oven, broiler, microwaves, refrigerator and dishwasher, which is convenient for everyday use
-    *- CLASSIC STYLE: The minimalistic elegant drum shaped body and glossy black glazed surface, make it a traditional Korean style bowl to display food nicely
-    *- VERSATILITY: This 8.6 in W x 4.9 in H Korean ceramic bowl holds up to 54 oz/1.6 L, perfect for cooking soups, stews, casseroles, dolsot bibimbaps, Kimchi jjigae, ramen, noodle or steamed egg, keeping the food hot and sizzling on dining table which greatly enhance appetite",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 32.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_kitchen-intl-ship_sr_pg3_1?ie=UTF8&adId=A05884062QA2NW4EKL7RS&qualifier=1650996673&id=993139042312979&widgetName=sp_atf_next&url=%2FCooking-Capacity-Ceramic-Casserole-23-6fl%2Fdp%2FB09NNG724R%2Fref%3Dsr_1_50_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996673%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-50-spons%26psc%3D1
-p46 = Product.create!('name': 'Clay Pot For Cooking Small Capacity Ceramic Casserole Ceramic Pots For Cooking, 23.6fl Oz',
-    'description': "- clay pot for cooking Be applicable: Casserole can be used as a pan for stews, soups, casseroles and other recipes.
-    *- clay pot for cooking Material: Porcelain ceramic body, selected from Australia's imported spodumene, high temperature resistance, resistance to hot and cold, smooth glazed look, warm and delicate touch.
-    *- clay pot for cooking scope of application: Suitable for gas, oven, electric ceramic stove, microwave oven. Prohibit use on induction cooker.
-    *- clay pot for cooking Features: The heat preservation ability is good, the heat in the pot is even, and the fragrance is easier to enter the food, so that the food can release the nutrition and the fragrance.
-    *- Service: A very durable clay pot for cooking that you can buy with confidence, we are proud of our excellent customer service.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 49.00)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg3_1?ie=UTF8&adId=A022863726U8CT6HRJH5D&qualifier=1650996673&id=993139042312979&widgetName=sp_mtf&url=%2FElinCube-Premium-Platter-Cooking-Bibimbap%2Fdp%2FB08R3DCF6V%2Fref%3Dsr_1_56_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996673%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-56-spons%26psc%3D1
-p47 = Product.create!('name': 'ElinCube Premium Korean Stone Bowl with Lid & Platter, Clay Pot for Cooking Hot Pot Dolsot Bibimbap and Soup',
-    'description': "- Our stone bowl(stone pot) is made of the highest quality Korean fine clay, and they are baked at a higher temperature, so they are more durable and can be used for a long time
-    *- It has a sophisticated and luxurious shape by adding a modern touch to the traditional Korean design. Our stone bowl will make the dishes set on your table more delicious and stand out during your pleasant dinner time
-    *- It can be used not only for Korean food, but also for various dishes. Add taste and style to your dishes. Keeps food warm during meals with loved ones around you and Bon appetit
-    *- Enjoy delicious Korean food with our premium stone bowl. You can cook with this bowl to make a variety of Korean dishes such as Dolsot Bibimbap, Galbi jjim(Braised beef short ribs), Kimchi jjigae(Kimch stew), Spicy soft tofu stew, Fluffy hot steamed eggs, Bulgogi stew and also various countries cuisine
-    *- Can be used on gas stoves, electric hot stoves, ovens, microwaves and dishwashers (Not for induction)",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 28.99)
-# https://www.amazon.com/Excelife-86150-Folding-Wooden-Korean/dp/B0722TZ48M/ref=sr_1_73?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-73
-p48 = Product.create!('name': 'Excelife 86150 Multi Folding Wooden Korean Tea Table M Size, Medium , Brown',
-    'description': "- Beautiful Asian style designed multi functional folding wooden table, Made from kalopanax
-    *- Multi functional table - to Eat, study always and use laptop
-    *- Strong durability and safe round edge rectangle
-    *- Light weight, foldable legs and portable design - easy to clean and Fold flat for storage",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 67.15)
-# https://www.amazon.com/AGAINATURE-Kitchen-Reusable-Absorbing-Eco-Friendly/dp/B093KHRVDZ/ref=sr_1_81?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-81
-p49 = Product.create!('name': 'AGAINATURE Cotton Kitchen Cloth 5 Pack, Korean Dish Cloth Called Sochang, Hand Towel, Steamer Cloth and Cheese Cloth, Natural Kitchen Cloth, Reusable Towel, Super Absorbing, Organic and Eco-Friendly',
-    'description': "- 100% Cotton
-    *- We only use fabrics made by a factory that has a history of over 100 years and all production processes are carried out in a korean traditional way. The fabric is unbleached and non-fluorescent. It is much more absorbent and dries faster than other cotton fabrics, so it is sanitary and contains less dust.
-    *- Threads are coated with natural corn starch. The more you wash and boil, the denser and more absorbent it becomes. We recommend to wash and boil several times. If you skip this before your first use, it would not be absorbent enough because of its starched surface. You can get details of ‘HOW TO USE’ after the product description below.
-    *- Each pack comes with 5 cotton cloths in different layers & sizes. You can use each as befits your purpose and in various ways like dishcloth, steamer cloth, cheese cloth or hand towel. The fabric is also great for needlepoint. You can embroider family name, flower, animal or character and make it your own special artwork.
-    *- Our cotton cloths can get finally done only with your engagement and touch. As you destarch, refine and use continuously, it will become like your close kitchen friend rather than just one of the many household items. You can experience premium quality of classic natural cotton kitchen cloth.
-    *- Using natural materials and giving worldwide customers the best experience is our brand’s mission. There are no any harsh chemicals or plastics in all of our products. Please visit our store and see other eco-friendly items. Hope you join the zero waste movement and enjoy a plastic free life!",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 14.99)
-# https://www.amazon.com/Cuckoo-CR-0655F-Cooker-Liters-Quarts/dp/B01MQWFGKG/ref=sr_1_77?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-77
-p50 = Product.create!('name': 'CUCKOO CR-0655F | 6-Cup (Uncooked) Micom Rice Cooker | 12 Menu Options: White Rice, Brown Rice & More, Nonstick Inner Pot, Designed in Korea | Red/White',
-    'description': "- Unique 11 Menu Options: Enjoy popular menu options such as white (glutinous) rice, brown rice and porridge as well as versatile options such as steam and multi cook
-    *- Ideal 6 Cup Capacity: The 6-cup (12 cups cooked) rice cooker provides the perfect serving amount for small gatherings or small to medium sized families
-    *- Smart Micom Rice Cooker: Enjoy effortless cooking as the smart cooking algorithm is designed to automatically cook delicious rice every time!
-    *- Customized Rice Cooking: Whether you enjoy sticky rice, soft rice, sweet rice, or savory rice, My Mode allows you to take control of your cooking with the 16 unique rice flavor and texture options
-    *- Clean & Fresh: Keep your rice cooker clean and your rice tasting fresh with the removable nonstick inner pot, detachable inner lid, auto clean function, and excess water drainage dish",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 112.99)
-# https://www.amazon.com/SASTYBALE-Japanese-Waitress-Painting-Gardening%EF%BC%88Gray%EF%BC%8CMedium%EF%BC%89/dp/B08FSTK6C6/ref=sr_1_86?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-86
-p51 = Product.create!('name': 'SASTYBALE Japanese Korean Style Apron Cotton Cooking Apron with Both Sides Waist Ties for Kitchen Waitress Painting Gardening',
-    'description': "- 腰带 closure
-    *- 【Personalized Design】SASTYBALE cooking apron has a relaxed comfortable fit and comes in various sizes to fit most individuals ,two large pockets in front and ties on both sides design ,full front and back optimal coverage to protection from kitchen grease, spills and food stains.
-    *- 【Healthy Material】This navy kitchen apron are made of high-quality Cotton ,that is lightweight and comfortable for you to wear,no harmful chemicals, safe for you and your family.
-    *- 【Conveient Wearing】This side ties apron with pockets and conveient to wear,you can as wear as T-shirt,directly from your head set in to get rid of the neck pressure when you wearing for a long time.
-    *- 【Easy Care】Machine washable, the color does not fade and shrinkage.do not bleach, tumble dry low and warm iron if needed.
-    *- 【Multiple Uses】This cotton apron is suitable for many occasion,apart from cooking, it can keep your clothes from getting dirty your clothes while home crafts, art projects, cutting flowers, doing chores, DIY or painting.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 19.99)
-# https://www.amazon.com/imarku-Removable-Multifunctional-Stainless-Sharpening/dp/B088D82YDZ/ref=sr_1_88?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-88
-p52 = Product.create!('name': 'Knife Set, imarku 16-Pieces Premium Kitchen Knife Set, German Stainless Steel Knife Set with Block and Knife Sharpener',
-    'description': "- HIGH-QUALITY JAPANESE KNIFE SET: Knife set blades are made of German high-carbon stainless steel, Carefully hand-sharpened edge at 16 degrees per side for the ultimate in sharpness, hand-forged and mirror-polished by craftsman with over 25 years of experience that can avoid rust, stains and corrosion. Vacuum heat treatment makes the blade of the knife set hard to HRC56±2, so the blade is indestructible and won't break for a long time use.
-    *- OUTSTANDING KITCHEN KNIFE SET: Handle are made of high-density pakkawood which has high hardness and beautiful grain. Handle will not crack after long-term use. After polishing process, handle arc perfectly fits the palm of the hand, providing optimal grip and comfort during use, without fatiguing your hand and guaranteed to be durable. Premium material of the kitchen knife sets reveals the luxurious identity of this knife that has been favored by many chefs and kitchen cooking enthusiasts.
-    *- PATENTED REMOVABLE KNIFE SET - imarku's patented design adds a pull-away steak knife set. Wooden Block part is made of durable Walnut, knife seat is easier to insert and remove, easy to store and maintain. You can move the 6 steak knives from the kitchen to the dining area, detach freely is perfect for busy kitchens. That's why so many kitchen cooks choose imarku kitchen knife set with block.
-    *- PRACTICAL KNIFE SET WITH BLOCK: imarku 16-piece stainless steel knives set for kitchen includes: 1 8in chef's knife, 1 bread knife, 1 slicing knife, 1 santoku knife, 1 6in chef's knife, 1 utility knife, 1 paring knife, 1 knife sharpener, 1 kitchen scissors, 1 wooden block, 6 steak knife, knives set includes every knife you need in the kitchen-A one-stop shop for all your needs.
-    *- TRUSTWORTHY: imarku focuses on developing high-quality knives and is dedicated to enhance your cooking experience. We promise to cover our knife sets for life. If knives set is defective, we will provide free exchange or return for life. imarku knife set for kitchen with block is the perfect gift for Weddings, Birthdays, Housewarming, Thanksgiving, Christmas.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 259.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg4_1?ie=UTF8&adId=A04626432Y0KUJOUNKLDV&qualifier=1650996706&id=8056718172970346&widgetName=sp_btf&url=%2FLavensi-Tamagoyaki-Japanese-Omelette-Non-stick%2Fdp%2FB098KYBY28%2Fref%3Dsr_1_94_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996706%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-94-spons%26psc%3D1
-p53 = Product.create!('name': 'Lavensi - Japanese Tamagoyaki Pan, Egg Pan with Heat-Resistant & Cook-Safe Handle, Nonstick Frying Pan, Curved Edge, Scratch-Proof Bottom, Cooktop Safe, 5 x 7 inches',
-    'description': "- Effortlessly Prep and Serve Omelettes - With our uniquely curved frying pan, you can easily roll and flip tamagoyaki. This Japanese omelette pan has a protective nonstick layer that keeps the egg batter from clinging to the pan.
-    *- Cooks Food Evenly - No more unsavory, burnt or uncooked meals when you use our pan. Crafted with a smooth and flat bottom, this egg roll pan ensures even heat distribution. It’s also safe to use on gas, electric, and induction stoves.
-    *- Safe and Convenient - Perfect your Tamagoyaki, pancakes, paninis and more with our cooking pan. Safe and convenient to use, this tamago pan is designed sleek and featherweight with a heat-resistant and cook-safe ergonomic handle.
-    *- Sturdy with Food-Safe Coating - Coated with food-safe materials, this nonstick pan contains no cadmium, lead, or PFOA. Our Asian cookware also has the same quality as cast iron to withstand daily use in preparing a variety of dishes.
-    *- Easy to Maintain and Store - Wash our square egg pan using a sponge or a soft scouring pad after use. Dry it off, hang this nonstick fry pan by the handle, then have it ready for your next cooking adventure.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 36.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg5_1?ie=UTF8&adId=A01510603EIXORTNPLW09&qualifier=1650996783&id=7561152989686588&widgetName=sp_mtf&url=%2FSEAAN-Portable-Electric-Non-stick-Temperature%2Fdp%2FB08VJ52XWV%2Fref%3Dsr_1_103_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996783%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-103-spons%26psc%3D1
-p54 = Product.create!('name': 'SEAAN Portable Electric Grill Hot Pot 2 in 1 BBQ Shabu Pot Baking Tray Combo Non-stick Pan Separate Temperature Control Easy to Clean (golden) US Stock',
-    'description': "- 【2 in 1 DESIGN】The Smokeless BBQ and Hot Pot is large capacity, suitable for 2-10 people. Great for grilling, baking, slow cooking, steaming, simmering and serving. It is very practical to use.
-    *- 【NON-STICK AND HEATPROOF 】The Frying Cook Grill is Heat-resistant, corrosion-resistant and non-stick BBQ griddle hot plate with the heat proof handle, prevent your hands from hurting, food grade material that is safe and non-toxic durable for you to use.
-    *- 【2200W HIGH POWER,FAST HEATING】High-power heat pipe, sealed embedded design, reduce heat loss, heat faster and more uniform to improve heat efficiency, food heat faster.
-    *-  【SEPERATE TEMPERATURE CONTROL】The most difficult cooking skill in the barbecue is the control of the fire. According to different ingredients, different temperatures can be selected.
-    *- 【Split and Simpler Cleaning】 The hot pot adopts a separate design, which can be easily removed and cleaned/placed to improve cleaning efficiency and make it more user-friendly.",
-    'department': kitchen.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 115.99)
+# # https://www.amazon.com/TeChef-Stovetop-Non-Stick-Coating-Technology/dp/B00JT8ZYCS/ref=sr_1_19?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996487&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-19
+# p38 = Product.create!('name': 'TECHEF - Stovetop Korean BBQ Non-Stick Grill Pan with New Safe Teflon Select Non-Stick Coating (PFOA Free) (Grill Pan)',
+#     'description': "- BEST NONSTICK - New Safe PFOA Free Teflon Select / Coated 5 times with Teflon Print Designs
+#     *- GOOD INNOVATION - The unique swirled channel design helps oils drain slowly to give food more flavor.
+#     *- HEALTHY COOKING - Fat/Grease Draining System - Good for Pork Belly or Any Type of Meat
+#     *- MADE IN KOREA - Delivers outstanding performance and exceptional quality
+#     *- OVEN/DISHWASHER SAFE - Oven safe up to 450ºF and are dishwasher safe for easy cleaning",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 39.99)
+# # https://www.amazon.com/Barbecue-Cutting-Serrated-Stainless-Scissors/dp/B01MYTIC16/ref=sr_1_24?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996563&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-24
+# p39 = Product.create!('name': 'Korean Barbecue Kalbi Rib Meat Cutting Shears/Serrated 3T Blade/Quality Stainless Steel Scissors Large 10 1/4 Inches',
+#     'description': "- Quality Stainless Steel Material Construction - Sturdy and Durable
+#     *- Serrated Blade - To prevent meat from slipping
+#     *- Dimensions: Total Length: 10 1/4 Inches; Blade Thickness: 3T (3mm)
+#     *- Suitable for cutting all kinds of meat, especially Korean Barbecue Ribs 'Kalbi'",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 5.89)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg1_1?ie=UTF8&adId=A05863291JYM0BW39FK24&qualifier=1650996563&id=2534797092238754&widgetName=sp_btf&url=%2FElectric-Portable-Nonstick-Multifunction-Saucepan%2Fdp%2FB09GN7JKJ9%2Fref%3Dsr_1_30_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996563%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-30-spons%26psc%3D1
+# p40 = Product.create!('name': 'Hytric Electric Hot Pot with Steamer, 1.5L Portable Nonstick Frying Pan for Sauté, Multifunction Electric Skillet for Fry, Mini Ramen Cooker with Dual Power Control for Dorm, Electric Saucepan, White',
+#     'description': "- Multi-Function Electric Hot Pot - This multi-functional electric hot pot is an essential appliance for every kitchen. It can replace various traditional stove kitchenware because it can be used as a sauté pan, frying pan, cooking pot, and steamer. It has an adjustable power knob, you can use the low-power mode(300W) for cooking ramen, scrambled eggs, pancake. Meanwhile, you can cook spaghetti, steak, salmon, hot pot, sauté with the high-power mode(600W).
+#     *- Stainless Steel Steamer - This mini pot comes with a food-grade stainless steel steamer. While cooking with this pot, you can also use the steamer to heat or steam food. This 1.5L electric cooker has a mini size (14.4 in x 7.7 in x 5.1 in) for easy to store and portable, particularly useful in a small space without a kitchen like studio apartments, offices, and dorms. If you are a travel lover, you can bring it with you to go on a trip and can cook your favorite food in a tourist place.
+#     *- Healthy Non-Stick Coating - Hytric electric frying pan surface is made of food-grade nonstick coating which has the features to provide an effortless release and easy cleaning. You can sauté your foods smoothly on the pan to prevent sticking and cook foods at a low level of fat and oil to make your foods healthier. After cooking, easy clean up the surface with water and a rag.
+#     *- Rapid Heating and Safe - We use round-shaped embedded heating element technology on our electric hot pot. This technology will keep your food heated evenly, not only make your tasty foods done more rapidly than traditional stove kitchenware but also prevent the foods from burning. In addition, Hytric electric hot pot has overheating protection, it will automatically power off when the pot at the dry burning and overheating status.
+#     *- Good Gift Choice - Hytric electric cooker has an elegant look and humanized design, it can be your good gift choice for those who love cooking. The electric cooker has an anti-scalding long handle for you to hold it easily and we use the high-quality tempered glass lid to let you check the cooking process through the glass lid.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 33.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A0757546O810UQ8S79OY&qualifier=1650996580&id=2330488405705501&widgetName=sp_atf_next&url=%2FMDLUU-Dolsot-Bibimbap-Granite-Korean%2Fdp%2FB085VWTFCQ%2Fref%3Dsr_1_27_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-27-spons%26psc%3D1
+# p41 = Product.create!('name': 'MDLUU 2 Pcs Dolsot Bibimbap Bowl 32 Oz, Granite Stone Bowl with Wood Base, Dolsot Pot for Korean Soup, Rice and Stew',
+#     'description': "- MATERIAL: Made of natural granite. Each product is examined to ensure the quality before selling, natural patterns and colors do not affect the usage
+#     *- SIZE: 7.08 inches in diameter, 3.03 inches in height (Capacity: 32oz)
+#     *- RETAINS HEAT: Natural granite retains heat well, safe to use on open flames, cook food in a quicker and more effective way, keep the food warm and help further slow cooks
+#     *- CREATES AN EARTHY SMORKY FLAVOR：While reheating the rice, coating a layer of sesame oil on the bowl helps to form a nice crisp crust and inherit an earthy smoky flavor
+#     *- CLEAN AND CARE: The package comes with detailed instructions for how to use stone bowls",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 45.89)
+# # https://www.amazon.com/Cleaver-Butcher-Vegetable-Kitchen-Camping/dp/B08JHWYXB1/ref=sr_1_25?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996580&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-25
+# p42 = Product.create!('name': 'Viking Knife Meat Cleaver Knife Hand Forged Boning Knife with Sheath Butcher Knives High Carbon Steel Fillet Knife Chef Knives for Kitchen, Camping, BBQ',
+#     'description': "- Premium Quality – Keep in mind that this handmade high carbon steel boning knife is not dishwasher-safe. You will need to hand-wash it and keep it clean and dry to resist rust after each use. Compared with meat knives made by general stainless steel, our forged kitchen knives have an extraordinary performance in edge-retention and a longer service life. The 6-inch sturdy blade passed multiple hand-grinding processes for an incredibly sharp cutting edge.
+#     *- Unique Leather Sheath -- The outdoor chef knife is equipped with a practical soft leather sheath to protect the blade. You can put a belt on it for easy carrying when camping outdoor. The portable camping knife is your ideal assistant for Butchering, Fishing, Camping, and Outdoor BBQ activities.
+#     *- Stylish & Practical – Unique hammered texture on the blade make it beautiful to behold and corrosion resistant while it also helps to prevent foods from sticking. Curved wood handle and large finger hole on the blade provides a secure grip for excellent control while filleting fish, chopping vegetables and deboning meat. The Full Tang design prevent this fillet knife from falling easily.
+#     *- Multipurpose -- This handmade meat cleaver is classified as a multi-function kitchen knife. The curved blade is perfect for many kitchen tasks like trimming brisket, slicing meat, and chopping vegetables, breaking down a whole chicken and deboning of lamb ribs.
+#     *- Well Packaged – All of our boning knives pass strict quality control before shipped and well packaged in an elegant box. We provide 100% SATISFACTION WARRANTY and 30-day money back guarantee for quality issues. It’s definitely an ideal gift for your lovers, family members and friends who loves cooking and knives.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 25.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A0192276FBJBOSPPLRYL&qualifier=1650996580&id=2330488405705501&widgetName=sp_mtf&url=%2FTobyan-Soft-Cotton-Linen-Apron%2Fdp%2FB09PMTG2KM%2Fref%3Dsr_1_30_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-30-spons%26psc%3D1
+# p43 = Product.create!('name': 'Tobyan Soft Cotton Linen Apron - Retro Linen Art Apron, Adjustable Casual Apron with Towel, Great for Florist, Coffee House and Kitchen (Grey)',
+#     'description': "- Linen
+#     *- Material: Exquisite workmanship Tobyan Bib Apron is made from fabric of cotton linen, which comfortable and soft, does not look swollen after wearing.
+#     *- Design: Simple, fashion and natural art apron will bring your house life more charming. 3 front square pockets, convenient temporary storage of the required items. In addition, this apron is also equipped with absorbent towel, so that you can wipe the water stains on the table at any time.
+#     *- Adjustable Size: Unique design with an adjustable neck strap and waist strap, you can adjust neck length and waist looseness according to your needs. This apron is suitable for most people.
+#     *- Easy To Clean: This casual apron is machine washable, fade-proof. Do not use bleach. Wash with cold water and air dry naturally.
+#     *- Widely used: Retro art cotton apron, suitable for cooking, baking, painting, crafts, gardening, barbecue, and house cleaning. This is a great gift for family or friends.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 17.69)
+# # https://www.amazon.com/Wooden-Long-Spoons-Natural-Cooking/dp/B09PZ6FM39/ref=sr_1_37?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996580&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-37
+# p44 = Product.create!('name': 'Wooden Soup Spoon, 2PCS Wooden Long Spoons Korean Style Natural Wood Long Handle Round Spoons Long Soup Spoons for Soup Cooking Mixing Stirrer Kitchen Tools',
+#     'description': "- 2 PIECES LONG WOODEN SPOONS, salad spoon,cooking spoon, soup spoons, Simple and plain, 10.9 inches LENGTH, natural color and elegant.
+#     *- LONG KOREAN STYLE SPOON Perfect for Soup Cooking Stirrer Mixing Eating Kitchen Tools Utensils. Great for hiking, mountain hiking, camping, lake fishing, construction site lunch or picnicking.
+#     *- WOOD SPOON SET is made of natural Nanmu wood, durable and sturdy body, the skin is smooth and clear. Healthy, Natural Painted. w/o BPA, PVC, or phthalates.
+#     *- WOOD KITCHEN TOOLS are safe to use on cups, dishes and bowls, as well as scratch-resistant they are. it may not frostbite or scald your hands,no matter how cold or hot the water is.
+#     *- SPOONS DISHWASHER SAFE easy to clean and reusable Safe for non-stick surfaces, safe, healthier, it can't heated by microwave.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 10.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg2_1?ie=UTF8&adId=A021592422Z25NWKYDI0Z&qualifier=1650996580&id=2330488405705501&widgetName=sp_btf&url=%2FSanbege-Ceramic-Sizzling-Bibimbap-Casserole%2Fdp%2FB09MCY4ZV2%2Fref%3Dsr_1_45_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996580%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-45-spons%26psc%3D1
+# p45 = Product.create!('name': 'Sanbege Large Korean Ceramic Bowl with Lid and Trivet, 54 oz Sizzling Hot Pot with Double Handles for Cooking and Serving Dolsot Bibimbap, Soup, Rice, Stew, Casserole, Noodle',
+#     'description': "- PREMIUM MATERIAL: This Korean ceramic bowl is fired from fine clay at high temperature and well glazed the surface in smooth finish, which is non-toxic and evenly conducts heat to cook better
+#     *- DETAILED DESIGN: The curve shaped double handles and heat-resistant melamine trivet, are safe and convenient for you to grip and keep your table top from heat; The lid air vent and extra high bowl rim can prevent boiling over; The slightly rough rim of the lid and bottom make stably covering and sitting on table
+#     *- CONVENIENT USAGE: Can be used for serving food and cooking directly on gas stovetop, electric glass cooktop (Not for induction burner); Also safe for oven, broiler, microwaves, refrigerator and dishwasher, which is convenient for everyday use
+#     *- CLASSIC STYLE: The minimalistic elegant drum shaped body and glossy black glazed surface, make it a traditional Korean style bowl to display food nicely
+#     *- VERSATILITY: This 8.6 in W x 4.9 in H Korean ceramic bowl holds up to 54 oz/1.6 L, perfect for cooking soups, stews, casseroles, dolsot bibimbaps, Kimchi jjigae, ramen, noodle or steamed egg, keeping the food hot and sizzling on dining table which greatly enhance appetite",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 32.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_next_kitchen-intl-ship_sr_pg3_1?ie=UTF8&adId=A05884062QA2NW4EKL7RS&qualifier=1650996673&id=993139042312979&widgetName=sp_atf_next&url=%2FCooking-Capacity-Ceramic-Casserole-23-6fl%2Fdp%2FB09NNG724R%2Fref%3Dsr_1_50_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996673%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-50-spons%26psc%3D1
+# p46 = Product.create!('name': 'Clay Pot For Cooking Small Capacity Ceramic Casserole Ceramic Pots For Cooking, 23.6fl Oz',
+#     'description': "- clay pot for cooking Be applicable: Casserole can be used as a pan for stews, soups, casseroles and other recipes.
+#     *- clay pot for cooking Material: Porcelain ceramic body, selected from Australia's imported spodumene, high temperature resistance, resistance to hot and cold, smooth glazed look, warm and delicate touch.
+#     *- clay pot for cooking scope of application: Suitable for gas, oven, electric ceramic stove, microwave oven. Prohibit use on induction cooker.
+#     *- clay pot for cooking Features: The heat preservation ability is good, the heat in the pot is even, and the fragrance is easier to enter the food, so that the food can release the nutrition and the fragrance.
+#     *- Service: A very durable clay pot for cooking that you can buy with confidence, we are proud of our excellent customer service.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 49.00)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg3_1?ie=UTF8&adId=A022863726U8CT6HRJH5D&qualifier=1650996673&id=993139042312979&widgetName=sp_mtf&url=%2FElinCube-Premium-Platter-Cooking-Bibimbap%2Fdp%2FB08R3DCF6V%2Fref%3Dsr_1_56_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996673%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-56-spons%26psc%3D1
+# p47 = Product.create!('name': 'ElinCube Premium Korean Stone Bowl with Lid & Platter, Clay Pot for Cooking Hot Pot Dolsot Bibimbap and Soup',
+#     'description': "- Our stone bowl(stone pot) is made of the highest quality Korean fine clay, and they are baked at a higher temperature, so they are more durable and can be used for a long time
+#     *- It has a sophisticated and luxurious shape by adding a modern touch to the traditional Korean design. Our stone bowl will make the dishes set on your table more delicious and stand out during your pleasant dinner time
+#     *- It can be used not only for Korean food, but also for various dishes. Add taste and style to your dishes. Keeps food warm during meals with loved ones around you and Bon appetit
+#     *- Enjoy delicious Korean food with our premium stone bowl. You can cook with this bowl to make a variety of Korean dishes such as Dolsot Bibimbap, Galbi jjim(Braised beef short ribs), Kimchi jjigae(Kimch stew), Spicy soft tofu stew, Fluffy hot steamed eggs, Bulgogi stew and also various countries cuisine
+#     *- Can be used on gas stoves, electric hot stoves, ovens, microwaves and dishwashers (Not for induction)",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 28.99)
+# # https://www.amazon.com/Excelife-86150-Folding-Wooden-Korean/dp/B0722TZ48M/ref=sr_1_73?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-73
+# p48 = Product.create!('name': 'Excelife 86150 Multi Folding Wooden Korean Tea Table M Size, Medium , Brown',
+#     'description': "- Beautiful Asian style designed multi functional folding wooden table, Made from kalopanax
+#     *- Multi functional table - to Eat, study always and use laptop
+#     *- Strong durability and safe round edge rectangle
+#     *- Light weight, foldable legs and portable design - easy to clean and Fold flat for storage",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 67.15)
+# # https://www.amazon.com/AGAINATURE-Kitchen-Reusable-Absorbing-Eco-Friendly/dp/B093KHRVDZ/ref=sr_1_81?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-81
+# p49 = Product.create!('name': 'AGAINATURE Cotton Kitchen Cloth 5 Pack, Korean Dish Cloth Called Sochang, Hand Towel, Steamer Cloth and Cheese Cloth, Natural Kitchen Cloth, Reusable Towel, Super Absorbing, Organic and Eco-Friendly',
+#     'description': "- 100% Cotton
+#     *- We only use fabrics made by a factory that has a history of over 100 years and all production processes are carried out in a korean traditional way. The fabric is unbleached and non-fluorescent. It is much more absorbent and dries faster than other cotton fabrics, so it is sanitary and contains less dust.
+#     *- Threads are coated with natural corn starch. The more you wash and boil, the denser and more absorbent it becomes. We recommend to wash and boil several times. If you skip this before your first use, it would not be absorbent enough because of its starched surface. You can get details of ‘HOW TO USE’ after the product description below.
+#     *- Each pack comes with 5 cotton cloths in different layers & sizes. You can use each as befits your purpose and in various ways like dishcloth, steamer cloth, cheese cloth or hand towel. The fabric is also great for needlepoint. You can embroider family name, flower, animal or character and make it your own special artwork.
+#     *- Our cotton cloths can get finally done only with your engagement and touch. As you destarch, refine and use continuously, it will become like your close kitchen friend rather than just one of the many household items. You can experience premium quality of classic natural cotton kitchen cloth.
+#     *- Using natural materials and giving worldwide customers the best experience is our brand’s mission. There are no any harsh chemicals or plastics in all of our products. Please visit our store and see other eco-friendly items. Hope you join the zero waste movement and enjoy a plastic free life!",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 14.99)
+# # https://www.amazon.com/Cuckoo-CR-0655F-Cooker-Liters-Quarts/dp/B01MQWFGKG/ref=sr_1_77?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-77
+# p50 = Product.create!('name': 'CUCKOO CR-0655F | 6-Cup (Uncooked) Micom Rice Cooker | 12 Menu Options: White Rice, Brown Rice & More, Nonstick Inner Pot, Designed in Korea | Red/White',
+#     'description': "- Unique 11 Menu Options: Enjoy popular menu options such as white (glutinous) rice, brown rice and porridge as well as versatile options such as steam and multi cook
+#     *- Ideal 6 Cup Capacity: The 6-cup (12 cups cooked) rice cooker provides the perfect serving amount for small gatherings or small to medium sized families
+#     *- Smart Micom Rice Cooker: Enjoy effortless cooking as the smart cooking algorithm is designed to automatically cook delicious rice every time!
+#     *- Customized Rice Cooking: Whether you enjoy sticky rice, soft rice, sweet rice, or savory rice, My Mode allows you to take control of your cooking with the 16 unique rice flavor and texture options
+#     *- Clean & Fresh: Keep your rice cooker clean and your rice tasting fresh with the removable nonstick inner pot, detachable inner lid, auto clean function, and excess water drainage dish",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 112.99)
+# # https://www.amazon.com/SASTYBALE-Japanese-Waitress-Painting-Gardening%EF%BC%88Gray%EF%BC%8CMedium%EF%BC%89/dp/B08FSTK6C6/ref=sr_1_86?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-86
+# p51 = Product.create!('name': 'SASTYBALE Japanese Korean Style Apron Cotton Cooking Apron with Both Sides Waist Ties for Kitchen Waitress Painting Gardening',
+#     'description': "- 腰带 closure
+#     *- 【Personalized Design】SASTYBALE cooking apron has a relaxed comfortable fit and comes in various sizes to fit most individuals ,two large pockets in front and ties on both sides design ,full front and back optimal coverage to protection from kitchen grease, spills and food stains.
+#     *- 【Healthy Material】This navy kitchen apron are made of high-quality Cotton ,that is lightweight and comfortable for you to wear,no harmful chemicals, safe for you and your family.
+#     *- 【Conveient Wearing】This side ties apron with pockets and conveient to wear,you can as wear as T-shirt,directly from your head set in to get rid of the neck pressure when you wearing for a long time.
+#     *- 【Easy Care】Machine washable, the color does not fade and shrinkage.do not bleach, tumble dry low and warm iron if needed.
+#     *- 【Multiple Uses】This cotton apron is suitable for many occasion,apart from cooking, it can keep your clothes from getting dirty your clothes while home crafts, art projects, cutting flowers, doing chores, DIY or painting.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 19.99)
+# # https://www.amazon.com/imarku-Removable-Multifunctional-Stainless-Sharpening/dp/B088D82YDZ/ref=sr_1_88?crid=VI05AD20QT0&keywords=korean+kitchen&qid=1650996706&s=kitchen-intl-ship&sprefix=korean+kitchen%2Ckitchen-intl-ship%2C54&sr=1-88
+# p52 = Product.create!('name': 'Knife Set, imarku 16-Pieces Premium Kitchen Knife Set, German Stainless Steel Knife Set with Block and Knife Sharpener',
+#     'description': "- HIGH-QUALITY JAPANESE KNIFE SET: Knife set blades are made of German high-carbon stainless steel, Carefully hand-sharpened edge at 16 degrees per side for the ultimate in sharpness, hand-forged and mirror-polished by craftsman with over 25 years of experience that can avoid rust, stains and corrosion. Vacuum heat treatment makes the blade of the knife set hard to HRC56±2, so the blade is indestructible and won't break for a long time use.
+#     *- OUTSTANDING KITCHEN KNIFE SET: Handle are made of high-density pakkawood which has high hardness and beautiful grain. Handle will not crack after long-term use. After polishing process, handle arc perfectly fits the palm of the hand, providing optimal grip and comfort during use, without fatiguing your hand and guaranteed to be durable. Premium material of the kitchen knife sets reveals the luxurious identity of this knife that has been favored by many chefs and kitchen cooking enthusiasts.
+#     *- PATENTED REMOVABLE KNIFE SET - imarku's patented design adds a pull-away steak knife set. Wooden Block part is made of durable Walnut, knife seat is easier to insert and remove, easy to store and maintain. You can move the 6 steak knives from the kitchen to the dining area, detach freely is perfect for busy kitchens. That's why so many kitchen cooks choose imarku kitchen knife set with block.
+#     *- PRACTICAL KNIFE SET WITH BLOCK: imarku 16-piece stainless steel knives set for kitchen includes: 1 8in chef's knife, 1 bread knife, 1 slicing knife, 1 santoku knife, 1 6in chef's knife, 1 utility knife, 1 paring knife, 1 knife sharpener, 1 kitchen scissors, 1 wooden block, 6 steak knife, knives set includes every knife you need in the kitchen-A one-stop shop for all your needs.
+#     *- TRUSTWORTHY: imarku focuses on developing high-quality knives and is dedicated to enhance your cooking experience. We promise to cover our knife sets for life. If knives set is defective, we will provide free exchange or return for life. imarku knife set for kitchen with block is the perfect gift for Weddings, Birthdays, Housewarming, Thanksgiving, Christmas.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 259.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_kitchen-intl-ship_sr_pg4_1?ie=UTF8&adId=A04626432Y0KUJOUNKLDV&qualifier=1650996706&id=8056718172970346&widgetName=sp_btf&url=%2FLavensi-Tamagoyaki-Japanese-Omelette-Non-stick%2Fdp%2FB098KYBY28%2Fref%3Dsr_1_94_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996706%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-94-spons%26psc%3D1
+# p53 = Product.create!('name': 'Lavensi - Japanese Tamagoyaki Pan, Egg Pan with Heat-Resistant & Cook-Safe Handle, Nonstick Frying Pan, Curved Edge, Scratch-Proof Bottom, Cooktop Safe, 5 x 7 inches',
+#     'description': "- Effortlessly Prep and Serve Omelettes - With our uniquely curved frying pan, you can easily roll and flip tamagoyaki. This Japanese omelette pan has a protective nonstick layer that keeps the egg batter from clinging to the pan.
+#     *- Cooks Food Evenly - No more unsavory, burnt or uncooked meals when you use our pan. Crafted with a smooth and flat bottom, this egg roll pan ensures even heat distribution. It’s also safe to use on gas, electric, and induction stoves.
+#     *- Safe and Convenient - Perfect your Tamagoyaki, pancakes, paninis and more with our cooking pan. Safe and convenient to use, this tamago pan is designed sleek and featherweight with a heat-resistant and cook-safe ergonomic handle.
+#     *- Sturdy with Food-Safe Coating - Coated with food-safe materials, this nonstick pan contains no cadmium, lead, or PFOA. Our Asian cookware also has the same quality as cast iron to withstand daily use in preparing a variety of dishes.
+#     *- Easy to Maintain and Store - Wash our square egg pan using a sponge or a soft scouring pad after use. Dry it off, hang this nonstick fry pan by the handle, then have it ready for your next cooking adventure.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 36.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_kitchen-intl-ship_sr_pg5_1?ie=UTF8&adId=A01510603EIXORTNPLW09&qualifier=1650996783&id=7561152989686588&widgetName=sp_mtf&url=%2FSEAAN-Portable-Electric-Non-stick-Temperature%2Fdp%2FB08VJ52XWV%2Fref%3Dsr_1_103_sspa%3Fcrid%3DVI05AD20QT0%26keywords%3Dkorean%2Bkitchen%26qid%3D1650996783%26s%3Dkitchen-intl-ship%26sprefix%3Dkorean%2Bkitchen%252Ckitchen-intl-ship%252C54%26sr%3D1-103-spons%26psc%3D1
+# p54 = Product.create!('name': 'SEAAN Portable Electric Grill Hot Pot 2 in 1 BBQ Shabu Pot Baking Tray Combo Non-stick Pan Separate Temperature Control Easy to Clean (golden) US Stock',
+#     'description': "- 【2 in 1 DESIGN】The Smokeless BBQ and Hot Pot is large capacity, suitable for 2-10 people. Great for grilling, baking, slow cooking, steaming, simmering and serving. It is very practical to use.
+#     *- 【NON-STICK AND HEATPROOF 】The Frying Cook Grill is Heat-resistant, corrosion-resistant and non-stick BBQ griddle hot plate with the heat proof handle, prevent your hands from hurting, food grade material that is safe and non-toxic durable for you to use.
+#     *- 【2200W HIGH POWER,FAST HEATING】High-power heat pipe, sealed embedded design, reduce heat loss, heat faster and more uniform to improve heat efficiency, food heat faster.
+#     *-  【SEPERATE TEMPERATURE CONTROL】The most difficult cooking skill in the barbecue is the control of the fire. According to different ingredients, different temperatures can be selected.
+#     *- 【Split and Simpler Cleaning】 The hot pot adopts a separate design, which can be easily removed and cleaned/placed to improve cleaning efficiency and make it more user-friendly.",
+#     'department': kitchen.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 115.99)
 
 # Attire
 # https://www.amazon.com/YESNO-Cropped-Bloomers-Elastic-Pockets/dp/B07PM2ZLYL/ref=sr_1_1?keywords=Korean+Clothes&qid=1650997269&sr=8-1
@@ -617,158 +617,158 @@ p60 = Product.create!('name': 'Zzple Kawaii Hoodie Womens Clothes Women`s Hoodie
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'price': 30.38)
-# https://www.amazon.com/Winter-Clothes-Hoodies-Pullover-Apricot/dp/B09CTJM53D/ref=sr_1_7?keywords=Korean+Clothes&qid=1650997269&sr=8-7
-p61 = Product.create!('name': 'Fall Winter Clothes Women Plaid Hoodies Fake Two Pieces Fleece Turtle Neck Korean Pullover',
-    'description': "- Fleece
-    *- Machine Wash
-    *- The fabric is soft and comfortable, not deformed, washable, machine washable, and durable.
-    *- Suitable for any body type. It can be given to sisters, girlfriends, wives, friends, family, relatives, etc. This will be a good gift.
-    *- It is Asian sizes. Please choose one or two sizes bigger than usual. Please refer to the size chart before buying. If you have any questions, please contact us within 24 hours.
-    *- Suitable for any occasion, it can be worn daily, and can also be used for home, work, school, dating, anniversaries, parties, travel, walking, sports, exercise, activities, outings and other occasions.
-    *- Casual and fashionable, easy to match with skirts, casual pants, trousers, shorts, leggings, etc., indispensable in autumn and winter.",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 36.99)
-# https://www.amazon.com/Pullover-Clothes-Oversized-Sweatshirt-Harajuku/dp/B094Y5LJYR/ref=sr_1_9?keywords=Korean+Clothes&qid=1650997269&sr=8-9
-p62 = Product.create!('name': 'Spring Autumn O-Neck Pullover Women Korean Loose Clothes Oversized Sweatshirt Vintage Oversized Harajuku Korean Hoodie',
-    'description': "- 100% Polyester
-    *- Material: 100% polyester fabric, breathable and soft, very comfortable to wear.
-    *- Design: This pullover, super fire letter printing, Korean ins Harajuku style design, street hip-hop style, loose fit, fashionable Hip Pop style, ultra-fashionable hoodie suitable for children, teenagers, couples, and families.
-    *- Occasion: It is very suitable for daily clothing in spring, autumn and winter, suitable for shopping, parties, travel, nightclubs, bars, photography, dinners, travel, etc.
-    *- The perfect gift: a unique and stylish design. This casual pullover is perfect for everyday wear and is the perfect birthday gift or holiday gift.
-    *- Service: 100% after-sales service guarantee, if you have any questions about our products, please contact us in time, we will provide you with a satisfactory solution.",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 15.99)
-# https://www.amazon.com/Womens-Sleeve-Japanese-Cardigan-OneSize/dp/B07FSWQC28/ref=sr_1_23?keywords=Korean+Clothes&qid=1650997269&sr=8-23
-p63 = Product.create!('name': 'Women`s 3/4 Sleeve Japanese Shawl Kimono Cardigan Tops Cover up OneSize US S-XL',
-    'description': "- 100% Polyester
-    *- Machine Wash
-    *- From Japanese pattern kimono design and style
-    *- Retro, elegant, traditional Japanese style, open style waterfall, Light quality, Loose Fit
-    *- Occasion / Season: Summer, beach, pool, bathroom, pajamas,casual
-    *- Garment Care:Machine wash,Package Includes:1 x Kimono
-    *- ONE SIZE(US S-L) :Length:28.3 in,Shoulder:18.0 in,Bust:46.4 in,Sleeve:11.0 in",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 25.98)
-# https://www.amazon.com/Wrenpies-Skateboarding-Sweatshirt-Pullover-Aesthetic/dp/B09FF34PX4/ref=sr_1_22?keywords=Korean+Clothes&qid=1650997269&sr=8-22
-p64 = Product.create!('name': 'Wrenpies Frog Skateboarding Casual Sweatshirt Women`s Pullover Long Sleeve Turn Down Collar with Pocket Tops for Teen Girls',
-    'description': "- Polyester,Cotton
-    *- Hand Wash Only
-    *- [Materia] :35% Cotton + 65% Polyester. It is made of high quality materials, polyester and cotton. Polyester has excellent wrinkle resistance, elasticity and dimensional stability. It is durable and wrinkle-resistant without ironing. It is not afraid of mold or insects.Soft and No Harm To Women Girls Tender Skin.
-    *- [Size] :The size of the skateboard frog sweatshirt is: M L XL XXL Asian Size. If you like loose, we recommend choosing 1 or 2 large.Please check the size chart before placing the order, because the size chart is manually measured and there is a difference of 2-3cm.
-    *- [Features] :Skateboarding frog long sleeve hoodie, kawaii clothing aesthetic, frog hoodies for teen girls, Cartoon Hoodies for Women,plus size fashion sweatshirt with collar,cute cotton pullover frog on skateboard sweatshirt,oversized drop shoulder sweatshirt graphic,turn-down collar sweatshirt,fit wear in autumn winter and spring season, best festival gifts for friends or family,and it is also the perfect gift for yourself!
-    *- [Occasion] :This skateboarding frog hoodie long sleeve cotton pullover is suitable for all occasions, prefer for Home, Daily, School, Lounge, Work, Date, Casual, Outings, Office. You can match this softie aesthetic skateboarding frog sweatshirt with jeans/skirt shorts/leggings /deni shorts/sweatpants.All-match clothing that suits you.
-    *- [Color Disclaimer] :Green,Pink,Black,Blue,Yellow,Apricot.The color of the cute frog on skateboard hoodie may be affected by the light shooting, Please allow slight deviation for the color! Machine wash or hand wash, hand wash can make the clothes last longer. Do not bleach .If you have any questions about our kawaii frog hoodie with pockets, please feel free to contact us, our enthusiastic customer service will reply within 24 hours and provide you with quality service.",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 23.68)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_aps_sr_pg1_1?ie=UTF8&adId=A0923408TY1YZ2JFDYP5&url=%2FUQJE-Women-Loose-Boyfriends-Trousers%2Fdp%2FB09Q37ZCDP%2Fref%3Dsr_1_27_sspa%3Fkeywords%3DKorean%2BClothes%26qid%3D1650997269%26sr%3D8-27-spons%26psc%3D1&qualifier=1650997269&id=3010713106466771&widgetName=sp_mtf
-p65 = Product.create!('name': 'UQJE Women`s Baggy Cotton Denim Wide Leg Pants Pull-on Jeans Comfy Elastic Waist Drawstring Trousers with Pockets',
-    'description': "- Denim
-    *- Imported
-    *- Drawstring closure
-    *- Machine Wash
-    *- 【PREMIUM QUALITY】 Made of premium cotton denim fabric. Soft, Durable and Comfortable.
-    *- 【STYLISH DESIGN】Casual loose, high waist, elastic waist with drawstring. Two side pockets, can put your card & keys.
-    *- 【MATCH】 Distressed relaxed wide leg jeans easy to match t-shirt, sweatshirt, loose tops and boots for a casual look.
-    *- 【NOTICE】Please refer to our size chart in the picture then compare with your body size to get the right fit.
-    *- 【OCCASIONS】 Fashion baggy plus size trousers fits all seasons. Perfect for your daily wear, home, beach party, holiday, party, streetwear, outdoor, travel and any time.",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 37.99)
-# https://www.amazon.com/BERING-Womens-Cotton-Hidden-Loafers/dp/B07PS5DQC9/ref=sr_1_37?keywords=Korean+Clothes&qid=1650997269&sr=8-37
-p66 = Product.create!('name': 'BERING Women`s No Show Socks 6-9 Pairs Low Cut Ankle for Sneaker Slip On Boot Ballet',
-    'description': "- 80% Cotton, 15% Polyester, 5% Spandex
-    *- Imported
-    *- Machine Wash
-    *- Soft, lightweight, durable, and fit perfectly. Made of advanced stretch cotton blended material, the optimum softness and thickness, breathable fabric helps keep your feet dry and comfortable all day long.
-    *- The Bering women's no show socks have three anti-slip silicone grippers on the inside of the heel to help the socks stay in place, they don't slip off your heel when you wear them.
-    *- Reinforced toe and heel for durability, better stretch recovery for long-lasting, withstand multiple washing, do not shrink up into twisted balls that lose shape.
-    *- Low-cut ankle style can be hidden in slip-ons, fashion sneakers, running shoes, walking shoes, tennis shoes, and everyday low-top casual shoes.
-    *- Available in a variety of colors and two regular sizes, medium (W 6-9/M 5-8), large (W 10-13/M 9-12). Worry-free after-sales service, shopping with confidence!",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 18.99)
-# https://www.amazon.com/Cosfun-Two-Piece-Fleece-Detachable-mp006068/dp/B08QLY7HNR/ref=sr_1_38?keywords=Korean+Clothes&qid=1650997269&sr=8-38
-p67 = Product.create!('name': 'Cosfun Winter Bear Hoodie Fake Two-Piece Fleece Hooded with Detachable Bear Bag C00554',
-    'description': "- 51% Cotton, 49% Polyester
-    *- Including: only hoodie(detachable bag)
-    *- Materials: 51%cotton, 49%polyester
-    *- Soft and Comfortable, Relaxed Fit, Front Zipper Detachable Bag
-    *- US Size S: Chest 108cm, Sleeve 49 cm, Length 69 cm; US Size M: Chest 113 cm, Sleeve 51 cm, Length 73 cm; US Size L: Chest 118 cm.
-    *- Note: The product photos are all taken in kind, and the actual product is the same as the product picture shown. Due to the different lighting and display screens, there may be slight color difference.
-    *- Perfect for leisure, school, work, dating and easy to match with any casual pants or skirt",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 37.99)
-# https://www.amazon.com/Byvheh-Harajuku-Sweatpants-Trousers-Joggers/dp/B092MJG9LY/ref=sr_1_39?keywords=Korean+Clothes&qid=1650997269&sr=8-39
-p68 = Product.create!('name': 'Women`s Cargo Pants Joggers Pants with Chain Loose Fit Kpop Black y2k Pants Baggy Streetwear Cargos Aesthetic Pants Gothic',
-    'description': "- egirl pants aesthetic emo pants for women goth pants for women goth pants aesthetic pants gothic pants for women gothic pants for women plus size
-    *- Lace Up closure
-    *- Machine Wash
-    *- [Please note!!!]Based on feedback from many customers, we have updated our sizes. Please refer to the new size chart in our picture to confirm the right size before ordering (not amazon's), thank you very much
-    *- [Garment Care!!!]Hand wash in cold water or machine wash in laundry bag, please don't soak the Dress in water for a long time, don't use chlorine bleach to wash, do not wash in hot water, do not bleach, do not dry
-    *- [Our Response]We've seen feedback that the zipper comes off after a few uses. We have contacted the factory to request a replacement zipper with better quality. In order to prolong its life, please put the trousers in the laundry bag and machine wash. There is also feedback that the chain position is not very comfortable. These decorations are free to disassemble. You can even remove the chain and hang up any other decorations you like to make it your very own, one-of-a-kind trousers
-    *- lace up leggings for women lace front leggings suede lace up leggings laced pants sexy gothic pants leather side leggings black lace up hem leggings plus size lace up leggings for women
-    *- side lace leggings for women side lace up jeans for women black lace up leggings laced jeans lace up leggings side lace up leggings punk clothing for women black suede lace pants",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 30.99)
-# https://www.amazon.com/Sweatshirt-Harajuku-Crewneck-Aesthetic-8253black/dp/B09GKCVLP7/ref=sr_1_41?keywords=Korean+Clothes&qid=1650997269&sr=8-41
-p69 = Product.create!('name': 'Women`s Sweatshirt Goth Hoodies Harajuku Crewneck Aesthetic Gothic Clothes Korean Fashion Pullover Tops',
-    'description': "- Hand Wash Only
-    *- Suitable for Casual, Work, Date, School, Sports, Vacation, Street wear or casual everyday wear, it's a great gift idea for christmas or holidays
-    *- Casual style, Relaxed Fit; Pullover Hoodie Sweater for women, ladies, juniors, teen girls.
-    *- Garment Care: Machine/Hand wash, hang to dry in shade, prohibit bleaching.
-    *- We Strive to Provide you Highest Quality Products and Best Service, Please Feel Free to contact us for any defective items you have purchased from our store or the hoodie has SIZE problem",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 29.50)
-# https://www.amazon.com/Harajuku-Kawaii-Hoodie-Sweater-Clothes/dp/B09LVTRW9G/ref=sr_1_44?keywords=Korean+Clothes&qid=1650997269&sr=8-44
-p70 = Product.create!('name': 'NC Harajuku Kawaii Sweet Hoodie Fruit Print Women`s Loose Thin Zipper Sweater Girl Cute Pink Plus Size Clothes',
-    'description': "- Fabric: Cotton + polyester, soft and skin-friendly, very comfortable to wear
-    *- Collar type: Hooded
-    *- Style: Japanese Harajuku Kawaii fruit print zipper hoodie, Korean casual Harajuku sweet jacket. Street fashion beautiful hoodie, soft and comfortable, simple and versatile.
-    *- Design: Kawaii fruit print design, very fresh and sweet and cute hoodie, Korean version of simple Harajuku kawaii sweet style, Harajuku casual fashion fresh and sweet beauty hoodie.
-    *- Matching: can be matched with jeans, casual pants, skirts, casual shoes, or as casual home wear",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 22.00)
-# https://www.amazon.com/ZAFUL-Knitted-Sweater-Crewneck-Pullover/dp/B07HN2V9YV/ref=sr_1_45?keywords=Korean+Clothes&qid=1650997269&sr=8-45
-p71 = Product.create!('name': 'ZAFUL Women`s Loose Sweater, Crew Neck Lantern Sleeve Casual Pullover Oversized Knitted Jumper Tops',
-    'description': "- Size information:One size(US 8-12)--Bust 130cm/51.2 in--Length 60cm/23.6 in--Shoulder Width 56cm/22 in--Sleeve Length 50cm/19.7 in Please refer to the size information before purchasing or contact us directly if any question.Please allow 1-3cm differs due to manual measurement,thanks
-    *- Material:Acrylic+Cotton+Polyester,Skin friendly fabric,comfy ,soft and warm
-    *- Feature:Crewneck,Lantern sleeve,a letter badge patched design,with multiple color optional
-    *- Occasion:Perfect for outdoor, indoor, shopping, working,business, casual, ball, prom, wedding, party, club, festival, travelling, jogging, etc
-    *- Easily to match with jeans, leggings or skirts",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 27.99)
-# https://www.amazon.com/SOLY-HUX-Colorblock-Embroidery-Drawstring/dp/B097PVY6CW/ref=sr_1_48?keywords=Korean+Clothes&qid=1650997269&sr=8-48
-p72 = Product.create!('name': 'SOLY HUX Men`s Colorblock Letter Embroidery Long Sleeve Drawstring Hoodie Sweatshirt',
-    'description': "- Soft Fabric
-    *- Pull On closure
-    *- Casual hooded pullover sweatshirt
-    *- Fabric: Fabric is soft and comfortable, some stretch
-    *- Feature: Letter, embroidery, drawstring, long sleeve, drop shoulder, pullovers, fashionable
-    *- Size recommendation: Please refer to size chart which we provide in our photos (not amazon's)
-    *- Suitable occasions: Suit for casual wear, vacation, school, daily life and outgoing, fit for spring or fall",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 32.99)
-# https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_aps_sr_pg1_1?ie=UTF8&adId=A07726261MEMQWEC8YBDS&url=%2FZPAYFSDS-Womens-Hoodies-Pullover-Sweatshirts%2Fdp%2FB081LL68FC%2Fref%3Dsr_1_57_sspa%3Fkeywords%3DKorean%2BClothes%26qid%3D1650997269%26sr%3D8-57-spons%26psc%3D1&qualifier=1650997269&id=3010713106466771&widgetName=sp_btf
-p73 = Product.create!('name': 'ZPAYFSDS Women`s Cute Cat Ear Button Fleece Warm Hoodies Pullover Coat Sweatshirts Blouse 4Color',
-    'description': "- Machine Wash
-    *- Material:Polyester, feel soft and comfortable
-    *- Style:Simple, stylish, long sleeves. Casual autumn blouse with a stylish solid color design. Suitable for teenagers, travel, work, family, school, dating.
-    *- Been improved to be more thick and warm, sanded, soft and waxy, elasticity.
-    *- This goes well with all your jeans, leggings, it's a great gift idea for christmas,Halloween and other holidays
-    *- Note:Machine wash or hand wash cold water,dry clean,Do not bleach;Package included:1x women sweatshirt",
-    'department': attire.name,
-    'delivery_days': rand(max_days) + 1,
-    'price': 25.99)
+# # https://www.amazon.com/Winter-Clothes-Hoodies-Pullover-Apricot/dp/B09CTJM53D/ref=sr_1_7?keywords=Korean+Clothes&qid=1650997269&sr=8-7
+# p61 = Product.create!('name': 'Fall Winter Clothes Women Plaid Hoodies Fake Two Pieces Fleece Turtle Neck Korean Pullover',
+#     'description': "- Fleece
+#     *- Machine Wash
+#     *- The fabric is soft and comfortable, not deformed, washable, machine washable, and durable.
+#     *- Suitable for any body type. It can be given to sisters, girlfriends, wives, friends, family, relatives, etc. This will be a good gift.
+#     *- It is Asian sizes. Please choose one or two sizes bigger than usual. Please refer to the size chart before buying. If you have any questions, please contact us within 24 hours.
+#     *- Suitable for any occasion, it can be worn daily, and can also be used for home, work, school, dating, anniversaries, parties, travel, walking, sports, exercise, activities, outings and other occasions.
+#     *- Casual and fashionable, easy to match with skirts, casual pants, trousers, shorts, leggings, etc., indispensable in autumn and winter.",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 36.99)
+# # https://www.amazon.com/Pullover-Clothes-Oversized-Sweatshirt-Harajuku/dp/B094Y5LJYR/ref=sr_1_9?keywords=Korean+Clothes&qid=1650997269&sr=8-9
+# p62 = Product.create!('name': 'Spring Autumn O-Neck Pullover Women Korean Loose Clothes Oversized Sweatshirt Vintage Oversized Harajuku Korean Hoodie',
+#     'description': "- 100% Polyester
+#     *- Material: 100% polyester fabric, breathable and soft, very comfortable to wear.
+#     *- Design: This pullover, super fire letter printing, Korean ins Harajuku style design, street hip-hop style, loose fit, fashionable Hip Pop style, ultra-fashionable hoodie suitable for children, teenagers, couples, and families.
+#     *- Occasion: It is very suitable for daily clothing in spring, autumn and winter, suitable for shopping, parties, travel, nightclubs, bars, photography, dinners, travel, etc.
+#     *- The perfect gift: a unique and stylish design. This casual pullover is perfect for everyday wear and is the perfect birthday gift or holiday gift.
+#     *- Service: 100% after-sales service guarantee, if you have any questions about our products, please contact us in time, we will provide you with a satisfactory solution.",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 15.99)
+# # https://www.amazon.com/Womens-Sleeve-Japanese-Cardigan-OneSize/dp/B07FSWQC28/ref=sr_1_23?keywords=Korean+Clothes&qid=1650997269&sr=8-23
+# p63 = Product.create!('name': 'Women`s 3/4 Sleeve Japanese Shawl Kimono Cardigan Tops Cover up OneSize US S-XL',
+#     'description': "- 100% Polyester
+#     *- Machine Wash
+#     *- From Japanese pattern kimono design and style
+#     *- Retro, elegant, traditional Japanese style, open style waterfall, Light quality, Loose Fit
+#     *- Occasion / Season: Summer, beach, pool, bathroom, pajamas,casual
+#     *- Garment Care:Machine wash,Package Includes:1 x Kimono
+#     *- ONE SIZE(US S-L) :Length:28.3 in,Shoulder:18.0 in,Bust:46.4 in,Sleeve:11.0 in",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 25.98)
+# # https://www.amazon.com/Wrenpies-Skateboarding-Sweatshirt-Pullover-Aesthetic/dp/B09FF34PX4/ref=sr_1_22?keywords=Korean+Clothes&qid=1650997269&sr=8-22
+# p64 = Product.create!('name': 'Wrenpies Frog Skateboarding Casual Sweatshirt Women`s Pullover Long Sleeve Turn Down Collar with Pocket Tops for Teen Girls',
+#     'description': "- Polyester,Cotton
+#     *- Hand Wash Only
+#     *- [Materia] :35% Cotton + 65% Polyester. It is made of high quality materials, polyester and cotton. Polyester has excellent wrinkle resistance, elasticity and dimensional stability. It is durable and wrinkle-resistant without ironing. It is not afraid of mold or insects.Soft and No Harm To Women Girls Tender Skin.
+#     *- [Size] :The size of the skateboard frog sweatshirt is: M L XL XXL Asian Size. If you like loose, we recommend choosing 1 or 2 large.Please check the size chart before placing the order, because the size chart is manually measured and there is a difference of 2-3cm.
+#     *- [Features] :Skateboarding frog long sleeve hoodie, kawaii clothing aesthetic, frog hoodies for teen girls, Cartoon Hoodies for Women,plus size fashion sweatshirt with collar,cute cotton pullover frog on skateboard sweatshirt,oversized drop shoulder sweatshirt graphic,turn-down collar sweatshirt,fit wear in autumn winter and spring season, best festival gifts for friends or family,and it is also the perfect gift for yourself!
+#     *- [Occasion] :This skateboarding frog hoodie long sleeve cotton pullover is suitable for all occasions, prefer for Home, Daily, School, Lounge, Work, Date, Casual, Outings, Office. You can match this softie aesthetic skateboarding frog sweatshirt with jeans/skirt shorts/leggings /deni shorts/sweatpants.All-match clothing that suits you.
+#     *- [Color Disclaimer] :Green,Pink,Black,Blue,Yellow,Apricot.The color of the cute frog on skateboard hoodie may be affected by the light shooting, Please allow slight deviation for the color! Machine wash or hand wash, hand wash can make the clothes last longer. Do not bleach .If you have any questions about our kawaii frog hoodie with pockets, please feel free to contact us, our enthusiastic customer service will reply within 24 hours and provide you with quality service.",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 23.68)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_aps_sr_pg1_1?ie=UTF8&adId=A0923408TY1YZ2JFDYP5&url=%2FUQJE-Women-Loose-Boyfriends-Trousers%2Fdp%2FB09Q37ZCDP%2Fref%3Dsr_1_27_sspa%3Fkeywords%3DKorean%2BClothes%26qid%3D1650997269%26sr%3D8-27-spons%26psc%3D1&qualifier=1650997269&id=3010713106466771&widgetName=sp_mtf
+# p65 = Product.create!('name': 'UQJE Women`s Baggy Cotton Denim Wide Leg Pants Pull-on Jeans Comfy Elastic Waist Drawstring Trousers with Pockets',
+#     'description': "- Denim
+#     *- Imported
+#     *- Drawstring closure
+#     *- Machine Wash
+#     *- 【PREMIUM QUALITY】 Made of premium cotton denim fabric. Soft, Durable and Comfortable.
+#     *- 【STYLISH DESIGN】Casual loose, high waist, elastic waist with drawstring. Two side pockets, can put your card & keys.
+#     *- 【MATCH】 Distressed relaxed wide leg jeans easy to match t-shirt, sweatshirt, loose tops and boots for a casual look.
+#     *- 【NOTICE】Please refer to our size chart in the picture then compare with your body size to get the right fit.
+#     *- 【OCCASIONS】 Fashion baggy plus size trousers fits all seasons. Perfect for your daily wear, home, beach party, holiday, party, streetwear, outdoor, travel and any time.",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 37.99)
+# # https://www.amazon.com/BERING-Womens-Cotton-Hidden-Loafers/dp/B07PS5DQC9/ref=sr_1_37?keywords=Korean+Clothes&qid=1650997269&sr=8-37
+# p66 = Product.create!('name': 'BERING Women`s No Show Socks 6-9 Pairs Low Cut Ankle for Sneaker Slip On Boot Ballet',
+#     'description': "- 80% Cotton, 15% Polyester, 5% Spandex
+#     *- Imported
+#     *- Machine Wash
+#     *- Soft, lightweight, durable, and fit perfectly. Made of advanced stretch cotton blended material, the optimum softness and thickness, breathable fabric helps keep your feet dry and comfortable all day long.
+#     *- The Bering women's no show socks have three anti-slip silicone grippers on the inside of the heel to help the socks stay in place, they don't slip off your heel when you wear them.
+#     *- Reinforced toe and heel for durability, better stretch recovery for long-lasting, withstand multiple washing, do not shrink up into twisted balls that lose shape.
+#     *- Low-cut ankle style can be hidden in slip-ons, fashion sneakers, running shoes, walking shoes, tennis shoes, and everyday low-top casual shoes.
+#     *- Available in a variety of colors and two regular sizes, medium (W 6-9/M 5-8), large (W 10-13/M 9-12). Worry-free after-sales service, shopping with confidence!",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 18.99)
+# # https://www.amazon.com/Cosfun-Two-Piece-Fleece-Detachable-mp006068/dp/B08QLY7HNR/ref=sr_1_38?keywords=Korean+Clothes&qid=1650997269&sr=8-38
+# p67 = Product.create!('name': 'Cosfun Winter Bear Hoodie Fake Two-Piece Fleece Hooded with Detachable Bear Bag C00554',
+#     'description': "- 51% Cotton, 49% Polyester
+#     *- Including: only hoodie(detachable bag)
+#     *- Materials: 51%cotton, 49%polyester
+#     *- Soft and Comfortable, Relaxed Fit, Front Zipper Detachable Bag
+#     *- US Size S: Chest 108cm, Sleeve 49 cm, Length 69 cm; US Size M: Chest 113 cm, Sleeve 51 cm, Length 73 cm; US Size L: Chest 118 cm.
+#     *- Note: The product photos are all taken in kind, and the actual product is the same as the product picture shown. Due to the different lighting and display screens, there may be slight color difference.
+#     *- Perfect for leisure, school, work, dating and easy to match with any casual pants or skirt",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 37.99)
+# # https://www.amazon.com/Byvheh-Harajuku-Sweatpants-Trousers-Joggers/dp/B092MJG9LY/ref=sr_1_39?keywords=Korean+Clothes&qid=1650997269&sr=8-39
+# p68 = Product.create!('name': 'Women`s Cargo Pants Joggers Pants with Chain Loose Fit Kpop Black y2k Pants Baggy Streetwear Cargos Aesthetic Pants Gothic',
+#     'description': "- egirl pants aesthetic emo pants for women goth pants for women goth pants aesthetic pants gothic pants for women gothic pants for women plus size
+#     *- Lace Up closure
+#     *- Machine Wash
+#     *- [Please note!!!]Based on feedback from many customers, we have updated our sizes. Please refer to the new size chart in our picture to confirm the right size before ordering (not amazon's), thank you very much
+#     *- [Garment Care!!!]Hand wash in cold water or machine wash in laundry bag, please don't soak the Dress in water for a long time, don't use chlorine bleach to wash, do not wash in hot water, do not bleach, do not dry
+#     *- [Our Response]We've seen feedback that the zipper comes off after a few uses. We have contacted the factory to request a replacement zipper with better quality. In order to prolong its life, please put the trousers in the laundry bag and machine wash. There is also feedback that the chain position is not very comfortable. These decorations are free to disassemble. You can even remove the chain and hang up any other decorations you like to make it your very own, one-of-a-kind trousers
+#     *- lace up leggings for women lace front leggings suede lace up leggings laced pants sexy gothic pants leather side leggings black lace up hem leggings plus size lace up leggings for women
+#     *- side lace leggings for women side lace up jeans for women black lace up leggings laced jeans lace up leggings side lace up leggings punk clothing for women black suede lace pants",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 30.99)
+# # https://www.amazon.com/Sweatshirt-Harajuku-Crewneck-Aesthetic-8253black/dp/B09GKCVLP7/ref=sr_1_41?keywords=Korean+Clothes&qid=1650997269&sr=8-41
+# p69 = Product.create!('name': 'Women`s Sweatshirt Goth Hoodies Harajuku Crewneck Aesthetic Gothic Clothes Korean Fashion Pullover Tops',
+#     'description': "- Hand Wash Only
+#     *- Suitable for Casual, Work, Date, School, Sports, Vacation, Street wear or casual everyday wear, it's a great gift idea for christmas or holidays
+#     *- Casual style, Relaxed Fit; Pullover Hoodie Sweater for women, ladies, juniors, teen girls.
+#     *- Garment Care: Machine/Hand wash, hang to dry in shade, prohibit bleaching.
+#     *- We Strive to Provide you Highest Quality Products and Best Service, Please Feel Free to contact us for any defective items you have purchased from our store or the hoodie has SIZE problem",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 29.50)
+# # https://www.amazon.com/Harajuku-Kawaii-Hoodie-Sweater-Clothes/dp/B09LVTRW9G/ref=sr_1_44?keywords=Korean+Clothes&qid=1650997269&sr=8-44
+# p70 = Product.create!('name': 'NC Harajuku Kawaii Sweet Hoodie Fruit Print Women`s Loose Thin Zipper Sweater Girl Cute Pink Plus Size Clothes',
+#     'description': "- Fabric: Cotton + polyester, soft and skin-friendly, very comfortable to wear
+#     *- Collar type: Hooded
+#     *- Style: Japanese Harajuku Kawaii fruit print zipper hoodie, Korean casual Harajuku sweet jacket. Street fashion beautiful hoodie, soft and comfortable, simple and versatile.
+#     *- Design: Kawaii fruit print design, very fresh and sweet and cute hoodie, Korean version of simple Harajuku kawaii sweet style, Harajuku casual fashion fresh and sweet beauty hoodie.
+#     *- Matching: can be matched with jeans, casual pants, skirts, casual shoes, or as casual home wear",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 22.00)
+# # https://www.amazon.com/ZAFUL-Knitted-Sweater-Crewneck-Pullover/dp/B07HN2V9YV/ref=sr_1_45?keywords=Korean+Clothes&qid=1650997269&sr=8-45
+# p71 = Product.create!('name': 'ZAFUL Women`s Loose Sweater, Crew Neck Lantern Sleeve Casual Pullover Oversized Knitted Jumper Tops',
+#     'description': "- Size information:One size(US 8-12)--Bust 130cm/51.2 in--Length 60cm/23.6 in--Shoulder Width 56cm/22 in--Sleeve Length 50cm/19.7 in Please refer to the size information before purchasing or contact us directly if any question.Please allow 1-3cm differs due to manual measurement,thanks
+#     *- Material:Acrylic+Cotton+Polyester,Skin friendly fabric,comfy ,soft and warm
+#     *- Feature:Crewneck,Lantern sleeve,a letter badge patched design,with multiple color optional
+#     *- Occasion:Perfect for outdoor, indoor, shopping, working,business, casual, ball, prom, wedding, party, club, festival, travelling, jogging, etc
+#     *- Easily to match with jeans, leggings or skirts",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 27.99)
+# # https://www.amazon.com/SOLY-HUX-Colorblock-Embroidery-Drawstring/dp/B097PVY6CW/ref=sr_1_48?keywords=Korean+Clothes&qid=1650997269&sr=8-48
+# p72 = Product.create!('name': 'SOLY HUX Men`s Colorblock Letter Embroidery Long Sleeve Drawstring Hoodie Sweatshirt',
+#     'description': "- Soft Fabric
+#     *- Pull On closure
+#     *- Casual hooded pullover sweatshirt
+#     *- Fabric: Fabric is soft and comfortable, some stretch
+#     *- Feature: Letter, embroidery, drawstring, long sleeve, drop shoulder, pullovers, fashionable
+#     *- Size recommendation: Please refer to size chart which we provide in our photos (not amazon's)
+#     *- Suitable occasions: Suit for casual wear, vacation, school, daily life and outgoing, fit for spring or fall",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 32.99)
+# # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_aps_sr_pg1_1?ie=UTF8&adId=A07726261MEMQWEC8YBDS&url=%2FZPAYFSDS-Womens-Hoodies-Pullover-Sweatshirts%2Fdp%2FB081LL68FC%2Fref%3Dsr_1_57_sspa%3Fkeywords%3DKorean%2BClothes%26qid%3D1650997269%26sr%3D8-57-spons%26psc%3D1&qualifier=1650997269&id=3010713106466771&widgetName=sp_btf
+# p73 = Product.create!('name': 'ZPAYFSDS Women`s Cute Cat Ear Button Fleece Warm Hoodies Pullover Coat Sweatshirts Blouse 4Color',
+#     'description': "- Machine Wash
+#     *- Material:Polyester, feel soft and comfortable
+#     *- Style:Simple, stylish, long sleeves. Casual autumn blouse with a stylish solid color design. Suitable for teenagers, travel, work, family, school, dating.
+#     *- Been improved to be more thick and warm, sanded, soft and waxy, elasticity.
+#     *- This goes well with all your jeans, leggings, it's a great gift idea for christmas,Halloween and other holidays
+#     *- Note:Machine wash or hand wash cold water,dry clean,Do not bleach;Package included:1x women sweatshirt",
+#     'department': attire.name,
+#     'delivery_days': rand(max_days) + 1,
+#     'price': 25.99)
 
 # Garden
 # https://www.amazon.com/HomeTheWay-weeding-farming-Daejanggan-Hand-made/dp/B077S7HCN7/ref=sr_1_2?crid=ZW85KZ6DSGIV&keywords=Korean+garden&qid=1650997517&sprefix=korean+garden%2Caps%2C82&sr=8-2
@@ -782,30 +782,55 @@ p74 = Product.create!('name': 'HomeTheWay Korean garden hand tool/ hoe/ garden p
     'delivery_days': rand(max_days) + 1,
     'price': 18.99)
 # https://www.amazon.com/YOUNGJU-Premium-Quality-Gardening-Blacksmith/dp/B08FH9ZYMT/ref=sr_1_6?crid=ZW85KZ6DSGIV&keywords=Korean+garden&qid=1650997517&sprefix=korean+garden%2Caps%2C82&sr=8-6
-# p75 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p75 = Product.create!('name': 'HOMI YOUNGJU HandPlowHoe Gardentool with Safety Cover for Easy Gardening, Weeding and Farming Made by Korean Master Blacksmith (Giftset)',
+    'description': "- Premium Quality : Sturdy and durable premium 100% hand-made garden tools by a Korean black smith 'No-Ki, Seok' who has made Homi during his entire life
+    *- Versatile and Brilliant : Containing the wisdom of Korean ancestors who had cultivated for a long time, The Homi is developed for the diverse purposes : Digging, grounding, removing all kinds of weeds, seeding, planting, etc.
+    *- Safty Cover : Synthetic leather cover with a precise logo is our pride and a special feature distinct from others. It’ll makes you a big difference using these tools.
+    *- Give You the best : Once you've used our product, you've got a whole new world on your gardening and farming. You'll see.
+    *- Order right away before it's sold out : Because it is produced in a traditional way by skilled masters, you may have to wait a long time if you don't order the moment you see it.",
+    'department': garden.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 39.80)
 # https://www.amazon.com/NY-FASHIONCITY-Baekdu-Korean-Carbon/dp/B09D7WK3GQ/ref=sr_1_16?crid=ZW85KZ6DSGIV&keywords=Korean+garden&qid=1650997517&sprefix=korean+garden%2Caps%2C82&sr=8-16
-# p76 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p76 = Product.create!('name': 'NY FASHIONCITY Baekdu Korean Carbon Steel Forged Sickle - Garden Tool Weeding Vine Farming Pruning Timber Gardening Weeding Harvesting Portable Sickle 16.53 inch',
+    'description': "- Robustness - The thick blade made by beating and compressing a special steel forging material does not break or become dull.
+    *- Use - It has a sharpness that can be used not only for forestry work, but also for pruning, cutting grass, vines, weeds, agriculture, and harvesting.
+    *- Special Gift - Give a special gift to those who love gardening with a sickle made in Korea with high quality.
+    *- Features - It has a length of 16.53 inches that will support the blade at 7.87 inches, and is ergonomically designed so that it is not burdensome even when used for a long time.
+    *- Dimensions - Blade width 7.87 inches, total length 16.53 inches, weight 0.66 pounds",
+    'department': garden.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 39.99)
 # https://www.amazon.com/Gardening-Attached-Farming-Gardener-Agriculture/dp/B07YBPW4S3/ref=sr_1_21?crid=ZW85KZ6DSGIV&keywords=Korean+garden&qid=1650997517&sprefix=korean+garden%2Caps%2C82&sr=8-21
-# p77 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p77 = Product.create!('name': 'VESTA Korean Gardening Hip Attached Work Seat, Ø 9.84 x 6.3 Farming Cushion Hip Chair Easy to Workin,Random Color with Waist Buckle Easy Wear&Off for Gardening Working Outdoor in Made in Korea',
+    'description': "- My legs hurt all the time! Now,don't squat any longer.It is attached comfortably to your body, making easy to move and easy to move around.
+    *- MOVES WITH YOUR BODY : Gardening sheets are available to anyone, light, and can work together at home when you are doing chores and utilities, planting or doing things. The Cushion is made of buckle, it is convenient to wear off easily. It is a product made by comlementing the disadvantage of flowing down when moving.
+    *- Material : PE, Taporin ,synthetic fiber
+    *- Measures : Ø 9.84 x 6.3Inch (Ø 25 x 16cm ) / The product color of the image may change depending on the color of the fabric supplied according to the production time of the product. Also, the location or appearance of the logo being printed may vary and confirm that it is a full-fledged genuine product.
+    *- Made In Korea , Ships from Republic of Korea",
+    'department': garden.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 53.99)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_mtf_aps_sr_pg1_1?ie=UTF8&adId=A0842589K3X3XG8YF82I&qualifier=1650997517&id=6635021737743976&widgetName=sp_mtf&url=%2Flabworkauto-Foldable-Kneeler-Portable-Folding%2Fdp%2FB086QV1W2N%2Fref%3Dsr_1_27_sspa%3Fcrid%3DZW85KZ6DSGIV%26keywords%3DKorean%2Bgarden%26qid%3D1650997517%26sprefix%3Dkorean%2Bgarden%252Caps%252C82%26sr%3D8-27-spons%26psc%3D1
-# p78 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p78 = Product.create!('name': 'labworkauto Garden Foldable Bench Seat Stool Kneeler Portable Garden Folding Stool',
+    'description': "- 1.Use for protect your knees and assiss with standing up after you have a long time squating, also provides a comfortable place to sit.
+    *- 2.Portable and foldable design, help you saving your space when you don't have to use it.
+    *- 3.Foam-padded cushion to reduce pressure on your knees when kneeling and keep you away from dirt and grass stains.
+    *- 4.Sturdy structure,maximum weight capacity up to 150KG.
+    *- 5.Comes with one removable garden tool bag.",
+    'department': garden.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 32.99)
 # https://www.amazon.com/SUPIA-Korean-Gardening-Excellent-Vegetable/dp/B08975KY1Q/ref=sr_1_31?crid=ZW85KZ6DSGIV&keywords=Korean+garden&qid=1650997517&sprefix=korean+garden%2Caps%2C82&sr=8-31
-# p79 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p79 = Product.create!('name': 'SUPIA Korean Gardening Tool ho-mi Hand Plow Hoe Spade, Trowel, Weeder, and More! an Excellent Tool for use in Any Vegetable or Flower Garden (Grass)',
+    'description': "- The Ho-Mi is a hand made product that has been processed several times in the traditional way by blacksmiths in the Korean forge.
+    *- Weighted to reduce strain on hands, wrists and arms.
+    *- Excellent tool for weeding and cultivating. Curved blade for planting, cultivating and trenching.
+    *- Excellent durability for gardening in general households as well as for professionals working in gardening business.
+    *- Because it is made using the same material as the spring used for the car lower body, it has superior durability than other products.",
+    'department': garden.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 12.88)
 # https://www.amazon.com/YoungJu-DaeJangGan-Handmade-Weeding-Blacksmith/dp/B09WW15PTK/ref=sr_1_29?crid=ZW85KZ6DSGIV&keywords=Korean+garden&qid=1650997517&sprefix=korean+garden%2Caps%2C82&sr=8-29
 # p80 = Product.create!('name': '',
 #     'description': "",
@@ -884,30 +909,55 @@ p93 = Product.create!('name': 'TOYTRON Little Future Book Pororo Talking Pen, In
     'delivery_days': rand(max_days) + 1,
     'price': 92.99)
 # https://www.amazon.com/Alphabet-Magnetic-Letters-Learning-Education/dp/B089RXKJVJ/ref=sr_1_3?crid=1RZH7UU9PD0JT&keywords=Korean+toys&qid=1650997823&sprefix=korean+toys%2Caps%2C92&sr=8-3
-# p94 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p94 = Product.create!('name': 'Soft Foam Korean Alphabet Magnetic Letters, Learning Korean, Hangul, Education (50 pcs) 한글 자석',
+    'description': "- Soft Foam Korean Alphabet Magnets, Educational, Learning Toys for over 15 years
+    *- Includes 28 Consonants and 22 Vowels
+    *- Great Educational kits to Learn Alphabets at Home or School / Ideal for ages 15 or older
+    *- Material : EVA, 1 cm Height
+    *- Made in Korea",
+    'department': toys.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 10.99)
 # https://www.amazon.com/Korean-Flower-Hwatu-Hand-drawn-illustration/dp/B072MWPB4L/ref=sxin_14_ac_d_bv?ac_md=0-0-QmVzdCBWYWx1ZQ%3D%3D-ac_d_bv_bv_bv&crid=1RZH7UU9PD0JT&cv_ct_cx=Korean+toys&keywords=Korean+toys&pd_rd_i=B072MWPB4L&pd_rd_r=8b8467a8-6d72-463f-ba12-94f4b08c11d8&pd_rd_w=qtF0H&pd_rd_wg=rqEZk&pf_rd_p=e11d91a6-f987-4c88-b86e-53e4b6a75723&pf_rd_r=5CYDSYW2N4BVTN06ADEF&psc=1&qid=1650997823&sprefix=korean+toys%2Caps%2C92&sr=1-1-270ce31b-afa8-499f-878b-3bb461a9a5a6
-# p95 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p95 = Product.create!('name': 'Korean Flower Card Game Hwatu / Good for Gift, Hand-Drawn Illustration Copy',
+    'description': "- Korean Traditional Flower Card Hwatu Game Set
+    *- Premium quality products ; Copy of Hand-drawn illustration
+    *- Good for unique and fun gift ; Luxurious case with a pebble shape
+    *- High durability because special matte coating ; Thickness and weight optimized for throwing Hwatu Card ; Slightly larger than other existing products
+    *- Case Size : 4.5 x 5.5 x 6.5cm / 1.8 in x 2.2 in x 2.6 in ; Material: Plastic 100% ; Made in Korea",
+    'department': toys.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 14.00)
 # https://www.amazon.com/Dr-Moku-Hangul-Flashcards-Mnemonics/dp/B092JNN6NK/ref=sxin_14_ac_d_bv?ac_md=2-1-VW5kZXIgJDI1-ac_d_bv_bv_bv&crid=1RZH7UU9PD0JT&cv_ct_cx=Korean+toys&keywords=Korean+toys&pd_rd_i=B092JNN6NK&pd_rd_r=8b8467a8-6d72-463f-ba12-94f4b08c11d8&pd_rd_w=qtF0H&pd_rd_wg=rqEZk&pf_rd_p=e11d91a6-f987-4c88-b86e-53e4b6a75723&pf_rd_r=5CYDSYW2N4BVTN06ADEF&psc=1&qid=1650997823&sprefix=korean+toys%2Caps%2C92&sr=1-2-270ce31b-afa8-499f-878b-3bb461a9a5a6
-# p96 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p96 = Product.create!('name': 'Dr. Moku Hangul Flashcards - Learn The Korean Alphabet with Mnemonics - Includes Links to Audio and Hangul Chart',
+    'description': "- Ideal for visual learners, complete beginners and struggling students! Mnemonics are a proven learning technique which avoid boring rote memorization.
+    *- Hangul Animations and Audio - Your purchase unlocks the Premium learning content in the accompanying iOS and Android app.
+    *- Learn the Korean alphabet (Hangul) with unforgettable memory tricks. Each flashcard is packed with mnemonic pictures, usage details and writing guides.
+    *- Start reading Korean words right away - Each flash card has sample words using the target Hangul character. Flip to reveal the translation.
+    *- 49 Large (88x126mm) Korean language flash cards with vibrant colours and a durable laminated finish.",
+    'department': toys.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 15.95)
 # https://www.amazon.com/Random-Korean-Traditional-Gonggi-Pebbles/dp/B096L2PQYG/ref=sr_1_7?crid=1RZH7UU9PD0JT&keywords=Korean+toys&qid=1650997823&sprefix=korean+toys%2Caps%2C92&sr=8-7
-# p97 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p97 = Product.create!('name': '[Random] Korean Traditional Play Game 8PCS Gonggi Jack Stone Pebbles Set w/Round Case (4 Sets)',
+    'description': "- KOREAN TRADITIONAL GAME GONG-GI JACK STONE
+    *- 100% brand new, made of plastic, safer and more convenient than another korea traditional jack stone products.
+    *- Stone diameter : 0.6 in / Clear case diameter : 1.625 in, height : 1.4 in
+    *- Friendly Game to Play Anywhere, Anytime.
+    *- 1 SET : 8 Pieces JACK STONES",
+    'department': toys.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 16.99)
 # https://www.amazon.com/PlaySet-Suitable-Role-Playing-Business-Korean/dp/B09LJJ71D6/ref=sr_1_15?crid=1RZH7UU9PD0JT&keywords=Korean+toys&qid=1650997823&sprefix=korean+toys%2Caps%2C92&sr=8-15
-# p98 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p98 = Product.create!('name': 'PlaySet Bag and Game Props, Suitable for Role-Playing, Flip Card Game with 5 Business Cards and Pop It Toy with Korean Prop Money, Themed Bag',
+    'description': "- FUN PLAYSET - Each playset bag has the traditional Korean flip card game Ddakji and the business invitation cards and Korean prop money with a BONUS mystery toy.
+    *- ROLEPLAY: Play the subway flip card game with your friends and exchange business cards and game money to compete to win.
+    *- REALISTIC WITH GREAT DURABILITY: Each item is made to be as real as possible. Prop Money is made from fabric material so it won't rip and all other items are made strong and durable.
+    *- GREAT GIFT FOR EVERYONE: This PlaySet can be a great gift for your friends or your kids for a fun game. Lots of fun items help restore the mood and keep you entertained daily.
+    *- FIRST CLASS CUSTOMER SERVICE: If you have any questions or dissatisfaction with the product, please feel free to contact us, we will refund the full amount. Buy without risk!",
+    'department': toys.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 13.99)
 # https://www.amazon.com/BBL-YUTNORI-Board-Game-Traditional/dp/B08BX3MXY8/ref=sr_1_2?keywords=korean+board+games&qid=1650998127&sprefix=korean+boar%2Caps%2C86&sr=8-2https://www.amazon.com/Uncle-Goose-Korean-Blocks-Made/dp/B01CRLHT4Y/ref=sr_1_14?crid=1RZH7UU9PD0JT&keywords=Korean+toys&qid=1650997823&sprefix=korean+toys%2Caps%2C92&sr=8-14
 # p99 = Product.create!('name': '',
 #     'description': "",
@@ -976,30 +1026,54 @@ p110 = Product.create!('name': 'February Mountain Mother of Pearl Small Korean J
     'delivery_days': rand(max_days) + 1,
     'price': 48.99)
 # https://www.amazon.com/Hanbok-Traditional-Adorable-binyeo-Accessory/dp/B07V67F1PD/ref=sr_1_2?keywords=traditional+korean+gifts&qid=1650998223&sprefix=traditional+korean+%2Caps%2C90&sr=8-2
-# p111 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p111 = Product.create!('name': 'Hanbok Hair Pin Korea Traditional Girl Women Adorable Stick binyeo Accessory Pastel Blue flower leaves',
+    'description': "- Made in Korea. Length 12 cm.
+    *- Hanbok is a unique Korean clothes. It is a traditional costume for traditional events such as festivals, marriages and birthdays. And it has a long history.
+    *- And there are many accessories for hanbok. These accessories complete the beauty of hanbok.
+    *- Hanbok gives you good memory and experience
+    *- We have family business for 30 years to make hanbok. we could supply the good price and the best quality.",
+    'department': traditional.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 28.00)
 # https://www.amazon.com/Make-Buy-Home-Coasters-Traditional/dp/B07W65932G/ref=sr_1_3?keywords=traditional+korean+gifts&qid=1650998223&sprefix=traditional+korean+%2Caps%2C90&sr=8-3
-# p112 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p112 = Product.create!('name': 'Make Buy Home Set of 5 Coasters for Tea with Holder Mosi Ramie with Korea Traditional Design Random 5 Colors (Rectangular)',
+    'description': "- KOREA TRADITIONAL DESIGN - The coaster made of ramie is a luxurious and cool material and is especially popular with Koreans in summer
+    *- HIGH QUALITY - Our lightweight, high quality cup coasters, durable & water resistant and easy to clean. Besides, These wonderful drinks coaster can protects your beloved dining table, kitchen countertops from damage and appropriate stains by HOT water, coffee & tea
+    *- IDEAL SIZE - Big 3.9 inch (10cm) size suits all commercial type of cups and mugs,making them the perfect size for holding coffee cups, kids' drinks, sports bottles, craft cocktails and tumblers
+    *- PERFECT GIFT- What a excellent gift idea for your families and friends,They will love it",
+    'department': traditional.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 15.99)
 # https://www.amazon.com/JYHOME-Traditional-Korean-Designed-JY001/dp/B09M2L3SKT/ref=sr_1_6?keywords=traditional+korean+gifts&qid=1650998223&sprefix=traditional+korean+%2Caps%2C90&sr=8-6
-# p113 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p113 = Product.create!('name': 'JYHOME Traditional Korean Designed Table Runner 78 x 11 inch Pink JY001 JY001',
+    'description': "- Ramie
+    *- Lines, colors and the harmony between the regular and the irregular compose a unique formative beauty in Jogakbo, which can be considered as one of the symbols of Korea’s emblematic esthetic.
+    *- It gives an instant glamorous makeover to an ordinary table. It will impress the guests of special events. It is perfect for family gatherings, festivals, parties, celebrations, and for everyday use in restaurants
+    *- It is a great decoration item
+    *- The table runner adds a sophisticated and refined touch to your table. It is also an ideal gift for occasions like Christmas, birthdays, weddings, or housewarming.",
+    'department': traditional.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 20.99)
 # https://www.amazon.com/Korean-Traditional-Fabric-Bojagi-Wrapping/dp/B09SCV7KGG/ref=sr_1_9?keywords=traditional+korean+gifts&qid=1650998223&sprefix=traditional+korean+%2Caps%2C90&sr=8-9
-# p114 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p114 = Product.create!('name': 'Gift Bags Korean Traditional Fabric Bojagi Double Sided Wrapping Cloth with Tassel (Blue Gray and White)',
+    'description': "- Bojagi is a Korean Traditional Wrapping Fabric For Gift
+    *- Traditionally, Bojagi is used to wrap precious gifts, mainly for wedding gifts or thank-you gifts.
+    *- Bojagi 1 pcs + Tassel 1 pcs + Rubber band 4 pcs
+    *- It can be used as a wine cover
+    *- Material: Polyester Size : 21 x 21 inches (55 x 55 cm)
+    *- All items are designed and made in Korea",
+    'department': traditional.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 16.99)
 # https://www.amazon.com/cozymomdeco-Korean-Traditional-Glasses-Perfect/dp/B093ZGKNVK/ref=sr_1_11?keywords=traditional+korean+gifts&qid=1650998223&sprefix=traditional+korean+%2Caps%2C90&sr=8-11
-# p115 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p115 = Product.create!('name': 'cozymomdeco Korean Made Traditional Simple Bronze Shot Glasses Heavy Weight Perfect for Gift, 2CUPS 2oz',
+    'description': "- 【KOREAN HAND FORGED BRONZEWARE】 Our Korean traditional Bronzeware is named as BANGJJA YUGI, which is different alloy ratio of copper and tin, 78:22, makes unique mechanical properties, comparing with the common bronzeware (90:10=copper:tin). It is fully hand made with the traditional method transferred from the several hundred years. Hand hammering with heating over 1200℃ (2,192℉) gives superior durability than any other material of shot glasses in the world.
+    *- 【LUMINOUS GOLD and HEAVY WEIGHT】 The luminous gold is not made from coating process, but its own color of the special metal alloy (Copper78% & Tin 22%). With a little care, it will keep you permanently. Apart from adorning your dinner table, gorgeous flatware set delivers the ultimate dining experience as everyday premium flatware. It is solid Brassware, much weight than typical stainless steel flatware, but feeling quality metal flatware.
+    *- 【WRAPPING FABRIC is ANOTHER GIFT】 Our gift wrap material is traditional Korean cotton cloth, which is natural 100% cotton material with no artificial chemical treatment for whitening and softening. After receive the package, the gift wrap can be used for various purposes of your daily living items, such as table cloth, dishcloth, handkerchief, etc.
+    *- 【GUIDE FOR CARE】 Hand Wash and Dry with Dish Cloth. No Dishwasher. For stain or discoloration, rub the dried surface of the cutlery with 3M Scotch-Brite Heavy Duty Scrub. It will back to shine and luminous gold color.",
+    'department': traditional.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 48.99)
 # https://www.amazon.com/Korean-Traditional-Womens-Bookmark-Ballpoint/dp/B07KSVRC3W/ref=sr_1_10?keywords=traditional+korean+gifts&qid=1650998223&sprefix=traditional+korean+%2Caps%2C90&sr=8-10
 # p116 = Product.create!('name': '',
 #     'description': "",
@@ -1064,35 +1138,59 @@ p127 = Product.create!('name': 'CheongKwanJang [Hong Sam Won Plus - Korean Ginse
     *- 6-YEAR OLD GINSENG: Growing the ginseng for 6 years, instead of a couple years like other competitors, allows the ginseng to fully mature with a premium quality for consumption.
     *- KOREAN GINSENG: There are several benefits that korean ginseng is known for, from boosting stamina and the metabolism to calming nerves and detoxifying the body.
     *- CheongKwanJang - When it comes to a product like ginseng, you do not want to go with a no-name internet brand. KGC (Cheong Kwan Jang) has been considered the top brand in the world for 120 years!
-        *- STIMULANT-FREE ENERGY: While energy drinks or caffeine pills often lead to the jitters or headaches, KGC red ginseng releases a steady burst of energy to help you naturally increase productivity, stay energized and focused and get things done.",
+    *- STIMULANT-FREE ENERGY: While energy drinks or caffeine pills often lead to the jitters or headaches, KGC red ginseng releases a steady burst of energy to help you naturally increase productivity, stay energized and focused and get things done.",
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'price': 39.99)
 # https://www.amazon.com/Premium-Sugar-Free-Balloon-Extract-Concentrate/dp/B087Z6XX8Z/ref=sr_1_7?keywords=korean+health+products&qid=1650998558&sprefix=korean+health%2Caps%2C93&sr=8-7
-# p128 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p128 = Product.create!('name': 'Premium Sugar-Free Korean Pear, Ginger and Balloon Flower Extract Liquid Concentrate Stick - Natural and Pure - Health Care for Changing Season - for Men and Women of All Ages',
+    'description': "- WHY OUR CONCENTRATE STICK : Provides nutrients such as magnesium, vitamin C, potassium, calcium, iron, fiber, and other compounds and antioxidants
+    *- OUR SUPPLEMENTS: Sugar Free and No presevatives or artificial additives Health Tea and Food
+    *- ON-THE-GO: 10 Individually packed pouches included. Enjoy it anywhere you go!
+    *- INGREDIENTS: 100% Extract Products for Pear 52%, Balloon Floor 5%, Ginger 2%, Purified Water (Solid contents over 50%) 목애 배 도라지 진액
+    *- PRODUCT PACKAGING: 12g x 10 pouches (1 Box)",
+    'department': health.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 16.99)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_search_thematic_aps_sr_pg1_4?ie=UTF8&adId=A08794353ATTQU3PRFC3O&qualifier=1650998558&id=4026638693702974&widgetName=sp_search_thematic&url=%2FPocheon-10-6oz-6Years-Ginseng-Saponin%2Fdp%2FB079DWLHCD%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcv_ct_cx%3Dkorean%2Bhealth%2Bproducts%26keywords%3Dkorean%2Bhealth%2Bproducts%26pd_rd_i%3DB079DWLHCD%26pd_rd_r%3D152aac0c-8b47-4f92-876b-3e0159d4d411%26pd_rd_w%3DKQeiT%26pd_rd_wg%3DtcvxR%26pf_rd_p%3D937f515b-f21e-48f6-8cfd-8695fa84b7c5%26pf_rd_r%3DADEBCTA7A4Y4Y9JZ5V8V%26qid%3D1650998558%26sprefix%3Dkorean%2Bhealth%252Caps%252C93%26sr%3D1-4-a73d1c8c-2fd2-4f19-aa41-2df022bcb241-spons%26psc%3D1
-# p129 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p129 = Product.create!('name': 'Pocheon 300g(10.6oz) 6Years Sliced Korean Panax Red Ginseng Roots with Honey, Saponin',
+    'description': "- Net weight: 300g(10.6oz)
+    *- Ingredient: Korean 6 Years Red ginseng 70% (6 years, Origin: Korea)
+    *- Sliced ginseng is made from the process of boiling red ginseng root with honey and oligosaccharide for 24~48 hours. This is 6 years red ginseng slice with honey. Good for snack, side dish and relish
+    *- Expiration Date: This product has an 2 years life span. We guarantee we ship only the product that have more than 1 years left.",
+    'department': health.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 36.40)
 # https://www.amazon.com/Korean-Baekje-Geumsan-Pomegranate-Collagen/dp/B08J6JXPB7/ref=sr_1_9?keywords=korean+health+products&qid=1650998558&sprefix=korean+health%2Caps%2C93&sr=8-9
-# p130 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p130 = Product.create!('name': 'Korean Beauty Baekje Geumsan Women`s Pomegranate Collagen Jelly Stick 5.1oz / 30 Count (5 Pack)',
+    'description': "- From pomegranate with natural estrogen to red ginseng concentrate and collagen!
+    *- Pomegranate Collagen Jelly Stick is excellent for women's health and skin care and tasty
+    *- Red ginseng is a quality certificated root(4 years old, 5 years old, 6 years old) that is steamed and dried ginseng containing GINSENOSIDE, which is good for your health.
+    *- Volume: 450g (15g X 30 stick) / Manufactured from South Korea
+    *- Samjiwon is a quality assurance trademark for red ginseng products which is carefully selected and directly produced by the Baekje Geumsan Ginseng Agricultural Cooperatives.",
+    'department': health.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 36.90)
 # https://www.amazon.com/LACTO-FIT-ProBiotics-Gold-2000mg-Total/dp/B07JLW1Q6Q/ref=sr_1_24?keywords=korean+health+products&qid=1650998558&sprefix=korean+health%2Caps%2C93&sr=8-24
-# p131 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p131 = Product.create!('name': 'CKD LACTO-FIT ProBiotics Gold 2000mg * 50EA (Total 100g)',
+    'description': "- US UAS laboratories DDS Probiology Usage. Intestine health lactobacillus, 1 billion CFU, Multi solution for your family.
+    *- Intestine health lactobacillus gold, Korea's No. 1 lactobacillus, 1 billion CFU.
+    *- Daily intake: Once a day. Take one pack without water.
+    *- Brand Story : Chong Kun Dang (CKD) is a very famous pharmaceutical company in Korea. Starting with the Danish 'Leo' and technical partnership in 1957. It has been manufactured various health supplements and medications. In 2017, it acquired the highest grade AA of Korea in CP rating.
+    *- 2g x 50EA (Total 100g)",
+    'department': health.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 19.00)
 # https://www.amazon.com/Organic-Bellflower-Healthy-Natural-Additives/dp/B08BXCSTD5/ref=sr_1_45?keywords=korean+health+products&qid=1650998558&sprefix=korean+health%2Caps%2C93&sr=8-45
-# p132 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p132 = Product.create!('name': 'Korean Pear Bellflower Root Juice [ Korean Food ] Healthy Natural Juice For Kids, No Sugar or Additives [ JRND Foods ] 20 Pouches',
+    'description': "- DRINK A WHOLE PEAR - Our pear juice delivers both unadulterated fruit flavor and a medley of vitamins necessary for kids of all ages.
+    *- 100% NATURAL DRINKS - Each pouch is filled with pure pear flavor, not dilluted with water, sweeteners, or any other additives, to the very last drop.
+    *- RICH IN VITAMINS - The unique blend of pear and bellflower delivers essentional nutrients like Vitamins C, B, and Potassium crucial for the diet of growing children.
+    *- On The Go Drinks - Each resealable pouch of juice is perfect for a quick drink or a mess-less addition to a packed lunch.
+    *- CENTER OF KOREAN CUISINE - Jeollanamdo Foods are all cultivated with all natural practices, no artificial or chemical fertilizers.",
+    'department': health.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 29.99)
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_aps_sr_pg1_1?ie=UTF8&adId=A0370137219BQMI4REO45&qualifier=1650998558&id=3333218745604650&widgetName=sp_btf&url=%2FKorean-Bellflower-Powder-Origin-Korea%2Fdp%2FB0899ZL6HZ%2Fref%3Dsr_1_55_sspa%3Fkeywords%3Dkorean%2Bhealth%2Bproducts%26qid%3D1650998558%26sprefix%3Dkorean%2Bhealth%252Caps%252C93%26sr%3D8-55-spons%26psc%3D1
 # p133 = Product.create!('name': '',
 #     'description': "",
@@ -1148,30 +1246,54 @@ p141 = Product.create!('name': 'Korean Calligraphy Name Wall Art/Custom Made and
     'delivery_days': rand(max_days) + 1,
     'price': 39.99)
 # https://www.amazon.com/PeeNoke-Wall-Art-Traditional-Painting/dp/B08QMXT8MT/ref=sr_1_12?crid=F5B5MNXNIAYR&keywords=korean+art&qid=1650999068&sprefix=korean+art%2Caps%2C84&sr=8-12
-# 142 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p142 = Product.create!('name': 'PeeNoke Wall Art: Traditional Korean Painting Vector Set of Ink Hand Drawn Men and Print On Canvas Wall Decor Painting for Home Modern Decor 4 Panel',
+    'description': "- Size: 12 x 24 Inch x 2 Panel, 12 x 32 Inch 2 Panel
+    *- From fascinating abstracts to breathtaking landscapes, abundance of art themes ranges to meet your needs in our shop.
+    *- High Definition modern art work, print on artist-grade canvas, and professionally hand-stretched & gallery wrapped, will showcase the exceptional detail. Redefine your living style now with this unique and elegant piece of art paintings.
+    *- Choose a perfect artwork which your friends and family will admire for years. A wonderful framed canvas art to hang in living room, bedroom, kitchen, dining room, bathroom, office, waiting area, Hotel, bar etc.
+    *- Risk free for purchase. We treasure your purchase experience much. If you are unhappy for any reason, we will provide you with a replacement or refund immediately after receiving your photo.",
+    'department': art.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 69.99)
 # https://www.amazon.com/100-K-Dramas-Scratch-Off-Poster/dp/B09TP9546V/ref=sr_1_11?crid=F5B5MNXNIAYR&keywords=korean+art&qid=1650999068&sprefix=korean+art%2Caps%2C84&sr=8-11
-# p143 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p143 = Product.create!('name': '100 K-Dramas Scratch Off Poster - Top Korean Drama of All Time Bucket List (16.5" x 23.4")',
+    'description': "- TOP RATED K-Dramas - our poster is filled with Korean Dramas loved by both fans and critics worldwide - from modern blockbusters to award-winning dramas.
+    *- 100 COLORFUL ICONS - it is so satisfying to find the symbol of that great K-Drama you have just watched. We created 100 original illustrations that you will not find anywhere else.
+    *- TIMELESS DESIGN - there is already enough visual noise in our lives, so we designed our poster to be as non-distracting as possible. Perfectly fits A2 size frame (16.5 x 23.4 in).
+    *- SUPREME QUALITY - with more than 1000 posters shipped to satisfied customers worldwide, you can trust us to deliver the best possible print quality and scratch-off experience.
+    *- PREMIUM PACKAGING - your new poster will come in a premium quality box, carefully hand-wrapped in protective paper. Ready to gift to your Korean Dramas-loving friends.",
+    'department': art.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 29.95)
 # https://www.amazon.com/Classic-Decoration-Painting-Abstract-Frame8x10inch/dp/B09GN28HBD/ref=sr_1_14?crid=F5B5MNXNIAYR&keywords=korean+art&qid=1650999068&sprefix=korean+art%2Caps%2C84&sr=8-14
-# p144 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p144 = Product.create!('name': 'Art Poster Korean Classic Art Wall Decoration Club Cafe Study Wall Decoration Wall Art Living Room Oil Painting Poster Abstract Picture Frame8x10inch(20x26cm)',
+    'description': "- Size : 5 size for choice(1 inch=2.54cm)
+    *- The poster is printed on canvas which is one kind of best material for poster. It is waterproof,moisture proof and high tensile strength.The poster has rich printing color and fine texture.
+    *- Creative gifts for relatives and friends, suitable for birthdays, weddings, Thanksgiving, Christmas and other holidays
+    *- Can be hung directly: very easy to install, the zigzag photo hook has been attached to the 7mm wood board (particle board), no additional frame is needed
+    *- Perfect choice for bedroom, living room, guest room, meeting room, bathroom, dinning room, coffee bar, hallway, corridor, college dormitory, hotel, lounge, home and office decor.",
+    'department': art.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 12.00)
 # https://www.amazon.com/Grace-Art-Asian-Scroll-Seasons/dp/B00S0K7HQC/ref=sr_1_15?crid=F5B5MNXNIAYR&keywords=korean+art&qid=1650999068&sprefix=korean+art%2Caps%2C84&sr=8-15
-# p145 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p145 = Product.create!('name': 'Grace Art Asian Wall Scroll, Set of 4, Four Seasons with Birds',
+    'description': "- Gorgeous, shimmering Grace Art brand art-silk Asian lithograph wall scroll displaying a traditional design
+    *- Perfect size as a wall decoration or elegant gift: each individual wall scroll measures 40 in long x 12 in wide
+    *- Printed using digital rendering of original artwork
+    *- Fade- and humidity-resistant rayon (art-silk) matted with a brocade for durability
+    *- Handsome solid wood scroll bar at bottom, with convenient loop at the top for hanging",
+    'department': art.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 79.99)
 # https://www.amazon.com/Korea-1800-Old-Korean-Map/dp/B07HDF75MR/ref=sr_1_20?crid=F5B5MNXNIAYR&keywords=korean+art&qid=1650999068&sprefix=korean+art%2Caps%2C84&sr=8-20
-# p146 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p146 = Product.create!('name': 'Korea, 1800|Old Korean Map: Chobyok chondo : yumyong Choson yojido.|14"x24" Wall Map',
+    'description': "- Map Size: 14 inches x 24 inches |Ready to Frame - Fits Any Standard 14x24 Frame (frame not included)
+    *- Note on map: `Chobyok is a nickname of Choson`
+    *- Each Map is Hand Printed in our Studio | Quality & Satisfaction Guaranteed |Made in the USA |
+    *- Giclée print produced on Fine Art Paper (Weight: 235 g/m2, Thickness: 10 mil, ISO brightness: 95%) that maintains vivid colors and faithfulness to the original map | Archival Quality and guaranteed not to fade for 200+ years.",
+    'department': art.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 24.99)
 # https://www.amazon.com/LYHNB-Colorful-Alphabet-Educational-Frameless/dp/B08P1VFY7F/ref=sr_1_22?crid=F5B5MNXNIAYR&keywords=korean+art&qid=1650999068&sprefix=korean+art%2Caps%2C84&sr=8-22
 # p147 = Product.create!('name': '',
 #     'description': "",

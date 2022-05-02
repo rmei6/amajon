@@ -5,11 +5,18 @@ import HeaderContainer from "../header/header_container";
 class ProductShow extends React.Component {
     constructor(props){
         super(props);
+        this.state = {department:''}
+        this.setDepartment = this.setDepartment.bind(this)
     }
 
     componentDidMount(){
         // debugger;
         this.props.fetchProduct(this.props.match.params.id);
+    }
+
+    setDepartment(dep){
+        debugger;
+        this.setState({department: dep})
     }
 
     // componentDidUpdate(prevProps){
@@ -47,7 +54,7 @@ class ProductShow extends React.Component {
             // debugger;
             return (
                 <div>
-                    <HeaderContainer />
+                    <HeaderContainer setDepartment={this.setDepartment}/>
                     <div className="product-show">
                         <div className="product-info">
                             <div className="product-department-container">
@@ -61,7 +68,7 @@ class ProductShow extends React.Component {
                             </div>
                             <div className="product-view-info">
                                 <div className="product-show-img-container">
-                                    <img className="product-show-img" src={imageurl} />
+                                    <img className="product-show-img" src={imageurl} alt={product.name}/>
                                 </div>
 
                                 <div className="product-base-info">

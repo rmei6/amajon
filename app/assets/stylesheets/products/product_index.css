@@ -1,3 +1,7 @@
+.index-container{
+    /* background-color: rgb(233, 230, 230); */
+}
+
 .product-index-item{
     border: 1px solid lightgray;
     border-radius: 4px;

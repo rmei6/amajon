@@ -772,10 +772,15 @@ p73 = Product.create!('name': 'ZPAYFSDS Women`s Cute Cat Ear Button Fleece Warm 
 
 # Garden
 # https://www.amazon.com/HomeTheWay-weeding-farming-Daejanggan-Hand-made/dp/B077S7HCN7/ref=sr_1_2?crid=ZW85KZ6DSGIV&keywords=Korean+garden&qid=1650997517&sprefix=korean+garden%2Caps%2C82&sr=8-2
-# p74 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p74 = Product.create!('name': 'HomeTheWay Korean garden hand tool/ hoe/ garden plow/ weeding sickle/ weeding farming tool- Youngju Daejanggan Master Homi Hand-made hoe ,M size',
+    'description': "- 100% HAND MADE - All parts of Homi are hand-made by a master who has been making this product for decades in Korea. This guarantees durability and safety of the product
+    *- MULTI-PURPOSE USE - Homi is powerful tool for weeding, edging ,plowing trenches, digging, planting and any other garden-related work
+    *- STRONG HEAD - Its' head has sharp blade made with strong hand-forged steel. This will increase your work efficiency in any circumstances
+    *- STURDY HANDLE - Homi has well polished wooden handle with a strong grip. This will help users to work faster and safer
+    *- USER-FRIENDLY DESIGN - Homi is designed ergonomically. It will change your garden work a lot easier and more enjoyable",
+    'department': garden.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 18.99)
 # https://www.amazon.com/YOUNGJU-Premium-Quality-Gardening-Blacksmith/dp/B08FH9ZYMT/ref=sr_1_6?crid=ZW85KZ6DSGIV&keywords=Korean+garden&qid=1650997517&sprefix=korean+garden%2Caps%2C82&sr=8-6
 # p75 = Product.create!('name': '',
 #     'description': "",
@@ -869,10 +874,15 @@ p73 = Product.create!('name': 'ZPAYFSDS Women`s Cute Cat Ear Button Fleece Warm 
 
 # Toys
 # https://www.amazon.com/TOYTRON-Futurebook-Pororopen-Developing-Beginning/dp/B083962K76/ref=sr_1_2?crid=1RZH7UU9PD0JT&keywords=Korean+toys&qid=1650997823&sprefix=korean+toys%2Caps%2C92&sr=8-2
-# p93 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p93 = Product.create!('name': 'TOYTRON Little Future Book Pororo Talking Pen, Interactive Learning Educational Toy to help kids develop reading skills. Korean Ver.',
+    'description': "- Build your child's vocabulary - PORORO Future Book includes 2000 developmental words to help advance your toddler’s vocabulary skills.
+    *- Various reading activities - Contains reading activities that can be made with one Future Book Robot. A fun and exciting way to practice reading! Press the pen onto an image or word, and it’ll be read by Pororo! * This product requires 2 X AAA batteries.
+    *- Increase language skills - Consists of a language book that helps kids develop their language skills when reading this Future Book.
+    *- Perfect gift idea - Future Book Lines are great for developing vocabulary skills. Perfect for both boys and girls, it’s a great gift for birthdays, holidays or for a surprise!
+    *- What's included in the Set? Smart Pen (Read a picture or a letter) + My First-Word Book + My Smart Thinking Book + Magic Poster + Talking Sticker",
+    'department': toys.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 92.99)
 # https://www.amazon.com/Alphabet-Magnetic-Letters-Learning-Education/dp/B089RXKJVJ/ref=sr_1_3?crid=1RZH7UU9PD0JT&keywords=Korean+toys&qid=1650997823&sprefix=korean+toys%2Caps%2C92&sr=8-3
 # p94 = Product.create!('name': '',
 #     'description': "",
@@ -956,10 +966,15 @@ p73 = Product.create!('name': 'ZPAYFSDS Women`s Cute Cat Ear Button Fleece Warm 
 
 # Traditional
 # https://www.amazon.com/February-Mountain-Jewelry-Organizer-Mirror/dp/B08QN9WLY4/ref=sr_1_1?keywords=traditional+korean+gifts&qid=1650998223&sprefix=traditional+korean+%2Caps%2C90&sr=8-1
-# p110 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p110 = Product.create!('name': 'February Mountain Mother of Pearl Small Korean Jewelry Box - Unique Gifts Wooden Box Sister birthday gifts from sister, gifts for women birthday unique gifts for her Oriental Room Decor',
+    'description': "- PREMIUM CRAFTSMANSHIP: This wooden jewelry box is 100% handmade. It is handcrafted by the Certified Korean Cultural Properties Craftsman, and each product goes through special screening process as well as strict quality verification to bring you nothing but the very best. It is a great Korean artwork that you can keep for a lifetime. You can place it anywhere in your home like living room, guest room, bedroom or even your office. It will brighten up the space.
+    *- ELEGANT JEWELRY DISPLAY: All your favorite jewelry can now be orderly organized in our jewelry organizer box, no more tangled gold, silver balls or dis-matched earrings. It helps save lots of space, tidies your countertop while ensuring your Jewelry is organized and well displayed at your fingertips!
+    *- CONVENIENT WITH EASY CLOSURE: designed with butterfly shaped metal snap you can easily open and close your jewelry box in seconds with one hand, very convenient and no time consuming. And the best part? It comes with large built-in mirror that adds convenience when you try your jewelry on.
+    *- EXCELLENT GIFTS FOR WOMEN: mom, wife, best friend, sister, grandma, daughter, daughter-in-law, aunt, girlfriend, coworker, teacher, or Yourself. This mother of pearl jewelry box is sure to make that special lady in your life feel cherished and loved and she will thank you forever.
+    *- PERFECT GIFT IDEA: No need to repack. Packaged in a unique gift box that includes a blank gift thank you card, your beloved one will be thrilled to receive such a classic gift. It is perfect for Birthday, Wedding, Anniversary, Graduation, Mother’s Day, Engagement, Thanksgiving Day, Christmas, Holiday or even just as a little treat for yourself.",
+    'department': traditional.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 48.99)
 # https://www.amazon.com/Hanbok-Traditional-Adorable-binyeo-Accessory/dp/B07V67F1PD/ref=sr_1_2?keywords=traditional+korean+gifts&qid=1650998223&sprefix=traditional+korean+%2Caps%2C90&sr=8-2
 # p111 = Product.create!('name': '',
 #     'description': "",
@@ -1044,10 +1059,15 @@ p73 = Product.create!('name': 'ZPAYFSDS Women`s Cute Cat Ear Button Fleece Warm 
 
 # Health
 # https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A05191761ETCRCXJYU4PM&qualifier=1650998558&id=3333218745604650&widgetName=sp_atf&url=%2FCheongKwanJang-Hong-Sam-Won-Plus%2Fdp%2FB092CN8CWM%2Fref%3Dsr_1_4_sspa%3Fkeywords%3Dkorean%2Bhealth%2Bproducts%26qid%3D1650998558%26sprefix%3Dkorean%2Bhealth%252Caps%252C93%26sr%3D8-4-spons%26psc%3D1%26smid%3DA2KVFU84DVJJ7J
-# p127 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p127 = Product.create!('name': 'CheongKwanJang [Hong Sam Won Plus - Korean Ginseng Drink] Korean Red Panax Ginseng Extract Drink - Increase Productivity, Improve Blood Circulation & Brain Function - 30 Pouches',
+    'description': "- HONG SAM WON PLUS: A caffeine-free energizing wellness drink made of 6 years grown Korean Red Ginseng extract (360mg). The drink includes Jujube fruit, cinnamon and ginger for added flavor and benefits.
+    *- 6-YEAR OLD GINSENG: Growing the ginseng for 6 years, instead of a couple years like other competitors, allows the ginseng to fully mature with a premium quality for consumption.
+    *- KOREAN GINSENG: There are several benefits that korean ginseng is known for, from boosting stamina and the metabolism to calming nerves and detoxifying the body.
+    *- CheongKwanJang - When it comes to a product like ginseng, you do not want to go with a no-name internet brand. KGC (Cheong Kwan Jang) has been considered the top brand in the world for 120 years!
+        *- STIMULANT-FREE ENERGY: While energy drinks or caffeine pills often lead to the jitters or headaches, KGC red ginseng releases a steady burst of energy to help you naturally increase productivity, stay energized and focused and get things done.",
+    'department': health.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 39.99)
 # https://www.amazon.com/Premium-Sugar-Free-Balloon-Extract-Concentrate/dp/B087Z6XX8Z/ref=sr_1_7?keywords=korean+health+products&qid=1650998558&sprefix=korean+health%2Caps%2C93&sr=8-7
 # p128 = Product.create!('name': '',
 #     'description': "",
@@ -1116,10 +1136,17 @@ p73 = Product.create!('name': 'ZPAYFSDS Women`s Cute Cat Ear Button Fleece Warm 
 
 # Art
 # https://www.amazon.com/Korean-Calligraphy-Custom-Painted-Symbols/dp/B086D8K317/ref=sr_1_10?crid=F5B5MNXNIAYR&keywords=korean+art&qid=1650999068&sprefix=korean+art%2Caps%2C84&sr=8-10
-# p141 = Product.create!('name': '',
-#     'description': "",
-#     'department': ,
-#     'price': )
+p141 = Product.create!('name': 'Korean Calligraphy Name Wall Art/Custom Made and Hand Painted in Hangul Symbols',
+    'description': "- Customize this art with your own name.
+    *- Choose white or painted plum blossoms background. Our example picture shows the painted plum blossoms.
+    *- Hand painted (not a print) authentic Asian calligraphy.
+    *- Choose only Korean symbols or Korean and English.
+    *- Hand made silk brocade scroll available in 8 different colors.
+    *- Convenient size: 11” X 32” (28 X 81 CM).
+    *- Cool Asian gift idea.",
+    'department': art.name,
+    'delivery_days': rand(max_days) + 1,
+    'price': 39.99)
 # https://www.amazon.com/PeeNoke-Wall-Art-Traditional-Painting/dp/B08QMXT8MT/ref=sr_1_12?crid=F5B5MNXNIAYR&keywords=korean+art&qid=1650999068&sprefix=korean+art%2Caps%2C84&sr=8-12
 # 142 = Product.create!('name': '',
 #     'description': "",

@@ -12,7 +12,7 @@ import { Switch } from "react-router-dom";
 
 // const home_path = new RegExp('^(?!signup$|login$)')
 // Tried to use regular expressions
-const department_paths = ['/beauty','/food-and-groceries','/kitchen','/clothing,-shoes-and-jewelry','/garden','/toys-and-games','/traditional','/health','/art']
+const department_paths = ['/beauty','/food-and-groceries','/kitchen','/clothing-shoes-and-jewelry','/garden','/toys-and-games','/traditional','/health','/art']
 
 const App = () => {
   // debugger;
@@ -23,19 +23,20 @@ const App = () => {
           {/* <HeaderContainer /> */}
           {/* <img className="home-logo" src={require('../../app/assets/images/amajonlogowhite.png')} alt="Amajon"/> */}
         {/* </header> */}
-        {/* <Switch> */}
+        <Switch>
             {/* Tried to match current path from within app */}
         {/* {(window.location.href.slice(-6) !== 'signin' && window.location.href.slice(-5) !== 'login') ?  */}
-          <Route path='/' component={HeaderContainer} />
           {/* <Route exact path='/' component={BodyContainer} /> */}
           <AuthRoute path="/signup" component={SignupFormContainer} />
           <AuthRoute path="/login" component={LoginFormContainer} />
-          <Route path="/products/:id" component={ProductShowContainer} />
           <Route exact path="/products" component={SearchContainer} />
-          {/* <Route exact path={department_paths} component={ProductIndexContainer}/> */}
+          <Route path="/products/:id" component={ProductShowContainer} />
+          <Route path='/:department' component={SearchContainer}/>
+          <Route exact path='/' component={HeaderContainer} />
+          {/* <Route exact path={department_paths} component={SearchContainer}/> */}
           {/* <Route path='/' component={FooterContainer} /> */}
 
-        {/* </Switch> */}
+        </Switch>
       </div>
     )
 };

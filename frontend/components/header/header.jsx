@@ -10,6 +10,7 @@ class Header extends React.Component {
     }
 
     render(){
+        debugger;
         return(
             <div>
                 <div className="header">
@@ -39,7 +40,7 @@ class Header extends React.Component {
                     </div>
                     <p className="cart">Cart Here</p>
                 </div>
-                <Nav />
+                <Nav setDepartment={this.props.setDepartment}/>
             </div>
         )
     }

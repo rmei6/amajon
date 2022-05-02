@@ -15,8 +15,13 @@ export const receiveProduct = (product) => ({
 })
 
 
-export const fetchProducts = () => dispatch => {
-    return ProductsUtil.getProducts()
+export const fetchProducts = (department) => dispatch => {
+    // debugger;
+    if(department === 'products'){
+        return ProductsUtil.getProducts()
+            .then(products => dispatch(receiveProducts(products)))
+    }
+    return ProductsUtil.getProducts(department)
         .then(products => dispatch(receiveProducts(products)))
 }
 

@@ -20,7 +20,7 @@ class ProductIndex extends React.Component {
         // debugger;
         // if(this.props.products.length === 0 || this.props.products[0].department !== this.state.department){
         if (window.location.href.slice(window.location.href.indexOf('#')+2) === 'products'){
-            if (this.props.products.length < 50){
+            if (this.props.products.length < 154){
                 dispatch(this.props.fetchProducts(window.location.href.slice(window.location.href.indexOf('#')+2)))
             }
         }else{

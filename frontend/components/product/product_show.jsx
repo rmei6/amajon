@@ -61,14 +61,15 @@ class ProductShow extends React.Component {
                                 <Link className="product-show-department" to='/products'>
                                     <span>Products</span>
                                 </Link>
-                                <span>  >  </span>
+                                <span> &#62; </span>
                                 <Link className="product-show-department" to={`/${product.department}`}>
                                     <p>{product.department.split('-').map(word => word[0].toUpperCase() + word.slice(1)).join(' ')}</p>
                                 </Link>
                             </div>
                             <div className="product-view-info">
                                 <div className="product-show-img-container">
-                                    <img className="product-show-img" src={imageurl} alt={product.name}/>
+                                    {/* <img className="product-show-img" src={imageurl} alt={product.name}/> */}
+                                    <img className="product-show-img" src={product.photoUrl} alt={product.name}/>
                                 </div>
 
                                 <div className="product-base-info">

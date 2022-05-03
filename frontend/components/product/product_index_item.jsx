@@ -21,7 +21,8 @@ const ProductIndexItem = ({product}) => {
         <div className="product-index-item">
             <div className="index-img-container">
                 <Link to={`/products/${product.id}`}>
-                    <img className="product-index-item-img" src={imageurl} />
+                    {/* <img className="product-index-item-img" src={imageurl} /> */}
+                    <img className="product-index-item-img" src={product.photoUrl} />
                 </Link>
             </div>
             <div className="product-index-item-name-container">

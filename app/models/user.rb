@@ -6,6 +6,11 @@ class User < ApplicationRecord
     attr_reader :password
     after_initialize :ensure_session_token!
 
+    has_many :carts
+    has_many :items,
+        through: :carts,
+        source: :product
+
     def self.find_by_credentials(email, password)
         user = User.find_by(email: email)
         return nil if user.nil?

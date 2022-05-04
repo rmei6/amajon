@@ -84,7 +84,7 @@
 .product-index-item-name-container, .product-index-item-price-container,.product-index-item-shipping-container, .product-index-item-reviews-container{
     margin-bottom: 10px;
     line-height: 20px;
-    text-align: center;
+    /* text-align: center; */
     margin-left: 5px;
     margin-right: 5px;
 }

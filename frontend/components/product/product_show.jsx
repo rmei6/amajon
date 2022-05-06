@@ -33,8 +33,8 @@ class ProductShow extends React.Component {
            this.props.history.push('/login')
         }else{    
             const product_id = this.props.product.id
-            const alreadyInCart = this.props.cart
-            if (alreadyInCart.includes(product_id)) {
+            const cartItems = this.props.cart
+            if (cartItems.includes(product_id)) {
                 this.props.updateCart({product_id: product_id, quantity: this.state.quantity})        
             } else {
                 this.props.addToCart({product_id: product_id, quantity: this.state.quantity})   

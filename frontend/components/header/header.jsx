@@ -38,7 +38,15 @@ class Header extends React.Component {
                         <p>Returns</p>
                         <p>& Orders</p>
                     </div>
-                    <p className="cart">Cart Here</p>
+                    <Link to={'/checkout'} className="cart-link">
+                        <div className="cart-container">
+                            <div className="cart-icon-container">
+                                <span className='cartcount'>{this.props.cartCount ?  this.props.cartCount : 0}</span>
+                                <img className="cart-icon" src={window.cartUrl} alt="" />
+                            </div>
+                        <p className="cart">Cart</p>
+                        </div>
+                    </Link>
                 </div>
                 <Nav setDepartment={this.props.setDepartment}/>
             </div>

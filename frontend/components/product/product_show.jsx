@@ -5,8 +5,9 @@ import HeaderContainer from "../header/header_container";
 class ProductShow extends React.Component {
     constructor(props){
         super(props);
-        this.state = {department:''}
+        this.state = {department:'',quantity:1}
         this.setDepartment = this.setDepartment.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
 
     componentDidMount(){
@@ -15,8 +16,31 @@ class ProductShow extends React.Component {
     }
 
     setDepartment(dep){
-        debugger;
+        // debugger;
         this.setState({department: dep})
+    }
+
+    handleSelect(){    
+        return(e)=> {
+            e.preventDefault()
+            this.setState({quantity: e.currentTarget.value})
+        }
+    }
+
+    handleClick(e){
+        e.preventDefault()
+        if(!this.props.currentUser){    
+           this.props.history.push('/login')
+        }else{    
+            const product_id = this.props.product.id
+            const alreadyInCart = this.props.cart
+            if (alreadyInCart.includes(product_id)) {
+                this.props.updateCart({product_id: product_id, quantity: this.state.quantity})        
+            } else {
+                this.props.addToCart({product_id: product_id, quantity: this.state.quantity})   
+            }
+
+        }
     }
 
     // componentDidUpdate(prevProps){
@@ -35,7 +59,7 @@ class ProductShow extends React.Component {
         // }
         // debugger;
         if (this.props.product){
-            const {product} = this.props;
+            const {product, currentUser} = this.props;
             var imageurl;
             if (product.id % 3 === 0){
                 imageurl = window.longproductURL;
@@ -120,7 +144,43 @@ class ProductShow extends React.Component {
                                         <br />
                                         <span>FREE Shipping by Amajon</span>
                                     </div>
-                                    <button className="add-cart">Add to Cart</button>
+                                    <div className='product-quantity'> 
+                                        <select onChange ={this.handleSelect()} name="quantity" className='product-show-quantity-selector'>   
+                                            <option value={1}>Qty: 1</option>
+                                            <option value={2}>Qty: 2</option>
+                                            <option value={3}>Qty: 3</option>
+                                            <option value={4}>Qty: 4</option>
+                                            <option value={5}>Qty: 5</option>
+                                            <option value={6}>Qty: 6</option>
+                                            <option value={7}>Qty: 7</option>
+                                            <option value={8}>Qty: 8</option>
+                                            <option value={9}>Qty: 9</option>
+                                            <option value={10}>Qty: 10</option>
+                                            <option value={11}>Qty: 11</option>
+                                            <option value={12}>Qty: 12</option>
+                                            <option value={13}>Qty: 13</option>
+                                            <option value={14}>Qty: 14</option>
+                                            <option value={15}>Qty: 15</option>
+                                            <option value={16}>Qty: 16</option>
+                                            <option value={17}>Qty: 17</option>
+                                            <option value={18}>Qty: 18</option>
+                                            <option value={19}>Qty: 19</option>
+                                            <option value={20}>Qty: 20</option>
+                                            <option value={21}>Qty: 21</option>
+                                            <option value={22}>Qty: 22</option>
+                                            <option value={23}>Qty: 23</option>
+                                            <option value={24}>Qty: 24</option>
+                                            <option value={25}>Qty: 25</option>
+                                            <option value={26}>Qty: 26</option>
+                                            <option value={27}>Qty: 27</option>
+                                            <option value={28}>Qty: 28</option>
+                                            <option value={29}>Qty: 29</option>
+                                            <option value={30}>Qty: 30</option>
+                                        </select>                            
+                                    </div>
+                                    <div className='addtocart'>
+                                        <button className="addtocart-button" onClick={this.handleClick}>Add to Cart</button>
+                                    </div>
                                     <button className="buy-now">Buy Now</button>
                                 </div>
                             </div>

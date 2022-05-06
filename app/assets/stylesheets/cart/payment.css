@@ -1,0 +1,17 @@
+.sent-order-container{
+    height: 625px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sent-order-message{
+    text-align: center;
+    font-weight: bold;
+}
+
+.sent-order-symbol{
+    font-size: 80px;
+    color: #007600;
+}
+

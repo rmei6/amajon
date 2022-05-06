@@ -12,7 +12,7 @@ class Main extends React.Component{
     }
 
     setDepartment(dep){
-        debugger;
+        // debugger;
         this.setState({department: dep})
     }
 

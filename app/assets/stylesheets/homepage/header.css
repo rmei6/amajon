@@ -5,7 +5,7 @@
     padding: 3px;
 }
 
-.home-logo,.greeting,.cart,.deliver,.region,.returns{
+.home-logo,.greeting,.cart-container,.deliver,.region,.returns{
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
@@ -13,7 +13,7 @@
     border-radius: 2px;
 }
 
-.home-logo:hover,.greeting:hover,.cart:hover,.deliver:hover,.region:hover,.returns:hover{
+.home-logo:hover,.greeting:hover,.cart-container:hover,.deliver:hover,.region:hover,.returns:hover{
     border-color: white;
 
 }
@@ -28,11 +28,11 @@
     height: 60px;
 }
 
-.login,.signup,.logout {
+.login,.signup,.logout,.cart-link {
     text-decoration: none;
 }
 
-.login:visited,.signup:visited,.logout:visited {
+.login:visited,.signup:visited,.logout:visited,.cart-link:visited {
     text-decoration: none;
     color: white;
 }
@@ -57,4 +57,26 @@
 
 .search-bar-input{
     width: 500px;
+}
+
+.cart-icon-container{
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.cart-icon{
+    width: auto;
+    height: auto;
+    max-height: 15px;
+    /* position: absolute; */
+}
+
+.cartcount{
+    z-index: 2;
+}
+
+.cart-container{
+    display: flex;
+    flex-direction: row;
 }

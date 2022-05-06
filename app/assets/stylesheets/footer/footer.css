@@ -1,0 +1,20 @@
+.footer{
+    background-color: #131921;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+i.fa.fa-github::before, i.fa.fa-linkedin-square::before{
+    margin-left: 20px;
+    font-size: 60px;
+}
+
+.fa-github{
+    color: white;
+}
+
+.fa-linkedin-square{
+    color: skyblue;
+}

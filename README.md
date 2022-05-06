@@ -1,25 +1,38 @@
-# README
+# Welcome to Amajon
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Amajon](https://amajon.herokuapp.com/#/) is a Amazon clone with products and departments that specifically appeal to Korean culture.
 
-Things you may want to cover:
+![Introduction](https://media.giphy.com/media/QmFvEQ5RzxiZSI7oF0/giphy.gif)
 
-* Ruby version
+# Technologies Used
 
-* System dependencies
+* Ruby on Rails
+* React/Redux
+* Javascript
+* AJAX
+* JBuilder
+* PostgreSQL
+* HTML5
+* CSS
+* AWS S3
+* ASW IAM
+* Heroku
 
-* Configuration
+# Features
 
-* Database creation
+* Show All Products and Products by Department
 
-* Database initialization
+![Show Products](https://media.giphy.com/media/ucnuj95EnU2aL8XL0K/giphy.gif)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* Show and Update Cart
 
-* Deployment instructions
+![Cart](https://media.giphy.com/media/V0ZsqSwZTk7Tsi4sn6/giphy.gif)
 
-* ...
-# amajon
+* Checkout
+
+![Checkout](https://media.giphy.com/media/qzuzPHLIE6bwRl9B5W/giphy.gif)
+
+#Future Features
+* Add and Update Reviews
+* Implement SearchBar

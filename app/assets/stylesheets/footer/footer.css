@@ -1,20 +1,42 @@
 .footer{
+    position: relative;
     background-color: #131921;
+    /* background-color: gray; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    width: 100%;
+    /* margin-top: -800px; */
+    /* z-index: 5; */
 }
 
 i.fa.fa-github::before, i.fa.fa-linkedin-square::before{
     margin-left: 20px;
     font-size: 60px;
 }
+/* 
+i.fa.fa-github{
+    margin-left: 20px;
+    font-size: 60px;
+    z-index: 7;
+} */
 
 .fa-github{
     color: white;
+    /* z-index: 10; */
 }
 
 .fa-linkedin-square{
     color: skyblue;
+    /* z-index: 10; */
+}
+
+/* .footer-container{
+    display: block;
+} */
+
+.github-container a{
+    width: 100px;
+    height: 100px;
 }

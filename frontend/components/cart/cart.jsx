@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import HeaderContainer from "../header/header_container";
 import CartItems from './cart_items'
 
-class Cart extends React.Component{
+class Cart extends React.Component{ //have to refactor cart and checkout
     constructor(props){
         super(props)
         this.state = {department:''}

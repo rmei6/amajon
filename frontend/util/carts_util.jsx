@@ -20,3 +20,5 @@ export const updateCart = (cart) => {
         data: {cart}
     })
 }
+
+//create delete cart method

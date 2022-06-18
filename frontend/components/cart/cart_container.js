@@ -16,5 +16,7 @@ const mapStateToProps = (state) => {
      fetchCart: () => dispatch(fetchCart()),
      updateCart: (item) => dispatch(updateCart(item))
  })
+
+ //add delete cart option
  
  export default connect(mapStateToProps, mapDispatchToProps)(Cart)

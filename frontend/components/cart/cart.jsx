@@ -49,6 +49,7 @@ class Cart extends React.Component{ //have to refactor cart and checkout
                 </div>
             )
         }
+        debugger;
         const items = cart.map((product, idx)=>{
             totalPrice += product.price
             // debugger;

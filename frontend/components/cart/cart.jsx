@@ -51,7 +51,7 @@ class Cart extends React.Component{ //have to refactor cart and checkout
         }
         debugger;
         const items = cart.map((product, idx)=>{
-            totalPrice += product.price
+            totalPrice += (product.price * product.quantity)
             // debugger;
             return ( product && <CartItems product={product} key={idx} updateCart={updateCart} />)
         })

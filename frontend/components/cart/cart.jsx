@@ -63,7 +63,7 @@ class Cart extends React.Component{ //have to refactor cart and checkout
                     <div className="cart-items">
                         <div className="cart-title"><h1>Shopping Cart</h1></div>
                         <div className="cart-columns">
-                            <a className="cart-deselect-options" href="">Deselect all Items</a>
+                            {/* <a className="cart-deselect-options" href="">Deselect all Items</a> */}
                             <div className="column-price"><span>Price</span></div>
                         </div>
                         {items}

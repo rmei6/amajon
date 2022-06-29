@@ -4,6 +4,8 @@ export const fetchItems = () => {
         url:"/api/carts"
     })
 }
+
+//update method to get carts by userid, currently getting all carts
   
 export const createCart = (cart) => {
     return $.ajax({

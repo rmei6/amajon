@@ -41,6 +41,7 @@ const App = () => {
           <Route exact path='/' component={Main} />
           {/* <Route exact path={department_paths} component={SearchContainer}/> */}
           {/* <Route path='/' component={FooterContainer} /> */}
+          {/* have /search/:searchterm for searches (replace spaces with +) */}
 
         </Switch>
         <Route path='/' component={Footer}></Route>

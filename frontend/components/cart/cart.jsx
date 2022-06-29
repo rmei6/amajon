@@ -31,6 +31,7 @@ class Cart extends React.Component{ //have to refactor cart and checkout
             const clear = { product_id: product.id, quantity: 0 }         
             this.props.updateCart(clear)
         })
+        this.props.fetchCart()
     }
 
     render(){
@@ -50,8 +51,10 @@ class Cart extends React.Component{ //have to refactor cart and checkout
             )
         }
         debugger;
+        //need to have cart be array of objects with quantity and item
         const items = cart.map((product, idx)=>{
-            totalPrice += (product.price * product.quantity)
+            // totalPrice += (product.price * product.quantity)
+            totalPrice += product.price
             // debugger;
             return ( product && <CartItems product={product} key={idx} updateCart={updateCart} />)
         })

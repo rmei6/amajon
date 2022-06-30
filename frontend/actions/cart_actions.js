@@ -23,7 +23,7 @@ export const changeQuantity = (quantity) => ({
 
 
 export const fetchCart = () => dispatch => {
-    // debugger;
+    debugger;
     return CartsUtil.fetchItems()
         .then((items)=> dispatch(receiveItems(items)))
 }

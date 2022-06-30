@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Dropdown = ({select, setSelected, product, updateCart}) => {
+const Dropdown = ({select, setSelected, product, updateCart, quantity}) => {
     const [isActive, setIsActive] = useState(false);
     const options = ["0 (Delete)","1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"];
     document.addEventListener("click", (e) => {        
@@ -32,6 +32,7 @@ const Dropdown = ({select, setSelected, product, updateCart}) => {
                             }else{
                                 option = parseInt(option) - product.quantity 
                             }
+                            debugger;
                             option = (option === "0 (Delete)") ? "0" : option
                             updateCart({ product_id: product.id, quantity: option}).then(()=>{
                                 setSelected("")

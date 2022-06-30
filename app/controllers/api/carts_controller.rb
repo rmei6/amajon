@@ -11,8 +11,11 @@ class Api::CartsController < ApplicationController
 
     def index
         if logged_in?
+            # debugger
             @cart = current_user.carts
             @products = current_user.items
+            debugger
+            # render 'api/carts/index'
             render 'api/products/index'
         else
             render json: ['Must have account to access cart'], status: 422

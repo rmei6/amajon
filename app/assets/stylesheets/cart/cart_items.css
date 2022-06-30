@@ -21,7 +21,7 @@
 
 .cart-columns{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-bottom: 1px solid lightgray;
 }
 
@@ -76,4 +76,8 @@
     flex-direction: column;
     justify-content: space-between;
     margin-left: 20px;
+}
+
+.product-price-container{
+    margin-left: 10px;
 }

@@ -4,7 +4,9 @@ import {fetchCart, updateCart} from '../../actions/cart_actions'
 
 const mapStateToProps = (state) => {
     const currentUserId = state.session.id
-    const items = state.entities.users.cart ? Object.values(state.entities.users.cart) : []
+    debugger;
+    // const items = state.entities.users.cart ? Object.values(state.entities.users.cart) : []
+    const items = state.entities.users.cart ? state.entities.users.cart : []
     return {
         cart: items,
         products: Object.values(state.entities.products),

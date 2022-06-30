@@ -34,6 +34,7 @@ class ProductShow extends React.Component {
         }else{    
             const product_id = this.props.product.id
             const cartItems = this.props.cart
+            debugger;
             if (cartItems.includes(product_id)) {
                 this.props.updateCart({product_id: product_id, quantity: this.state.quantity})        
             } else {

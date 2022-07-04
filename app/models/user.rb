@@ -7,6 +7,7 @@ class User < ApplicationRecord
     after_initialize :ensure_session_token!
 
     has_many :carts
+    has_many :reviews
     has_many :items,
         through: :carts,
         source: :product

@@ -11,6 +11,7 @@ User.destroy_all
 Department.destroy_all
 Product.destroy_all
 Cart.destroy_all
+Review.destroy_all
 
 demo = User.create!('name': 'Demo', 'email': 'demo@gmail.com', 'password': 'password')
 

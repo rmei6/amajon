@@ -37,6 +37,10 @@ class Api::ProductsController < ApplicationController
         end
     end
 
+    def update
+        
+    end
+
     private
 
     def product_params

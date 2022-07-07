@@ -3,7 +3,7 @@ import { useState } from "react";
 import Dropdown from "../dropdown/dropdown";
 
 
-const CartItems = ({ product, updateCart, quantity })=>{
+const CartItems = ({ product, updateCart, quantity, fetchCart })=>{
     const [selected, setSelected] = useState(0);
     const totalPrice = (product.price * quantity).toLocaleString('en-US', { maximumFractionDigits: 2 });
     let price = totalPrice;
@@ -45,6 +45,7 @@ const CartItems = ({ product, updateCart, quantity })=>{
                             updateCart({ product_id: product.id, quantity: 0}).then(()=>{
                                 setSelected("")
                             })
+                            fetchCart();
                         }}>Delete</button>
                     </div>                                
                 </div>                                  

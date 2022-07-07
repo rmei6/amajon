@@ -38,7 +38,7 @@ class Cart extends React.Component{ //have to refactor cart and checkout
     }
 
     render(){
-        const {products, cartCount, updateCart, cart} = this.props
+        const {products, cartCount, updateCart, cart, fetchCart} = this.props
         let totalPrice = 0.0;
         if (Object.values(cart).length === 0) {
             return (
@@ -73,7 +73,7 @@ class Cart extends React.Component{ //have to refactor cart and checkout
                     quantity = cart.quantity
                 }
             })
-            return ( product && <CartItems product={product} key={idx} updateCart={updateCart} quantity={quantity}/>)
+            return ( product && <CartItems product={product} key={idx} updateCart={updateCart} quantity={quantity} fetchCart={fetchCart}/>)
         })
         totalPrice = totalPrice.toLocaleString('en-US', { maximumFractionDigits: 2 });
         let price = totalPrice;

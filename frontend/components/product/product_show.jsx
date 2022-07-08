@@ -100,7 +100,8 @@ class ProductShow extends React.Component {
                                 <div className="product-base-info">
                                     <div className="product-name-container">
                                         <p className="product-show-name">{product.name}</p>
-                                        <p>overall review info here</p>
+                                        {/* <p>overall review info here</p> */}
+                                        <p className="product-show-review">{product.review} stars</p>
                                     </div>
                                     <div className="product-show-price-shipping">
                                         <div className="product-show-item-price-container">

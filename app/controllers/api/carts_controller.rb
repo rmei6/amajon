@@ -14,7 +14,7 @@ class Api::CartsController < ApplicationController
             # debugger
             @cart = current_user.carts
             @products = current_user.items
-            debugger
+            # debugger
             # render 'api/carts/index'
             render 'api/products/index'
         else

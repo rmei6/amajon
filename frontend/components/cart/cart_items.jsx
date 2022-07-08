@@ -45,7 +45,7 @@ const CartItems = ({ product, updateCart, quantity, fetchCart })=>{
                             updateCart({ product_id: product.id, quantity: 0}).then(()=>{
                                 setSelected("")
                             })
-                            fetchCart();
+                            // fetchCart();
                         }}>Delete</button>
                     </div>                                
                 </div>                                  

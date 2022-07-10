@@ -10,6 +10,7 @@ import Main from "./main/main";
 import CartContainer from "./cart/cart_container";
 import Payment from "./cart/payment";
 import Footer from "./footer/footer";
+import DetailedSearchContainer from "./product/detailed_search_container";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import { Switch } from "react-router-dom";
 // import amajon_logo from '../../app/assets/images/amajon_logo.png';
@@ -37,11 +38,12 @@ const App = () => {
           <Route path="/products/:id" component={ProductShowContainer} />
           <ProtectedRoute path='/checkout' component={CartContainer}/>
           <ProtectedRoute path='/payment' component={Payment}/>
+          {/* have /search/:searchterm for searches (replace spaces with +) */}
+          <Route path="/search/:search_terms" component={DetailedSearchContainer}/>
           <Route path='/:department' component={SearchContainer}/>
           <Route exact path='/' component={Main} />
           {/* <Route exact path={department_paths} component={SearchContainer}/> */}
           {/* <Route path='/' component={FooterContainer} /> */}
-          {/* have /search/:searchterm for searches (replace spaces with +) */}
 
         </Switch>
         <Route path='/' component={Footer}></Route>

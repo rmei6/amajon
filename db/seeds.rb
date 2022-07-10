@@ -41,6 +41,9 @@ p1 = Product.create!('name': 'Korean Skin Care K Beauty - 20% Vitamin C Hyaluron
     'price': 18.00)
 pic1 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p1.jpg")
 p1.photo.attach(io: pic1, filename:"p1")
+
+r1 = Review.create!('user_name': demo.name, 'user_id': demo.id, 'product_id': p1.id, 'body': 'this is good', 'stars': 3)
+
 # https://www.amazon.com/Celavi-Collagen-12-Sheets-Classic-Skincare/dp/B07ZQQDZ7S/ref=sr_1_10?keywords=korean&qid=1650995701&s=beauty&sr=1-10
 p2 = Product.create!('name': '24PCS NEW Celavi Collagen Facial Face Mask (12-Sheets) Classic Korean Skincare',
     'description': "- Naturally Brighter Skin Tone - Authentic Korean facial masks, when used regularly they can help diminish signs of dark spots, pigmentation, circles, and puffiness.

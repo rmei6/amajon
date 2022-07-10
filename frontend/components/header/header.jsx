@@ -7,7 +7,23 @@ import Nav from "./nav";
 class Header extends React.Component {
     constructor(props){
         super(props);
+        this.state = {search: ''}
+        this.setSearchTerm = this.setSearchTerm.bind(this)
+        // this.search = this.search.bind(this)
     }
+
+    setSearchTerm(){
+        return(e) => {
+            e.preventDefault()
+            this.setState({search: e.currentTarget.value.split(' ').join('+')})
+        }
+    }
+
+    // search(e){
+    //     e.preventDefault();
+    //     let search = this.state.search.split(' ').join('+')
+
+    // }
 
     render(){
         // debugger;
@@ -26,9 +42,9 @@ class Header extends React.Component {
                         </div>
                     </div>
                     <div className="search-bar">
-                        <label>Search
-                            <input className="search-bar-input" type="text" />
-                        </label>
+                        <input className="search-bar-input" type="text" onChange={this.setSearchTerm()}/>
+                        {/* <button onClick={this.search}>Search</button> */}
+                        <Link to={`/search/${this.state.search}`}><button>Search</button></Link>
                     </div>
                     <div className="region">
                         <p className="region-img">&#127482;&#127480;</p>

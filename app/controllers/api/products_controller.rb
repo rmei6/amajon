@@ -41,11 +41,14 @@ class Api::ProductsController < ApplicationController
         @product = Product.find_by(id: params[:id])
         reviews = @product.reviews
         review_num = reviews.length
-        review_sum = 0;
-        for(i = 0; i < reviews.length; i++){
-            review_sum += reviews[i].stars
-        }
-        avg_review = review_sum / review_num
+        avg_review = 0;
+        if review_num != 0
+            review_sum = 0;
+            reviews.each do |item|
+                review_sum += item.stars
+            end
+            avg_review = review_sum / review_num
+        end
         @product.update(review: avg_review)
         render :show
     end

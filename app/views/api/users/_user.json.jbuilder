@@ -11,3 +11,13 @@ else
     json.cart([])
     json.cartCount 0
 end
+
+if user.reviews.length != 0
+    reviewed = []
+    user.reviews.each do |review|
+        reviewed.push(review.product_id)
+    end
+    json.reviewed reviewed
+else
+    json.reviewed([])
+end

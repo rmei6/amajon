@@ -13,3 +13,10 @@ export const getProduct = (product_id) => {
         url: `/api/products/${product_id}`
     })
 }
+
+export const updateReview = (product_id) => {
+    return $.ajax({
+        method: 'PATCH',
+        url: `/api/products/${product_id}`
+    })
+}

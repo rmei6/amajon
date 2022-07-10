@@ -31,3 +31,8 @@ export const fetchProduct = (product_id) => dispatch => {
     return ProductsUtil.getProduct(product_id)
         .then(product => dispatch(receiveProduct(product)))
 }
+
+export const updateProduct = (product_id) => dispatch => {
+    return ProductsUtil.updateReview(product_id)
+        .then(product => dispatch(receiveProduct(product)))
+}

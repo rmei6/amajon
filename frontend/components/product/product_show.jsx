@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useDebugValue } from "react";
 import { Link } from "react-router-dom";
 import HeaderContainer from "../header/header_container";
 
 class ProductShow extends React.Component {
     constructor(props){
         super(props);
-        this.state = {department:'',quantity:1}
+        this.state = 
+        {
+            department: '',
+            quantity: 1,
+            stars: 1,
+            body: ''
+        }
         this.setDepartment = this.setDepartment.bind(this)
         this.handleClick = this.handleClick.bind(this)
+        this.setStars = this.setStars.bind(this)
+        this.setText = this.setText.bind(this)
+        this.submitReview = this.submitReview.bind(this)
+        this.deleteReview = this.deleteReview.bind(this)
     }
 
     componentDidMount(){
         // debugger;
+        // this.props.updateProduct(this.props.match.params.id);
         this.props.fetchProduct(this.props.match.params.id);
     }
 
@@ -42,6 +53,49 @@ class ProductShow extends React.Component {
             }
 
         }
+    }
+
+    setStars(){    
+        return(e)=> {
+            e.preventDefault()
+            this.setState({stars: parseInt(e.currentTarget.value)})
+        }
+    }
+
+    setText(){    
+        return(e)=> {
+            e.preventDefault()
+            this.setState({body: e.currentTarget.value})
+        }
+    }
+    
+    submitReview(e){
+        e.preventDefault()
+        if(this.state.body != ''){
+            let review = {
+                'user_name': this.props.currentUser.name,
+                'user_id': this.props.currentUser.id,
+                'product_id': this.props.product.id,
+                'body': this.state.body,
+                'stars': this.state.stars
+            }
+            let that = this;
+            this.props.createReview(review)
+            .then(() => {
+                that.props.updateProduct(that.props.product.id)
+            })
+        }
+    }
+
+    deleteReview(e){
+        e.preventDefault()
+        let id = parseInt(e.target.getAttribute('id'))
+        // debugger;
+        let that = this;
+        this.props.deleteReview(id)
+            .then(() => {
+                that.props.updateProduct(that.props.product.id)
+            })
     }
 
     // componentDidUpdate(prevProps){
@@ -76,7 +130,46 @@ class ProductShow extends React.Component {
             // debugger;
             var nextdate_word = nextdate.toLocaleString('en-us',{day: 'numeric', month: 'short'})
             var deliverday = `${dayslater === 1 ? 'Tomorrow' : weekdays[nextdate.getDay()]}, ${nextdate_word}`;
-            // debugger;
+            debugger;
+            const reviews = product.reviews ? Object.values(product.reviews).map((review,idx) => (
+                <div key={`review${idx}`}>
+                    <span>{review.user_name}</span>
+                    <span>{review.stars} stars</span>
+                    <span>{review.body}</span>
+                    {currentUser && review.user_id === currentUser.id ? <button id={review.id} onClick={this.deleteReview}>Delete</button> : ''}
+                </div>
+            )) : ''
+            let reviewFormValid = true;
+            debugger;
+            if(currentUser === undefined){
+                reviewFormValid = false;
+            }else if (product.reviews) {
+                const reviewers = Object.values(product.reviews).map(review => review.user_id)
+                reviewFormValid = !reviewers.includes(currentUser.id)
+            }
+            const reviewForm = reviewFormValid ?
+                <div>
+                        <label>Stars
+                            {/* <input type="select" onChange={this.setStars()}>
+                                <option value={1}>1</option>
+                                <option value={2}>2</option>
+                                <option value={3}>3</option>
+                                <option value={4}>4</option>
+                                <option value={5}>5</option>
+                            </input> */}
+                            <select onChange={this.setStars()}>
+                                <option value={1}>1</option>
+                                <option value={2}>2</option>
+                                <option value={3}>3</option>
+                                <option value={4}>4</option>
+                                <option value={5}>5</option>
+                            </select>
+                        </label>
+                        <label>Body
+                            <input type="text" onChange={this.setText()} placeholder='Please add a review'/>
+                        </label>
+                        <button onClick={this.submitReview}>Submit Review</button>
+                </div> : ''
             return (
                 <div>
                     <HeaderContainer setDepartment={this.setDepartment}/>
@@ -187,6 +280,11 @@ class ProductShow extends React.Component {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="product-review">
+                        <span>Review Info: {product.review} stars</span>
+                        {reviews}
+                        {reviewForm}           
                     </div>
                 </div>
             )

@@ -169,7 +169,7 @@ class ProductShow extends React.Component {
                             <input type="text" onChange={this.setText()} placeholder='Please add a review'/>
                         </label>
                         <button onClick={this.submitReview}>Submit Review</button>
-                </div> : ''
+                </div> : currentUser ? '' : <span>Please Login to Leave a Review</span>
             return (
                 <div>
                     <HeaderContainer setDepartment={this.setDepartment}/>

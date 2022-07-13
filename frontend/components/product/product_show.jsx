@@ -251,7 +251,7 @@ class ProductShow extends React.Component {
                                             <option value={8}>Qty: 8</option>
                                             <option value={9}>Qty: 9</option>
                                             <option value={10}>Qty: 10</option>
-                                            <option value={11}>Qty: 11</option>
+                                            {/* <option value={11}>Qty: 11</option>
                                             <option value={12}>Qty: 12</option>
                                             <option value={13}>Qty: 13</option>
                                             <option value={14}>Qty: 14</option>
@@ -270,7 +270,7 @@ class ProductShow extends React.Component {
                                             <option value={27}>Qty: 27</option>
                                             <option value={28}>Qty: 28</option>
                                             <option value={29}>Qty: 29</option>
-                                            <option value={30}>Qty: 30</option>
+                                            <option value={30}>Qty: 30</option> */}
                                         </select>                            
                                     </div>
                                     <div className='addtocart'>

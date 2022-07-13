@@ -47,6 +47,9 @@ const App = () => {
 
         </Switch>
         <Route path='/' component={Footer}></Route>
+        {/* <footer> */}
+          {/* {location.hash === '#/login' || location.hash === '#/signup' ? '' : <Footer/>} */}
+        {/* </footer> */}
       </div>
     )
 };

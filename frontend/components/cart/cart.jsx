@@ -96,14 +96,18 @@ class Cart extends React.Component{ //have to refactor cart and checkout
                             {/* <div className="column-price"><span>Quantity</span></div> */}
                         </div>
                         {items}
+                        <div className="cart-columns-bottom">
+                            <span className="cart-price-label">Subtotal {`(${cartCount} ${cartCount === 1 ? 'Item' : 'Items'})`}:</span>
+                            <span className="cart-price"> ${price}</span>
+                        </div>
                     </div>
                     <div className="cart-checkout">
                         <div className=" cart-price-container">
-                            <span className="cart-price-label">Subtotal {`(${cartCount} Items)`}:</span>
+                            <span className="cart-price-label">Subtotal {`(${cartCount} ${cartCount === 1 ? 'Item' : 'Items'})`}:</span>
                             <span className="cart-price"> ${price}</span>
                         </div>
                         <NavLink to='/payment' onClick={this.handleCheckOut}>
-                            <button  className="checkout-button">Place your order</button>
+                            <button  className="checkout-button">Proceed to checkout</button>
                         </NavLink>
                     </div>
                 </div>

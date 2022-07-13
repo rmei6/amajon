@@ -1,7 +1,8 @@
 import React from "react";
 
 const Footer = () => {
-    return (
+
+    return location.hash === '#/login' || location.hash === '#/signup' ? '' : (
         <div className="footer-container">
             <div className="footer">
                 <div className="github-container">

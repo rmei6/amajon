@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 
-const Dropdown = ({select, setSelected, product, updateCart, quantity}) => {
+const Dropdown = ({product, updateCart, quantity}) => {
     const [isActive, setIsActive] = useState(false);
-    const options = ["0 (Delete)","1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"];
+    // const options = ["0 (Delete)","1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+    const options = ["0 (Delete)"];
+    const limit = Math.floor(quantity * 1.5);
+    for(let i = 1; i <= limit; i++){
+        options.push(i.toString())
+    }
+    debugger;
     document.addEventListener("click", (e) => {        
-        if (e.target.className !== "dropdown" && e.target.className.baseVal !== "down-arrow") { 
+        if (e.target.className !== "dropdown"  && e.target.className !== "down-arrow") { 
             setIsActive(false) 
         }
     })
@@ -15,34 +21,33 @@ const Dropdown = ({select, setSelected, product, updateCart, quantity}) => {
             )}
         >
             <div className="dropdown" >
-                Qty: {select ? select : product.quantity}
+                <span className="dropdown">Qty: </span>
+                <span className="dropdown">{quantity}</span>
                 <div className="dropdown-icon">
                     <span className="down-arrow">&#8964;</span>
                 </div>
             </div>
-            {isActive && (
+            {
+            isActive && (
                 <div className="dropdown-options">
-                    {options.map(option=> (
+                    {options.map((option)=> (
                         <div onClick={() => {
-                            setSelected(option)                           
-                            if(parseInt(option) < product.quantity) {
-                                option = -(product.quantity - parseInt(option))
-                            }else if (parseInt(option) === product.quantity ){
+                            debugger;
+                            if (parseInt(option) === quantity ){
                                 return option
                             }else{
-                                option = parseInt(option) - product.quantity 
+                                option = parseInt(option) - quantity 
                             }
                             debugger;
-                            option = (option === "0 (Delete)") ? "0" : option
-                            updateCart({ product_id: product.id, quantity: option}).then(()=>{
-                                setSelected("")
-                            })
+                            option = (option === "0 (Delete)") ? 0 : parseInt(option)
+                            updateCart({ product_id: product.id, quantity: option})
                         }} 
                         className="dropdown-item" key={option}>
                             {option}
                         </div>
                     ))}
-                </div>)
+                </div>
+                )
             }
         </div>
     )

@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import Dropdown from "../dropdown/dropdown";
 
 
 const CartItems = ({ product, updateCart, quantity, fetchCart })=>{
-    const [selected, setSelected] = useState(0);
-    const totalPrice = (product.price * quantity).toLocaleString('en-US', { maximumFractionDigits: 2 });
+    // const [selected, setSelected] = useState(0);
+    const totalPrice = product.price.toLocaleString('en-US', { maximumFractionDigits: 2 });
     let price = totalPrice;
     debugger;
     if (!totalPrice.includes('.')) {
@@ -36,18 +36,19 @@ const CartItems = ({ product, updateCart, quantity, fetchCart })=>{
                         <span className="origin"> Amajon</span>
                     </div> 
                     <span className="cart-department-label">Department: <span className="cart-department">{product.department.split('-').join(' ').toUpperCase()}</span></span> 
-                    <span className="cart-quantity-label">Quantity: {quantity} </span>
-                    {/* <div className="cart-quantity">
-                        <Dropdown select={selected} setSelected={setSelected} product={product} updateCart={updateCart} quantity={quantity}/>
-                    </div> */}
-                    <div className="cart-delete">
-                        <button onClick={() => {
-                            updateCart({ product_id: product.id, quantity: 0}).then(()=>{
-                                setSelected("")
-                            })
-                            // fetchCart();
-                        }}>Delete</button>
-                    </div>                                
+                    {/* <span className="cart-quantity-label">Quantity: {quantity} </span> */}
+                    <div className="cart-quantity-info">
+                        <div className="cart-quantity">
+                            <Dropdown product={product} updateCart={updateCart} quantity={quantity}/>
+                        </div>
+                        
+                        <div className="cart-options">
+                            <button className="cart-delete" onClick={() => {
+                                updateCart({ product_id: product.id, quantity: 0})
+                                // fetchCart();
+                            }}>Delete</button>
+                        </div>                                
+                    </div>
                 </div>                                  
             </div>
             <div className="product-price-container">

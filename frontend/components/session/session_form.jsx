@@ -74,7 +74,7 @@ class SessionForm extends React.Component{
             ) : (null)
         const name_form = this.props.formType === 'Create Account' ? 
             <label className='session-input'>Name:
-                <input className="session-text" type="text" value={this.state.name} onChange={this.update('name')}/>
+                <input className="session-text" type="text" placeholder="First name" value={this.state.name} onChange={this.update('name')}/>
             </label> 
             :
             (null)
@@ -94,7 +94,7 @@ class SessionForm extends React.Component{
                         <input className="session-text" type="text" value={this.state.email} onChange={this.update('email')}/>
                     </label>
                     <label className='session-input'>Password:
-                        <input className="session-text" type="password" value={this.state.password} onChange={this.update('password')}/>
+                        <input className="session-text" type="password" placeholder={this.props.formType === 'Create Account' ? "At least 6 characters" : ''} value={this.state.password} onChange={this.update('password')}/>
                     </label>
                     <input className='account-button' type="submit" value={this.props.formType} />
                     <button className="account-button" onClick={this.handleDemo}>Demo</button>

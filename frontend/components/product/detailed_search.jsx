@@ -32,10 +32,10 @@ class DetailedSearch extends React.Component {
     let productsFound = filteredProducts.length != 0;
     const items = productsFound ? filteredProducts.map(product => (
       <ProductIndexItem product={product} key={product.id}/>
-    )) : <span>No Products Found</span>
+    )) : <span>No Products Found for "{searchterm}"</span>
     const summary = productsFound ? 
     <div className="result-summary-container">
-      <span className="result-summary">1 - {filteredProducts.length} of {filteredProducts.length} results</span>
+      <span className="result-summary">1 - {filteredProducts.length} of {filteredProducts.length} results for "{searchterm}"</span>
     </div> : ''
     debugger;
     return (

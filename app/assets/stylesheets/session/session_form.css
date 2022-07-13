@@ -81,7 +81,7 @@
     width: 350px;
 }
 
-.error-list,.error-symbol{
+.error-message,.error-symbol{
     color: red;
 }
 

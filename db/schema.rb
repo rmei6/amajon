@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_04_163951) do
+ActiveRecord::Schema.define(version: 2022_07_13_182650) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 2022_07_04_163951) do
     t.string "department", null: false
     t.integer "delivery_days", null: false
     t.float "review", null: false
+    t.integer "review_num", null: false
     t.index ["name"], name: "index_products_on_name"
   end
 
@@ -73,6 +74,7 @@ ActiveRecord::Schema.define(version: 2022_07_04_163951) do
     t.integer "stars", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "headline", null: false
     t.index ["product_id"], name: "index_reviews_on_product_id"
     t.index ["user_id", "product_id"], name: "index_reviews_on_user_id_and_product_id", unique: true
     t.index ["user_id"], name: "index_reviews_on_user_id"

@@ -37,12 +37,13 @@ p1 = Product.create!('name': 'Korean Skin Care K Beauty - 20% Vitamin C Hyaluron
     *- THIS FACIAL SERUM HELPS TO shrink pores, clear up acne, prevent breakouts, and minimize the appearance of acne scars & perfect under korean makeup",
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
-    'review': 0.00,
+    'review': 3,
+    'review_num': 1,
     'price': 18.00)
 pic1 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p1.jpg")
 p1.photo.attach(io: pic1, filename:"p1")
 
-r1 = Review.create!('user_name': demo.name, 'user_id': demo.id, 'product_id': p1.id, 'body': 'this is good', 'stars': 3)
+r1 = Review.create!('user_name': demo.name, 'user_id': demo.id, 'product_id': p1.id, 'headline': 'testing','body': 'this is good', 'stars': 3)
 
 # https://www.amazon.com/Celavi-Collagen-12-Sheets-Classic-Skincare/dp/B07ZQQDZ7S/ref=sr_1_10?keywords=korean&qid=1650995701&s=beauty&sr=1-10
 p2 = Product.create!('name': '24PCS NEW Celavi Collagen Facial Face Mask (12-Sheets) Classic Korean Skincare',
@@ -54,6 +55,7 @@ p2 = Product.create!('name': '24PCS NEW Celavi Collagen Facial Face Mask (12-She
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 21.99)
 pic2 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p2.jpg")
 p2.photo.attach(io: pic2, filename:"p2")
@@ -65,6 +67,7 @@ p3 = Product.create!('name': 'Etude House Moistfull Collagen Sleeping Pack, 3.38
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 15.90)
 pic3 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p3.jpg")
 p3.photo.attach(io: pic3, filename:"p3")
@@ -78,6 +81,7 @@ p4 = Product.create!('name': 'MIXSOON Bean Essence',
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 32.00)
 pic4 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p4.jpg")
 p4.photo.attach(io: pic4, filename:"p4")
@@ -90,6 +94,7 @@ p5 = Product.create!('name': 'BIOHEAL BOH Derma Water Ceramide Gel Cream 2 for 1
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 29.00)
 pic5 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p5.jpg")
 p5.photo.attach(io: pic5, filename:"p5")
@@ -103,6 +108,7 @@ p6 = Product.create!('name': 'Papa Recipe Bombee Sheet Mask, Korean moisturizing
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 19.99)
 pic6 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p6.jpg")
 p6.photo.attach(io: pic6, filename:"p6")
@@ -116,6 +122,7 @@ p7 = Product.create!('name': 'Korean Skin Care K-Beauty Moisturizer for Oily Ski
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 35.99)
 pic7 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p7.jpg")
 p7.photo.attach(io: pic7, filename:"p7")
@@ -128,6 +135,7 @@ p8 = Product.create!('name': "A'pieu Milk Sheet Mask (7 flavors in 1 pack) with 
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 14.00)
 pic8 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p8.jpg")
 p8.photo.attach(io: pic8, filename:"p8")
@@ -137,6 +145,7 @@ p9 = Product.create!('name': 'Sulwhasoo Essential Comfort Moisture Cream: Hydrat
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 80.00)
 pic9 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p9.jpg")
 p9.photo.attach(io: pic9, filename:"p9")
@@ -150,6 +159,7 @@ p10 = Product.create!('name': 'Daandanbit [DAANDAN BIT] Boyun Firming Cream 50ml
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 14.99)
 pic10 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p10.jpg")
 p10.photo.attach(io: pic10, filename:"p10")
@@ -163,6 +173,7 @@ p11 = Product.create!('name': 'YEDAM YUN BIT Prime Luxury Gold Women Skin Care 4
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 46.99)
 pic11 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p11.jpg")
 p11.photo.attach(io: pic11, filename:"p11")
@@ -172,6 +183,7 @@ p12 = Product.create!('name': 'THEFACESHOP Rice Water Bright Foam Cleanser 150ml
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 13.00)
 pic12 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p12.jpg")
 p12.photo.attach(io: pic12, filename:"p12")
@@ -185,6 +197,7 @@ p13 = Product.create!('name': 'Korean Skin Care - Dr Song Glycolic Acid Face Was
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 7.99)
 pic13 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p13.jpg")
 p13.photo.attach(io: pic13, filename:"p13")
@@ -194,6 +207,7 @@ p14 = Product.create!('name': 'Sulwhasoo Essential Comfort Balancing Water: Hydr
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 68.00)
 pic14 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p14.jpg")
 p14.photo.attach(io: pic14, filename:"p14")
@@ -207,6 +221,7 @@ p15 = Product.create!('name': 'DONGINBI Daily Defense Cream, Anti-aging, Anti-Wr
     'department': beauty.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 65.99)
 pic15 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p15.webp")
 p15.photo.attach(io: pic15, filename:"p15")
@@ -224,6 +239,7 @@ p16 = Product.create!('name': 'Sempio Gochujang, Hot Pepper Paste (Korean Chili 
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 22.32)
 pic16 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p16.jpg")
 p16.photo.attach(io: pic16, filename:"p16")
@@ -233,6 +249,7 @@ p17 = Product.create!('name': 'Fruits Mochi Daifuku Ichigo 7.4oz/210g',
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 6.88)
 pic17 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p17.jpg")
 p17.photo.attach(io: pic17, filename:"p17")
@@ -246,6 +263,7 @@ p18 = Product.create!('name': 'CJ Haechandle Soybean Paste, Korean Doenjang, 500
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 6.85)
 pic18 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p18.jpg")
 p18.photo.attach(io: pic18, filename:"p18")
@@ -259,6 +277,7 @@ p19 = Product.create!('name': '[Samyang] Buldark Spicy Chicken Roasted Sauce 200
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 11.85)
 pic19 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p19.jpg")
 p19.photo.attach(io: pic19, filename:"p19")
@@ -272,6 +291,7 @@ p20 = Product.create!('name': 'Premium Real Korean Pear, Balloon Flower Root, & 
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 35.99)
 pic20 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p20.jpg")
 p20.photo.attach(io: pic20, filename:"p20")
@@ -282,6 +302,7 @@ p21 = Product.create!('name': 'Korea Seasoned Dried Squid Snack Squid Over Flowe
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 18.88)
 pic21 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p21.jpg")
 p21.photo.attach(io: pic21, filename:"p21")
@@ -294,6 +315,7 @@ p22 = Product.create!('name': 'Yopokki Jjajang Rabokki Cup I Ramen Noodle Rice C
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 11.99)
 pic22 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p22.jpg")
 p22.photo.attach(io: pic22, filename:"p22")
@@ -307,6 +329,7 @@ p23 = Product.create!('name': 'Kewpie Mayonaise, 17.64-Ounce Tubes (Pack of 2)',
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 15.19)
 pic23 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p23.jpg")
 p23.photo.attach(io: pic23, filename:"p23")
@@ -321,6 +344,7 @@ p24 = Product.create!('name': 'Tae-kyung Korean Red Chili Pepper Flakes Powder G
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 11.84)
 pic24 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p24.jpg")
 p24.photo.attach(io: pic24, filename:"p24")
@@ -333,6 +357,7 @@ p25 = Product.create!('name': 'bibigo Korean Pre-Made Packaged Seaweed Soup 500g
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 12.94)
 pic25 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p25.jpg")
 p25.photo.attach(io: pic25, filename:"p25")
@@ -346,6 +371,7 @@ p26 = Product.create!('name': '[Palkin] Korea Ramen Tea Bag 16ea (8 hot&spicy fl
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 19.90)
 pic26 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p26.jpg")
 p26.photo.attach(io: pic26, filename:"p26")
@@ -359,6 +385,7 @@ p27 = Product.create!('name': 'CJ New Beksul Furikake Rice Seasoning Mix 밥이�
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 6.95)
 pic27 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p27.jpeg")
 p27.photo.attach(io: pic27, filename:"p27")
@@ -371,6 +398,7 @@ p28 = Product.create!('name': '[Dongsuh] Post Peanut Butter Oreo o`s 400g / Kore
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 29.58)
 pic28 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p28.jpg")
 p28.photo.attach(io: pic28, filename:"p28")
@@ -382,6 +410,7 @@ p29 = Product.create!('name': 'Bonjuk Premium Korean Porridge New Flavor 17.6oz,
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 9.99)
 pic29 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p29.webp")
 p29.photo.attach(io: pic29, filename:"p29")
@@ -397,6 +426,7 @@ p30 = Product.create!('name': 'LAYS Brand , Crispy Potato Chips Spicy Korean Ram
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 14.99)
 pic30 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p30.webp")
 p30.photo.attach(io: pic30, filename:"p30")
@@ -410,6 +440,7 @@ p31 = Product.create!('name': 'Official Gilim HBAF Brand Korean Seasoned Almonds
     'department': food.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 26.97)
 pic31 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p31.webp")
 p31.photo.attach(io: pic31, filename:"p31")
@@ -429,6 +460,7 @@ p32 = Product.create!('name': 'Crazy Korean Cooking Korean Stone Bowl (Dolsot), 
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 46.99)
 pic32 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p32.jpg")
 p32.photo.attach(io: pic32, filename:"p32")
@@ -442,6 +474,7 @@ p33 = Product.create!('name': 'AHIER Ramen Pot, Korean Ramen Cooking Pot With Li
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 16.99)
 pic33 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p33.webp")
 p33.photo.attach(io: pic33, filename:"p33")
@@ -455,6 +488,7 @@ p34 = Product.create!('name': 'TECHEF - Tamagoyaki Japanese Omelette Pan / Egg P
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 32.99)
 pic34 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p34.jpg")
 p34.photo.attach(io: pic34, filename:"p34")
@@ -468,6 +502,7 @@ p35 = Product.create!('name': 'Soup Spoon,Korean Spoons, 8 Pieces Stainless Stee
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 15.99)
 pic35 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p35.jpg")
 p35.photo.attach(io: pic35, filename:"p35")
@@ -481,6 +516,7 @@ p36 = Product.create!('name': 'Rice Cooker,Intelligent Digital Slow Cooker with 
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 79.99)
 pic36 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p36.webp")
 p36.photo.attach(io: pic36, filename:"p36")
@@ -494,6 +530,7 @@ p37 = Product.create!('name': 'Wooden Spoons, 6 Pieces 9 Inch Wood Soup Spoons f
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 16.99)
 pic37 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p37.jpg")
 p37.photo.attach(io: pic37, filename:"p37")
@@ -507,6 +544,7 @@ p38 = Product.create!('name': 'TECHEF - Stovetop Korean BBQ Non-Stick Grill Pan 
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 39.99)
 pic38 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p38.jpg")
 p38.photo.attach(io: pic38, filename:"p38")
@@ -519,6 +557,7 @@ p39 = Product.create!('name': 'Korean Barbecue Kalbi Rib Meat Cutting Shears/Ser
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 5.89)
 pic39 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p39.jpg")
 p39.photo.attach(io: pic39, filename:"p39")
@@ -532,6 +571,7 @@ p40 = Product.create!('name': 'Hytric Electric Hot Pot with Steamer, 1.5L Portab
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 33.99)
 pic40 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p40.webp")
 p40.photo.attach(io: pic40, filename:"p40")
@@ -545,6 +585,7 @@ p41 = Product.create!('name': 'MDLUU 2 Pcs Dolsot Bibimbap Bowl 32 Oz, Granite S
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 45.89)
 pic41 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p41.webp")
 p41.photo.attach(io: pic41, filename:"p41")
@@ -558,6 +599,7 @@ p42 = Product.create!('name': 'Viking Knife Meat Cleaver Knife Hand Forged Bonin
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 25.99)
 pic42 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p42.webp")
 p42.photo.attach(io: pic42, filename:"p42")
@@ -572,6 +614,7 @@ p43 = Product.create!('name': 'Tobyan Soft Cotton Linen Apron - Retro Linen Art 
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 17.69)
 pic43 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p43.jpg")
 p43.photo.attach(io: pic43, filename:"p43")
@@ -585,6 +628,7 @@ p44 = Product.create!('name': 'Wooden Soup Spoon, 2PCS Wooden Long Spoons Korean
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 10.99)
 pic44 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p44.webp")
 p44.photo.attach(io: pic44, filename:"p44")
@@ -598,6 +642,7 @@ p45 = Product.create!('name': 'Sanbege Large Korean Ceramic Bowl with Lid and Tr
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 32.99)
 pic45 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p45.webp")
 p45.photo.attach(io: pic45, filename:"p45")
@@ -611,6 +656,7 @@ p46 = Product.create!('name': 'Clay Pot For Cooking Small Capacity Ceramic Casse
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 49.00)
 pic46 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p46.jpg")
 p46.photo.attach(io: pic46, filename:"p46")
@@ -624,6 +670,7 @@ p47 = Product.create!('name': 'ElinCube Premium Korean Stone Bowl with Lid & Pla
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 28.99)
 pic47 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p47.jpg")
 p47.photo.attach(io: pic47, filename:"p47")
@@ -636,6 +683,7 @@ p48 = Product.create!('name': 'Excelife 86150 Multi Folding Wooden Korean Tea Ta
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 67.15)
 pic48 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p48.jpg")
 p48.photo.attach(io: pic48, filename:"p48")
@@ -650,6 +698,7 @@ p49 = Product.create!('name': 'AGAINATURE Cotton Kitchen Cloth 5 Pack, Korean Di
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 14.99)
 pic49 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p49.jpg")
 p49.photo.attach(io: pic49, filename:"p49")
@@ -663,6 +712,7 @@ p50 = Product.create!('name': 'CUCKOO CR-0655F | 6-Cup (Uncooked) Micom Rice Coo
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 112.99)
 pic50 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p50.jpg")
 p50.photo.attach(io: pic50, filename:"p50")
@@ -677,6 +727,7 @@ p51 = Product.create!('name': 'SASTYBALE Japanese Korean Style Apron Cotton Cook
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 19.99)
 pic51 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p51.jpg")
 p51.photo.attach(io: pic51, filename:"p51")
@@ -690,6 +741,7 @@ p52 = Product.create!('name': 'Knife Set, imarku 16-Pieces Premium Kitchen Knife
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 259.99)
 pic52 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p52.jpg")
 p52.photo.attach(io: pic52, filename:"p52")
@@ -703,6 +755,7 @@ p53 = Product.create!('name': 'Lavensi - Japanese Tamagoyaki Pan, Egg Pan with H
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 36.99)
 pic53 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p53.jpg")
 p53.photo.attach(io: pic53, filename:"p53")
@@ -716,6 +769,7 @@ p54 = Product.create!('name': 'SEAAN Portable Electric Grill Hot Pot 2 in 1 BBQ 
     'department': kitchen.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 115.99)
 pic54 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p54.jpg")
 p54.photo.attach(io: pic54, filename:"p54")
@@ -732,6 +786,7 @@ p55 = Product.create!('name': 'YESNO Women Casual Loose Cropped Pants Denim Bloo
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 44.99)
 pic55 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p55.jpg")
 p55.photo.attach(io: pic55, filename:"p55")
@@ -746,6 +801,7 @@ p56 = Product.create!('name': 'Aedvoouer Women`s Baggy Plus Size Overalls Cotton
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 26.99)
 pic56 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p56.jpg")
 p56.photo.attach(io: pic56, filename:"p56")
@@ -759,6 +815,7 @@ p57 = Product.create!('name': 'Mfacl Cute Hoodies Sweatshirt Womens Clothes Larg
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 23.59)
 pic57 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p57.jpg")
 p57.photo.attach(io: pic57, filename:"p57")
@@ -773,6 +830,7 @@ p58 = Product.create!('name': 'JLFFYJ Harajuku Aesthetic Bear Anime Hoodie Women
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 35.00)
 pic58 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p58.jpg")
 p58.photo.attach(io: pic58, filename:"p58")
@@ -787,6 +845,7 @@ p59 = Product.create!('name': 'Women`s High-Waisted Striped Snap Button Track Pa
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 36.99)
 pic59 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p59.jpg")
 p59.photo.attach(io: pic59, filename:"p59")
@@ -800,6 +859,7 @@ p60 = Product.create!('name': 'Zzple Kawaii Hoodie Womens Clothes Women`s Hoodie
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 30.38)
 pic60 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p60.jpg")
 p60.photo.attach(io: pic60, filename:"p60")
@@ -815,6 +875,7 @@ p61 = Product.create!('name': 'Fall Winter Clothes Women Plaid Hoodies Fake Two 
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 36.99)
 pic61 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p61.jpg")
 p61.photo.attach(io: pic61, filename:"p61")
@@ -829,6 +890,7 @@ p62 = Product.create!('name': 'Spring Autumn O-Neck Pullover Women Korean Loose 
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 15.99)
 pic62 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p62.jpg")
 p62.photo.attach(io: pic62, filename:"p62")
@@ -844,6 +906,7 @@ p63 = Product.create!('name': 'Women`s 3/4 Sleeve Japanese Shawl Kimono Cardigan
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 25.98)
 pic63 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p63.jpg")
 p63.photo.attach(io: pic63, filename:"p63")
@@ -859,6 +922,7 @@ p64 = Product.create!('name': 'Wrenpies Frog Skateboarding Casual Sweatshirt Wom
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 23.68)
 pic64 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p64.jpg")
 p64.photo.attach(io: pic64, filename:"p64")
@@ -876,6 +940,7 @@ p65 = Product.create!('name': 'UQJE Women`s Baggy Cotton Denim Wide Leg Pants Pu
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 37.99)
 pic65 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p65.jpg")
 p65.photo.attach(io: pic65, filename:"p65")
@@ -892,6 +957,7 @@ p66 = Product.create!('name': 'BERING Women`s No Show Socks 6-9 Pairs Low Cut An
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 18.99)
 pic66 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p66.jpg")
 p66.photo.attach(io: pic66, filename:"p66")
@@ -907,6 +973,7 @@ p67 = Product.create!('name': 'Cosfun Winter Bear Hoodie Fake Two-Piece Fleece H
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 37.99)
 pic67 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p67.jpg")
 p67.photo.attach(io: pic67, filename:"p67")
@@ -923,6 +990,7 @@ p68 = Product.create!('name': 'Women`s Cargo Pants Joggers Pants with Chain Loos
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 30.99)
 pic68 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p68.jpg")
 p68.photo.attach(io: pic68, filename:"p68")
@@ -936,6 +1004,7 @@ p69 = Product.create!('name': 'Women`s Sweatshirt Goth Hoodies Harajuku Crewneck
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 29.50)
 pic69 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p69.jpg")
 p69.photo.attach(io: pic69, filename:"p69")
@@ -949,6 +1018,7 @@ p70 = Product.create!('name': 'NC Harajuku Kawaii Sweet Hoodie Fruit Print Women
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 22.00)
 pic70 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p70.jpg")
 p70.photo.attach(io: pic70, filename:"p70")
@@ -962,6 +1032,7 @@ p71 = Product.create!('name': 'ZAFUL Women`s Loose Sweater, Crew Neck Lantern Sl
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 27.99)
 pic71 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p71.jpg")
 p71.photo.attach(io: pic71, filename:"p71")
@@ -977,6 +1048,7 @@ p72 = Product.create!('name': 'SOLY HUX Men`s Colorblock Letter Embroidery Long 
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 32.99)
 pic72 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p72.jpg")
 p72.photo.attach(io: pic72, filename:"p72")
@@ -991,6 +1063,7 @@ p73 = Product.create!('name': 'ZPAYFSDS Women`s Cute Cat Ear Button Fleece Warm 
     'department': attire.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 25.99)
 pic73 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p73.jpg")
 p73.photo.attach(io: pic73, filename:"p73")
@@ -1006,6 +1079,7 @@ p74 = Product.create!('name': 'HomeTheWay Korean garden hand tool/ hoe/ garden p
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 18.99)
 pic74 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p74.jpg")
 p74.photo.attach(io: pic74, filename:"p74")
@@ -1019,6 +1093,7 @@ p75 = Product.create!('name': 'HOMI YOUNGJU HandPlowHoe Gardentool with Safety C
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 39.80)
 pic75 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p75.jpg")
 p75.photo.attach(io: pic75, filename:"p75")
@@ -1032,6 +1107,7 @@ p76 = Product.create!('name': 'NY FASHIONCITY Baekdu Korean Carbon Steel Forged 
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 39.99)
 pic76 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p76.jpg")
 p76.photo.attach(io: pic76, filename:"p76")
@@ -1045,6 +1121,7 @@ p77 = Product.create!('name': 'VESTA Korean Gardening Hip Attached Work Seat, Ø
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 53.99)
 pic77 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p77.jpg")
 p77.photo.attach(io: pic77, filename:"p77")
@@ -1058,6 +1135,7 @@ p78 = Product.create!('name': 'labworkauto Garden Foldable Bench Seat Stool Knee
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 32.99)
 pic78 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p78.jpg")
 p78.photo.attach(io: pic78, filename:"p78")
@@ -1071,6 +1149,7 @@ p79 = Product.create!('name': 'SUPIA Korean Gardening Tool ho-mi Hand Plow Hoe S
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 12.88)
 pic79 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p79.jpg")
 p79.photo.attach(io: pic79, filename:"p79")
@@ -1084,6 +1163,7 @@ p80 = Product.create!('name': 'Homi YoungJu DaeJangGan Handmade Korean Hand Plow
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 19.95)
 pic80 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p80.jpg")
 p80.photo.attach(io: pic80, filename:"p80")
@@ -1093,6 +1173,7 @@ p81 = Product.create!('name': 'JADAM Organic PEST and DISEASE CONTROL: POWERFUL 
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 45.00)
 pic81 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p81.jpg")
 p81.photo.attach(io: pic81, filename:"p81")
@@ -1106,6 +1187,7 @@ p82 = Product.create!('name': 'Design Toscano The Nara Temple Pagoda Asian Decor
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 106.90)
 pic82 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p82.jpg")
 p82.photo.attach(io: pic82, filename:"p82")
@@ -1119,6 +1201,7 @@ p83 = Product.create!('name': 'Kwik Edge Tool - Garden Edger Weeder - Soil Culti
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 49.95)
 pic83 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p83.jpg")
 p83.photo.attach(io: pic83, filename:"p83")
@@ -1132,6 +1215,7 @@ p84 = Product.create!('name': 'Cabbage Seeds for Planting 5 Individual Packets B
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 10.95)
 pic84 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p84.jpg")
 p84.photo.attach(io: pic84, filename:"p84")
@@ -1145,6 +1229,7 @@ p85 = Product.create!('name': 'Nacome Solar Pagoda Lantern Garden Statue,Indoor/
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 41.98)
 pic85 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p85.jpg")
 p85.photo.attach(io: pic85, filename:"p85")
@@ -1157,6 +1242,7 @@ p86 = Product.create!('name': 'BlueArrowExpress Kana Hoe 217 Japanese Garden Too
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 18.00)
 pic86 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p86.jpg")
 p86.photo.attach(io: pic86, filename:"p86")
@@ -1166,6 +1252,7 @@ p87 = Product.create!('name': 'UpBlend Outdoors Large Wind Chime - The Classic H
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 28.94)
 pic87 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p87.jpg")
 p87.photo.attach(io: pic87, filename:"p87")
@@ -1179,6 +1266,7 @@ p88 = Product.create!('name': 'Nisaku NJP650 Hori-Hori Weeding & Digging Knife, 
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 26.00)
 pic88 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p88.jpg")
 p88.photo.attach(io: pic88, filename:"p88")
@@ -1192,6 +1280,7 @@ p89 = Product.create!('name': 'Korean Lovers Figure Ornaments Miniature Dollhous
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 4.27)
 pic89 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p89.jpg")
 p89.photo.attach(io: pic89, filename:"p89")
@@ -1205,6 +1294,7 @@ p90 = Product.create!('name': 'Tree Face Sculpture, Flower Planter Pot Hand-Pain
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 28.00)
 pic90 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p90.jpg")
 p90.photo.attach(io: pic90, filename:"p90")
@@ -1218,6 +1308,7 @@ p91 = Product.create!('name': 'COOLJOB Gardening Gloves for Women and Ladies, 6 
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 19.99)
 pic91 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p91.jpg")
 p91.photo.attach(io: pic91, filename:"p91")
@@ -1231,6 +1322,7 @@ p92 = Product.create!('name': 'Magid Glove & Safety Professional Rose Pruning Th
     'department': garden.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 11.10)
 pic92 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p92.jpg")
 p92.photo.attach(io: pic92, filename:"p92")
@@ -1246,6 +1338,7 @@ p93 = Product.create!('name': 'TOYTRON Little Future Book Pororo Talking Pen, In
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 92.99)
 pic93 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p93.jpg")
 p93.photo.attach(io: pic93, filename:"p93")
@@ -1259,6 +1352,7 @@ p94 = Product.create!('name': 'Soft Foam Korean Alphabet Magnetic Letters, Learn
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 10.99)
 pic94 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p94.jpg")
 p94.photo.attach(io: pic94, filename:"p94")
@@ -1272,6 +1366,7 @@ p95 = Product.create!('name': 'Korean Flower Card Game Hwatu / Good for Gift, Ha
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 14.00)
 pic95 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p95.jpg")
 p95.photo.attach(io: pic95, filename:"p95")
@@ -1285,6 +1380,7 @@ p96 = Product.create!('name': 'Dr. Moku Hangul Flashcards - Learn The Korean Alp
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 15.95)
 pic96 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p96.jpg")
 p96.photo.attach(io: pic96, filename:"p96")
@@ -1298,6 +1394,7 @@ p97 = Product.create!('name': '[Random] Korean Traditional Play Game 8PCS Gonggi
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 16.99)
 pic97 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p97.jpg")
 p97.photo.attach(io: pic97, filename:"p97")
@@ -1311,6 +1408,7 @@ p98 = Product.create!('name': 'PlaySet Bag and Game Props, Suitable for Role-Pla
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 13.99)
 pic98 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p98.jpg")
 p98.photo.attach(io: pic98, filename:"p98")
@@ -1324,6 +1422,7 @@ p99 = Product.create!('name': 'GEEKBEAR YUTNORI Board Game - Korean Board Game Y
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 17.99)
 pic99 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p99.jpg")
 p99.photo.attach(io: pic99, filename:"p99")
@@ -1337,6 +1436,7 @@ p100 = Product.create!('name': 'Cute Bag of Chocolate Bear Plush Toy Soft Throw 
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 39.99)
 pic100 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p100.jpg")
 p100.photo.attach(io: pic100, filename:"p100")
@@ -1350,6 +1450,7 @@ p101 = Product.create!('name': 'ECTY Cute Stuffed Plush Doll, 11" Sitting Height
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 36.00)
 pic101 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p101.jpg")
 p101.photo.attach(io: pic101, filename:"p101")
@@ -1363,6 +1464,7 @@ p102 = Product.create!('name': '[LENITH] Dalgona Korean Squid Game Sugar Candy C
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 16.50)
 pic102 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p102.jpg")
 p102.photo.attach(io: pic102, filename:"p102")
@@ -1376,6 +1478,7 @@ p103 = Product.create!('name': 'Youngchang Sogo Korean Traditional Hand Drum Mus
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 14.60)
 pic103 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p103.jpg")
 p103.photo.attach(io: pic103, filename:"p103")
@@ -1389,6 +1492,7 @@ p104 = Product.create!('name': 'YIPINJIA Squid Pop Game It Bag Kids Toy, Poppers
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 9.99)
 pic104 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p104.jpg")
 p104.photo.attach(io: pic104, filename:"p104")
@@ -1402,6 +1506,7 @@ p105 = Product.create!('name': 'SHASHIBO Shape Shifting Box - Award-Winning, Pat
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 25.00)
 pic105 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p105.jpg")
 p105.photo.attach(io: pic105, filename:"p105")
@@ -1414,6 +1519,7 @@ p106 = Product.create!('name': 'LENITH YUTNORI Korean Board Games 윷놀이 Yunn
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 9.93)
 pic106 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p106.jpg")
 p106.photo.attach(io: pic106, filename:"p106")
@@ -1427,6 +1533,7 @@ p107 = Product.create!('name': 'Raon with BTS (Korean & English Language) | Boar
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 49.99)
 pic107 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p107.jpg")
 p107.photo.attach(io: pic107, filename:"p107")
@@ -1440,6 +1547,7 @@ p108 = Product.create!('name': 'GEEKBEAR Hwatu - Korean Flower Card Game – Kor
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 20.99)
 pic108 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p108.jpg")
 p108.photo.attach(io: pic108, filename:"p108")
@@ -1452,6 +1560,7 @@ p109 = Product.create!('name': 'Exit: The Game – The Abandoned Cabin (Korean L
     'department': toys.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 20.00)
 pic109 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p109.webp")
 p109.photo.attach(io: pic109, filename:"p109")
@@ -1467,6 +1576,7 @@ p110 = Product.create!('name': 'February Mountain Mother of Pearl Small Korean J
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 48.99)
 pic110 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p110.jpg")
 p110.photo.attach(io: pic110, filename:"p110")
@@ -1480,6 +1590,7 @@ p111 = Product.create!('name': 'Hanbok Hair Pin Korea Traditional Girl Women Ado
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 28.00)
 pic111 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p111.jpg")
 p111.photo.attach(io: pic111, filename:"p111")
@@ -1492,6 +1603,7 @@ p112 = Product.create!('name': 'Make Buy Home Set of 5 Coasters for Tea with Hol
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 15.99)
 pic112 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p112.jpg")
 p112.photo.attach(io: pic112, filename:"p112")
@@ -1505,6 +1617,7 @@ p113 = Product.create!('name': 'JYHOME Traditional Korean Designed Table Runner 
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 20.99)
 pic113 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p113.jpg")
 p113.photo.attach(io: pic113, filename:"p113")
@@ -1519,6 +1632,7 @@ p114 = Product.create!('name': 'Gift Bags Korean Traditional Fabric Bojagi Doubl
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 16.99)
 pic114 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p114.jpg")
 p114.photo.attach(io: pic114, filename:"p114")
@@ -1531,6 +1645,7 @@ p115 = Product.create!('name': 'cozymomdeco Korean Made Traditional Simple Bronz
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 48.99)
 pic115 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p115.jpg")
 p115.photo.attach(io: pic115, filename:"p115")
@@ -1542,6 +1657,7 @@ p116 = Product.create!('name': 'Korean Traditional Women`s Men`s Hanbok Metal Bo
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 17.95)
 pic116 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p116.jpg")
 p116.photo.attach(io: pic116, filename:"p116")
@@ -1555,6 +1671,7 @@ p117 = Product.create!('name': 'Korean Traditional Queen Hanbok Wine Bottle Cove
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 16.99)
 pic117 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p117.jpg")
 p117.photo.attach(io: pic117, filename:"p117")
@@ -1568,6 +1685,7 @@ p118 = Product.create!('name': 'Parkssisangbang Korean Traditional Bamboo Hanji 
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 18.90)
 pic118 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p118.jpg")
 p118.photo.attach(io: pic118, filename:"p118")
@@ -1581,6 +1699,7 @@ p119 = Product.create!('name': 'Korea Traditional Ban Korean Instruments Haegeum
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 690.00)
 pic119 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p119.jpg")
 p119.photo.attach(io: pic119, filename:"p119")
@@ -1594,6 +1713,7 @@ p120 = Product.create!('name': 'Ivory Peach Hanbok Girl Baby Korea Traditional D
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 140.00)
 pic120 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p120.jpg")
 p120.photo.attach(io: pic120, filename:"p120")
@@ -1606,6 +1726,7 @@ p121 = Product.create!('name': 'Women Hanbok Dress Korean Traditional Hanbok Kor
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 61.00)
 pic121 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p121.jpg")
 p121.photo.attach(io: pic121, filename:"p121")
@@ -1618,6 +1739,7 @@ p122 = Product.create!('name': 'Wood Lamp Shade Handmade Traditional Korean Hous
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 299.00)
 pic122 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p122.jpg")
 p122.photo.attach(io: pic122, filename:"p122")
@@ -1632,6 +1754,7 @@ p123 = Product.create!('name': 'koliq Korean Traditional Soju Shot Glasses Set -
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 32.99)
 pic123 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p123.jpg")
 p123.photo.attach(io: pic123, filename:"p123")
@@ -1643,6 +1766,7 @@ p124 = Product.create!('name': 'Korean Traditional Colorful Carved Wedding Woode
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 99.95)
 pic124 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p124.jpg")
 p124.photo.attach(io: pic124, filename:"p124")
@@ -1656,6 +1780,7 @@ p125 = Product.create!('name': 'Womens Summer Loose fit Dragon or Crane Japanese
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 27.98)
 pic125 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p125.jpg")
 p125.photo.attach(io: pic125, filename:"p125")
@@ -1669,6 +1794,7 @@ p126 = Product.create!('name': 'Korean Traditional Bamboo Hanji Hand Fan + Paper
     'department': traditional.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 16.90)
 pic126 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p126.jpg")
 p126.photo.attach(io: pic126, filename:"p126")
@@ -1685,6 +1811,7 @@ p127 = Product.create!('name': 'CheongKwanJang [Hong Sam Won Plus - Korean Ginse
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 39.99)
 pic127 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p127.jpg")
 p127.photo.attach(io: pic127, filename:"p127")
@@ -1698,6 +1825,7 @@ p128 = Product.create!('name': 'Premium Sugar-Free Korean Pear, Ginger and Ballo
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 16.99)
 pic128 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p128.jpg")
 p128.photo.attach(io: pic128, filename:"p128")
@@ -1710,6 +1838,7 @@ p129 = Product.create!('name': 'Pocheon 300g(10.6oz) 6Years Sliced Korean Panax 
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 36.40)
 pic129 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p129.jpg")
 p129.photo.attach(io: pic129, filename:"p129")
@@ -1723,6 +1852,7 @@ p130 = Product.create!('name': 'Korean Beauty Baekje Geumsan Women`s Pomegranate
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 36.90)
 pic130 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p130.jpg")
 p130.photo.attach(io: pic130, filename:"p130")
@@ -1736,6 +1866,7 @@ p131 = Product.create!('name': 'CKD LACTO-FIT ProBiotics Gold 2000mg * 50EA (Tot
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 19.00)
 pic131 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p131.jpg")
 p131.photo.attach(io: pic131, filename:"p131")
@@ -1749,6 +1880,7 @@ p132 = Product.create!('name': 'Korean Pear Bellflower Root Juice [ Korean Food 
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 29.99)
 pic132 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p132.jpg")
 p132.photo.attach(io: pic132, filename:"p132")
@@ -1762,6 +1894,7 @@ p133 = Product.create!('name': 'Korean 100% Pure Balloon Flower Bellflower Root 
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 23.99)
 pic133 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p133.jpg")
 p133.photo.attach(io: pic133, filename:"p133")
@@ -1775,6 +1908,7 @@ p134 = Product.create!('name': 'GeumHeuk Korean Black Ginseng 240g - 100% Black 
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 299.99)
 pic134 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p134.jpg")
 p134.photo.attach(io: pic134, filename:"p134")
@@ -1788,6 +1922,7 @@ p135 = Product.create!('name': 'Jung’s Laboratory of Immunology–Vita Postbio
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 25.98)
 pic135 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p135.jpg")
 p135.photo.attach(io: pic135, filename:"p135")
@@ -1797,6 +1932,7 @@ p136 = Product.create!('name': 'Korean Medicine: A Holistic Way to Health and He
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 18.00)
 pic136 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p136.jpg")
 p136.photo.attach(io: pic136, filename:"p136")
@@ -1810,6 +1946,7 @@ p137 = Product.create!('name': 'Kwangdong Jujube Ssang Hwa Jin - Traditional Kor
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 15.99)
 pic137 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p137.jpg")
 p137.photo.attach(io: pic137, filename:"p137")
@@ -1823,6 +1960,7 @@ p138 = Product.create!('name': 'Itch Relief Octagon Traditional Korean Paper HAN
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 13.90)
 pic138 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p138.jpg")
 p138.photo.attach(io: pic138, filename:"p138")
@@ -1836,6 +1974,7 @@ p139 = Product.create!('name': 'Korean Red Panax Ginseng [Gold Series] Double St
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 39.95)
 pic139 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p139.jpg")
 p139.photo.attach(io: pic139, filename:"p139")
@@ -1849,6 +1988,7 @@ p140 = Product.create!('name': 'COSRX Acne Pimple Patch (96 counts) Absorbing Hy
     'department': health.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 13.50)
 pic140 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p140.jpg")
 p140.photo.attach(io: pic140, filename:"p140")
@@ -1866,6 +2006,7 @@ p141 = Product.create!('name': 'Korean Calligraphy Name Wall Art/Custom Made and
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 39.99)
 pic141 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p141.jpg")
 p141.photo.attach(io: pic141, filename:"p141")
@@ -1879,6 +2020,7 @@ p142 = Product.create!('name': 'PeeNoke Wall Art: Traditional Korean Painting Ve
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 69.99)
 pic142 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p142.jpg")
 p142.photo.attach(io: pic142, filename:"p142")
@@ -1892,6 +2034,7 @@ p143 = Product.create!('name': '100 K-Dramas Scratch Off Poster - Top Korean Dra
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 29.95)
 pic143 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p143.jpg")
 p143.photo.attach(io: pic143, filename:"p143")
@@ -1905,6 +2048,7 @@ p144 = Product.create!('name': 'Art Poster Korean Classic Art Wall Decoration Cl
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 12.00)
 pic144 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p144.jpg")
 p144.photo.attach(io: pic144, filename:"p144")
@@ -1918,6 +2062,7 @@ p145 = Product.create!('name': 'Grace Art Asian Wall Scroll, Set of 4, Four Seas
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 79.99)
 pic145 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p145.jpg")
 p145.photo.attach(io: pic145, filename:"p145")
@@ -1930,6 +2075,7 @@ p146 = Product.create!('name': 'Korea, 1800|Old Korean Map: Chobyok chondo : yum
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 24.99)
 pic146 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p146.jpg")
 p146.photo.attach(io: pic146, filename:"p146")
@@ -1943,6 +2089,7 @@ p147 = Product.create!('name': 'LYHNB Colorful Korean Alphabet Art Prints Hangul
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 30.89)
 pic147 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p147.jpg")
 p147.photo.attach(io: pic147, filename:"p147")
@@ -1954,6 +2101,7 @@ p148 = Product.create!('name': 'Hand Carved Korean Hahoe Woman Dance Smile Woode
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 59.95)
 pic148 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p148.jpg")
 p148.photo.attach(io: pic148, filename:"p148")
@@ -1967,6 +2115,7 @@ p149 = Product.create!('name': 'PeeNoke 8 Panel Extra Large Wall Art Decor Korea
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 139.99)
 pic149 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p149.jpg")
 p149.photo.attach(io: pic149, filename:"p149")
@@ -1980,6 +2129,7 @@ p150 = Product.create!('name': 'Lunarable East Tapestry Queen Size, Korean Folk 
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 26.99)
 pic150 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p150.jpg")
 p150.photo.attach(io: pic150, filename:"p150")
@@ -1993,6 +2143,7 @@ p151 = Product.create!('name': 'YGGQF Throw Pillow Cover Korean Hangul Pattern S
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 9.99)
 pic151 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p151.jpg")
 p151.photo.attach(io: pic151, filename:"p151")
@@ -2006,6 +2157,7 @@ p152 = Product.create!('name': 'MariaP 8 x 12 Metal Sign - You Can`t Buy Happine
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 12.99)
 pic152 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p152.jpg")
 p152.photo.attach(io: pic152, filename:"p152")
@@ -2017,6 +2169,7 @@ p153 = Product.create!('name': 'Korean Celadon Glaze Inlaid Clouds and Cranes Pa
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 230.00)
 pic153 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p153.jpg")
 p153.photo.attach(io: pic153, filename:"p153")
@@ -2030,6 +2183,7 @@ p154 = Product.create!('name': 'Wooden Texture South Korean Flag Wall Art Painti
     'department': art.name,
     'delivery_days': rand(max_days) + 1,
     'review': 0.00,
+    'review_num': 0,
     'price': 21.98)
 pic154 = open("https://amajon-seeds.s3.amazonaws.com/product_images/p154.jpg")
 p154.photo.attach(io: pic154, filename:"p154")

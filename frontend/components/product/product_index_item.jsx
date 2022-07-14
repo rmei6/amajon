@@ -31,7 +31,7 @@ const ProductIndexItem = ({product}) => {
                 </Link>
             </div>
             <div className="product-index-item-reviews-container">
-                <span>{product.review} stars</span>
+                <span>{product.review} stars with {product.review_num} reviews</span>
             </div>
             <div className="product-index-item-price-container">
                 <Link className="product-index-item-price" to={`/products/${product.id}`}>

@@ -1,6 +1,7 @@
-import React, { useDebugValue } from "react";
+import React, { startTransition, useDebugValue } from "react";
 import { Link } from "react-router-dom";
 import HeaderContainer from "../header/header_container";
+import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs"
 
 class ProductShow extends React.Component {
     constructor(props){
@@ -10,12 +11,14 @@ class ProductShow extends React.Component {
             department: '',
             quantity: 1,
             stars: 1,
+            headline: '',
             body: ''
         }
         this.setDepartment = this.setDepartment.bind(this)
         this.handleClick = this.handleClick.bind(this)
         this.setStars = this.setStars.bind(this)
         this.setText = this.setText.bind(this)
+        this.setHeadline = this.setHeadline.bind(this)
         this.submitReview = this.submitReview.bind(this)
         this.deleteReview = this.deleteReview.bind(this)
     }
@@ -68,6 +71,13 @@ class ProductShow extends React.Component {
             this.setState({body: e.currentTarget.value})
         }
     }
+
+    setHeadline(){    
+        return(e)=> {
+            e.preventDefault()
+            this.setState({headline: e.currentTarget.value})
+        }
+    }
     
     submitReview(e){
         e.preventDefault()
@@ -76,6 +86,7 @@ class ProductShow extends React.Component {
                 'user_name': this.props.currentUser.name,
                 'user_id': this.props.currentUser.id,
                 'product_id': this.props.product.id,
+                'headline': this.state.headline,
                 'body': this.state.body,
                 'stars': this.state.stars
             }
@@ -131,10 +142,30 @@ class ProductShow extends React.Component {
             var nextdate_word = nextdate.toLocaleString('en-us',{day: 'numeric', month: 'short'})
             var deliverday = `${dayslater === 1 ? 'Tomorrow' : weekdays[nextdate.getDay()]}, ${nextdate_word}`;
             debugger;
+            const stars = [];
+            let stars_rem = product.review;
+            for(let i = 0; i < 5; i++){
+                if(stars_rem >= 1){
+                    stars.push(<BsStarFill key={i}/>);
+                    stars_rem -= 1;
+                }else if(stars_rem === 0){
+                    stars.push(<BsStar key={i}/>)
+                }else{
+                    if(stars_rem < 0.3){
+                        stars.push(<BsStar key={i}/>)
+                    }else if(stars_rem <= 0.7){
+                        stars.push(<BsStarHalf key={i}/>)
+                    }else{
+                        stars.push(<BsStarFill key={i}/>)
+                    }
+                    stars_rem = 0;
+                }
+            }
             const reviews = product.reviews ? Object.values(product.reviews).map((review,idx) => (
                 <div key={`review${idx}`}>
                     <span>{review.user_name}</span>
                     <span>{review.stars} stars</span>
+                    <span>{review.headline}</span>
                     <span>{review.body}</span>
                     {currentUser && review.user_id === currentUser.id ? <button id={review.id} onClick={this.deleteReview}>Delete</button> : ''}
                 </div>
@@ -165,6 +196,9 @@ class ProductShow extends React.Component {
                                 <option value={5}>5</option>
                             </select>
                         </label>
+                        <label>Headline
+                            <input type="text" onChange={this.setHeadline()} placeholder='Please add a headline'></input>
+                        </label>
                         <label>Body
                             <input type="text" onChange={this.setText()} placeholder='Please add a review'/>
                         </label>
@@ -194,7 +228,8 @@ class ProductShow extends React.Component {
                                     <div className="product-name-container">
                                         <p className="product-show-name">{product.name}</p>
                                         {/* <p>overall review info here</p> */}
-                                        <p className="product-show-review">{product.review} stars</p>
+                                        {stars}
+                                        <p className="product-show-review">{product.review} stars with {product.review_num} reviews</p>
                                     </div>
                                     <div className="product-show-price-shipping">
                                         <div className="product-show-item-price-container">

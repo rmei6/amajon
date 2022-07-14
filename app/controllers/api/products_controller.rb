@@ -49,13 +49,13 @@ class Api::ProductsController < ApplicationController
             end
             avg_review = review_sum / review_num
         end
-        @product.update(review: avg_review)
+        @product.update(review: avg_review,review_num: review_num)
         render :show
     end
 
     private
 
     def product_params
-        params.require(:product).permit(:name,:description,:department_id,:delivery_days,:price,:review)
+        params.require(:product).permit(:name,:description,:department_id,:delivery_days,:price,:review,:review_num)
     end
 end

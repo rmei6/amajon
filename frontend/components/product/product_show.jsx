@@ -146,17 +146,17 @@ class ProductShow extends React.Component {
             let stars_rem = product.review;
             for(let i = 0; i < 5; i++){
                 if(stars_rem >= 1){
-                    stars.push(<BsStarFill key={i}/>);
+                    stars.push(<BsStarFill key={i} className="review-star"/>);
                     stars_rem -= 1;
                 }else if(stars_rem === 0){
-                    stars.push(<BsStar key={i}/>)
+                    stars.push(<BsStar key={i} className="review-star"/>)
                 }else{
                     if(stars_rem < 0.3){
-                        stars.push(<BsStar key={i}/>)
+                        stars.push(<BsStar key={i} className="review-star"/>)
                     }else if(stars_rem <= 0.7){
-                        stars.push(<BsStarHalf key={i}/>)
+                        stars.push(<BsStarHalf key={i} className="review-star"/>)
                     }else{
-                        stars.push(<BsStarFill key={i}/>)
+                        stars.push(<BsStarFill key={i} className="review-star"/>)
                     }
                     stars_rem = 0;
                 }

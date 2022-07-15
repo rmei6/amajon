@@ -15,7 +15,7 @@ class Api::ProductsController < ApplicationController
             @products = Product.all
         elsif(department_paths.include?(params[:department]))
             # debugger;
-            @products = Product.select(:id,:name,:description,:department,:delivery_days,:price,:review).where(department: params[:department])
+            @products = Product.select(:id,:name,:description,:department,:delivery_days,:price,:review,:review_num).where(department: params[:department])
         else
             redirect_to '/'
             # return Redirect("http://localhost:3000/#/");

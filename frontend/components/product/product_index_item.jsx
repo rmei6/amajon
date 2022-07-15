@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs"
 
 
 const ProductIndexItem = ({product}) => {
@@ -17,6 +18,25 @@ const ProductIndexItem = ({product}) => {
     var nextdate = new Date(date.getFullYear(), date.getMonth(), date.getDate()+dayslater);
     var nextdate_word = nextdate.toLocaleString('en-us',{day: 'numeric', month: 'short'})
     var deliverday = `${dayslater === 1 ? 'Tomorrow' : weekdays[nextdate.getDay()]}, ${nextdate_word}`;
+    const stars = [];
+    let stars_rem = product.review;
+    for(let i = 0; i < 5; i++){
+        if(stars_rem >= 1){
+            stars.push(<BsStarFill key={i} className="review-star"/>);
+            stars_rem -= 1;
+        }else if(stars_rem === 0){
+            stars.push(<BsStar key={i} className="review-star"/>)
+        }else{
+            if(stars_rem < 0.3){
+                stars.push(<BsStar key={i} className="review-star"/>)
+            }else if(stars_rem <= 0.7){
+                stars.push(<BsStarHalf key={i} className="review-star"/>)
+            }else{
+                stars.push(<BsStarFill key={i} className="review-star"/>)
+            }
+            stars_rem = 0;
+        }
+    }
     return (
         <div className="product-index-item">
             <div className="index-img-container">
@@ -31,6 +51,7 @@ const ProductIndexItem = ({product}) => {
                 </Link>
             </div>
             <div className="product-index-item-reviews-container">
+                {stars}
                 <span>{product.review} stars with {product.review_num} reviews</span>
             </div>
             <div className="product-index-item-price-container">

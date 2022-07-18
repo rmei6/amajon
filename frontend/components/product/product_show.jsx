@@ -114,6 +114,28 @@ class ProductShow extends React.Component {
     //         this.props.fetchProduct(this.props.match.params.id);
     //     }
     // }
+    getStars(rating){
+        let stars_rem = rating;
+        const stars = [];
+        for(let i = 0; i < 5; i++){
+            if(stars_rem >= 1){
+                stars.push(<BsStarFill key={i} className="review-star"/>);
+                stars_rem -= 1;
+            }else if(stars_rem === 0){
+                stars.push(<BsStar key={i} className="review-star"/>)
+            }else{
+                if(stars_rem < 0.3){
+                    stars.push(<BsStar key={i} className="review-star"/>)
+                }else if(stars_rem <= 0.7){
+                    stars.push(<BsStarHalf key={i} className="review-star"/>)
+                }else{
+                    stars.push(<BsStarFill key={i} className="review-star"/>)
+                }
+                stars_rem = 0;
+            }
+        }
+        return stars;
+    }
 
 
     render(){
@@ -142,68 +164,61 @@ class ProductShow extends React.Component {
             var nextdate_word = nextdate.toLocaleString('en-us',{day: 'numeric', month: 'short'})
             var deliverday = `${dayslater === 1 ? 'Tomorrow' : weekdays[nextdate.getDay()]}, ${nextdate_word}`;
             debugger;
-            const stars = [];
-            let stars_rem = product.review;
-            for(let i = 0; i < 5; i++){
-                if(stars_rem >= 1){
-                    stars.push(<BsStarFill key={i} className="review-star"/>);
-                    stars_rem -= 1;
-                }else if(stars_rem === 0){
-                    stars.push(<BsStar key={i} className="review-star"/>)
-                }else{
-                    if(stars_rem < 0.3){
-                        stars.push(<BsStar key={i} className="review-star"/>)
-                    }else if(stars_rem <= 0.7){
-                        stars.push(<BsStarHalf key={i} className="review-star"/>)
-                    }else{
-                        stars.push(<BsStarFill key={i} className="review-star"/>)
-                    }
-                    stars_rem = 0;
-                }
-            }
+            const product_review = Math.round(product.review * 10) / 10;
+            const review_shown = product_review.toLocaleString('en-US', { maximumFractionDigits: 1 });
+            let stars = this.getStars(product_review);
             const reviews = product.reviews ? Object.values(product.reviews).map((review,idx) => (
                 <div key={`review${idx}`}>
                     <span>{review.user_name}</span>
-                    <span>{review.stars} stars</span>
-                    <span>{review.headline}</span>
-                    <span>{review.body}</span>
                     {currentUser && review.user_id === currentUser.id ? <button id={review.id} onClick={this.deleteReview}>Delete</button> : ''}
+                    <div>
+                        {this.getStars(review.stars)}
+                        <span>{review.headline}</span>
+                    </div>
+                    <span>{review.body}</span>
                 </div>
             )) : ''
             let reviewFormValid = true;
             debugger;
+            //use currentUser.reviews to check if it's their review to edit?
             if(currentUser === undefined){
                 reviewFormValid = false;
             }else if (product.reviews) {
                 const reviewers = Object.values(product.reviews).map(review => review.user_id)
                 reviewFormValid = !reviewers.includes(currentUser.id)
             }
-            const reviewForm = reviewFormValid ?
-                <div>
-                        <label>Stars
-                            {/* <input type="select" onChange={this.setStars()}>
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                                <option value={4}>4</option>
-                                <option value={5}>5</option>
-                            </input> */}
-                            <select onChange={this.setStars()}>
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                                <option value={4}>4</option>
-                                <option value={5}>5</option>
-                            </select>
-                        </label>
-                        <label>Headline
-                            <input type="text" onChange={this.setHeadline()} placeholder='Please add a headline'></input>
-                        </label>
-                        <label>Body
-                            <input type="text" onChange={this.setText()} placeholder='Please add a review'/>
-                        </label>
-                        <button onClick={this.submitReview}>Submit Review</button>
-                </div> : currentUser ? '' : <span>Please Login to Leave a Review</span>
+            const reviewLink = reviewFormValid ?
+                // <div>
+                //         <label>Stars
+                //             {/* <input type="select" onChange={this.setStars()}>
+                //                 <option value={1}>1</option>
+                //                 <option value={2}>2</option>
+                //                 <option value={3}>3</option>
+                //                 <option value={4}>4</option>
+                //                 <option value={5}>5</option>
+                //             </input> */}
+                //             <select onChange={this.setStars()}>
+                //                 <option value={1}>1</option>
+                //                 <option value={2}>2</option>
+                //                 <option value={3}>3</option>
+                //                 <option value={4}>4</option>
+                //                 <option value={5}>5</option>
+                //             </select>
+                //         </label>
+                //         <label>Headline
+                //             <input type="text" onChange={this.setHeadline()} placeholder='Please add a headline'></input>
+                //         </label>
+                //         <label>Body
+                //             <input type="text" onChange={this.setText()} placeholder='Please add a review'/>
+                //         </label>
+                //         <button onClick={this.submitReview}>Submit Review</button>
+                // </div> 
+                <div className="create-review-option">
+                    <span>Review this product</span>
+                    <span>Share your thoughts with other customers </span>
+                    <Link to={`/products/${product.id}/review/new`}><button>Write a customer review</button></Link>
+                </div>
+                : currentUser ? '' : <span>Please Login to Leave a Review</span>
             return (
                 <div>
                     <HeaderContainer setDepartment={this.setDepartment}/>
@@ -229,7 +244,7 @@ class ProductShow extends React.Component {
                                         <p className="product-show-name">{product.name}</p>
                                         {/* <p>overall review info here</p> */}
                                         {stars}
-                                        <p className="product-show-review">{product.review} stars with {product.review_num} reviews</p>
+                                        <p className="product-show-review">{product.review_num} ratings</p>
                                     </div>
                                     <div className="product-show-price-shipping">
                                         <div className="product-show-item-price-container">
@@ -317,9 +332,24 @@ class ProductShow extends React.Component {
                         </div>
                     </div>
                     <div className="product-review">
-                        <span>Review Info: {product.review} stars</span>
-                        {reviews}
-                        {reviewForm}           
+                        <div className="review-header">
+                            <span>Customer Reviews</span>
+                            <div>
+                                {stars}
+                                <span>{review_shown} out of 5</span>
+                            </div>
+                            <span>{product.review_num} global ratings</span>
+                            {/* <div className="create-review-option">
+                                <span>Review this product</span>
+                                <span>Share your thoughts with other customers </span>
+                                <Link to={`/products/${product.id}/review/new`}><button>Write a customer review</button></Link>
+                            </div> */}
+                            {reviewLink}
+                        </div>
+                        <div className="reviews-list">
+                            <span>Global Reviews</span>
+                            {reviews}
+                        </div>
                     </div>
                 </div>
             )

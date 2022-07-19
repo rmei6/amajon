@@ -3,7 +3,7 @@ import { ADD_CART, RECEIVE_ITEMS, UPDATE_CART } from "../actions/cart_actions";
 
 const usersReducer = (state = {}, action) => {
     Object.freeze(state)
-    debugger; 
+    // debugger; 
     switch(action.type){
         case RECEIVE_CURRENT_USER: 
             debugger;

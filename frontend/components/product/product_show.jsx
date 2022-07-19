@@ -332,7 +332,7 @@ class ProductShow extends React.Component {
                         </div>
                     </div>
                     <div className="product-review">
-                        <div className="review-header">
+                        <div className="review-right">
                             <span>Customer Reviews</span>
                             <div>
                                 {stars}

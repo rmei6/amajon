@@ -170,14 +170,19 @@ class ProductShow extends React.Component {
             const review_shown = product_review.toLocaleString('en-US', { maximumFractionDigits: 1 });
             let stars = this.getStars(product_review);
             let reviews = product.reviews ? Object.values(product.reviews).map((review,idx) => (
-                <div key={`review${idx}`}>
-                    <span>{review.user_name}</span>
-                    {currentUser && review.user_id === currentUser.id ? <button id={review.id} onClick={this.deleteReview}>Delete</button> : ''}
-                    <div>
-                        {this.getStars(review.stars)}
-                        <span>{review.headline}</span>
+                <div key={`review${idx}`} className="review-item">
+                    <div className="review-top">
+                        <img className="review-avatar" src={window.avatarUrl}/>
+                        <span className="review-username">{review.user_name}</span>
+                        {currentUser && review.user_id === currentUser.id ? <button className="delete-review-button" id={review.id} onClick={this.deleteReview}>Delete</button> : ''}
                     </div>
-                    <span>{review.body}</span>
+                    <div className="review-rating">
+                        {this.getStars(review.stars)}
+                        <span className="review-headline">{review.headline}</span>
+                    </div>
+                    {/*Include date at some point */}
+                    <span className="purchase-verified">Verified Purchase</span>
+                    <span className="review-body">{review.body}</span>
                 </div>
             )) : ''
             if(product.reviews === undefined){
@@ -219,9 +224,9 @@ class ProductShow extends React.Component {
                 //         <button onClick={this.submitReview}>Submit Review</button>
                 // </div> 
                 <div className="create-review-option">
-                    <span>Review this product</span>
-                    <span>Share your thoughts with other customers </span>
-                    <Link to={`/products/${product.id}/review/new`}><button>Write a customer review</button></Link>
+                    <span className="secondary-title">Review this product</span>
+                    <span className="review-suggestion">Share your thoughts with other customers </span>
+                    <Link to={`/products/${product.id}/review/new`}><button className="create-review-button">Write a customer review</button></Link>
                 </div>
                 : currentUser ? '' : <span>Please Login to Leave a Review</span>
             return (
@@ -338,12 +343,14 @@ class ProductShow extends React.Component {
                     </div>
                     <div className="product-review">
                         <div className="review-right">
-                            <h2>Customer Reviews</h2>
-                            <div>
-                                {stars}
-                                <span>{review_shown} out of 5</span>
+                            <h2 className="primary-title">Customer reviews</h2>
+                            <div className="rating-info">
+                                <div className="star-display">
+                                    {stars}
+                                    <span className="rating-display">{review_shown} out of 5</span>
+                                </div>
+                                <span className="ratings-num">{product.review_num} global ratings</span>
                             </div>
-                            <span>{product.review_num} global ratings</span>
                             {/* <div className="create-review-option">
                                 <span>Review this product</span>
                                 <span>Share your thoughts with other customers </span>
@@ -351,9 +358,11 @@ class ProductShow extends React.Component {
                             </div> */}
                             {reviewLink}
                         </div>
-                        <div className="reviews-list">
-                            <h3>Global Reviews</h3>
-                            {reviews}
+                        <div className="review-left">
+                            <h3 className="secondary-title">Global Reviews</h3>
+                            <div className="reviews-list">
+                                {reviews}
+                            </div>
                         </div>
                     </div>
                 </div>

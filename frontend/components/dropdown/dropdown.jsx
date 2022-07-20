@@ -4,9 +4,15 @@ const Dropdown = ({product, updateCart, quantity}) => {
     const [isActive, setIsActive] = useState(false);
     // const options = ["0 (Delete)","1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
     const options = ["0 (Delete)"];
-    const limit = Math.floor(quantity * 1.5);
-    for(let i = 1; i <= limit; i++){
-        options.push(i.toString())
+    if(quantity >= 10){
+        const limit = Math.ceil(quantity * 1.5);
+        for(let i = 1; i <= limit; i++){
+            options.push(i.toString())
+        }
+    }else{
+        for(let i = 1; i < 11; i++){
+            options.push(i.toString())
+        }
     }
     debugger;
     document.addEventListener("click", (e) => {        

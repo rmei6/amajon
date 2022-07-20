@@ -44,7 +44,7 @@ class Header extends React.Component {
                     <div className="search-bar">
                         <input className="search-bar-input" type="text" onChange={this.setSearchTerm()}/>
                         {/* <button onClick={this.search}>Search</button> */}
-                        <Link to={`/search/${this.state.search}`}><button>Search</button></Link>
+                        <Link to={`/search/${this.state.search}`}><button className="search-button">Search</button></Link>
                     </div>
                     <div className="region">
                         <p className="region-img">&#127482;&#127480;</p>
@@ -60,7 +60,7 @@ class Header extends React.Component {
                                 <span className='cartcount'>{this.props.cartCount ?  this.props.cartCount : 0}</span>
                                 <img className="cart-icon" src={window.cartUrl} alt="" />
                             </div>
-                        <p className="cart">Cart</p>
+                        {/* <p className="cart">Cart</p> */}
                         </div>
                     </Link>
                 </div>

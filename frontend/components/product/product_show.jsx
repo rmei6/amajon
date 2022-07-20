@@ -81,7 +81,7 @@ class ProductShow extends React.Component {
     
     submitReview(e){
         e.preventDefault()
-        if(this.state.body != ''){
+        if(this.state.body != '' && this.state.headline != ''){
             let review = {
                 'user_name': this.props.currentUser.name,
                 'user_id': this.props.currentUser.id,
@@ -101,9 +101,11 @@ class ProductShow extends React.Component {
     deleteReview(e){
         e.preventDefault()
         let id = parseInt(e.target.getAttribute('id'))
+        let product_id = this.props.product.id
+        let user_id = this.props.currentUser.id
         // debugger;
         let that = this;
-        this.props.deleteReview(id)
+        this.props.deleteReview([id,product_id,user_id])
             .then(() => {
                 that.props.updateProduct(that.props.product.id)
             })
@@ -167,7 +169,7 @@ class ProductShow extends React.Component {
             const product_review = Math.round(product.review * 10) / 10;
             const review_shown = product_review.toLocaleString('en-US', { maximumFractionDigits: 1 });
             let stars = this.getStars(product_review);
-            const reviews = product.reviews ? Object.values(product.reviews).map((review,idx) => (
+            let reviews = product.reviews ? Object.values(product.reviews).map((review,idx) => (
                 <div key={`review${idx}`}>
                     <span>{review.user_name}</span>
                     {currentUser && review.user_id === currentUser.id ? <button id={review.id} onClick={this.deleteReview}>Delete</button> : ''}
@@ -178,6 +180,9 @@ class ProductShow extends React.Component {
                     <span>{review.body}</span>
                 </div>
             )) : ''
+            if(product.reviews === undefined){
+                reviews = (<span>No reviews so far</span>)
+            }
             let reviewFormValid = true;
             debugger;
             //use currentUser.reviews to check if it's their review to edit?
@@ -333,7 +338,7 @@ class ProductShow extends React.Component {
                     </div>
                     <div className="product-review">
                         <div className="review-right">
-                            <span>Customer Reviews</span>
+                            <h2>Customer Reviews</h2>
                             <div>
                                 {stars}
                                 <span>{review_shown} out of 5</span>
@@ -347,7 +352,7 @@ class ProductShow extends React.Component {
                             {reviewLink}
                         </div>
                         <div className="reviews-list">
-                            <span>Global Reviews</span>
+                            <h3>Global Reviews</h3>
                             {reviews}
                         </div>
                     </div>

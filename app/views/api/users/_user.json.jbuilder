@@ -13,11 +13,15 @@ else
 end
 
 if user.reviews.length != 0
-    reviewed = []
+    reviewed_products = []
+    review_ids = []
     user.reviews.each do |review|
-        reviewed.push(review.product_id)
+        reviewed_products.push(review.product_id)
+        review_ids.push(review.id)
     end
-    json.reviewed reviewed
+    json.reviewed_products reviewed_products
+    json.review_ids review_ids
 else
-    json.reviewed([])
+    json.reviewed_products([])
+    json.review_ids([])
 end

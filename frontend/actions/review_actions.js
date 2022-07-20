@@ -8,9 +8,9 @@ const receiveReview = (review) => ({
   review
 })
 
-const removeReview = (reviewId) => ({
+const removeReview = (reviewIds) => ({
   type: REMOVE_REVIEW,
-  reviewId
+  reviewIds
 })
 
 export const createReview = (review) => dispatch => {
@@ -18,10 +18,10 @@ export const createReview = (review) => dispatch => {
       .then((newReview) => dispatch(receiveReview(newReview)))
 }
 
-export const deleteReview = (reviewId) => dispatch => {
+export const deleteReview = (reviewIds) => dispatch => {
   debugger;
-  return ReviewsUtil.deleteReview(reviewId)
-    .then(() => dispatch(removeReview(reviewId)))
+  return ReviewsUtil.deleteReview(reviewIds[0])
+    .then(() => dispatch(removeReview(reviewIds)))
 }
 
 export const updateReview = (review) => dispatch => {

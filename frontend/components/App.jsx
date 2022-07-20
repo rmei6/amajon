@@ -6,6 +6,7 @@ import SignupFormContainer from "./session/signup_form_container";
 import HeaderContainer from "./header/header_container";
 import SearchContainer from "./product/search_container";
 import ProductShowContainer from "./product/product_show_container";
+import CreateReviewFormContainer from "./product/create_review_form_container";
 import Main from "./main/main";
 import CartContainer from "./cart/cart_container";
 import Payment from "./cart/payment";
@@ -35,6 +36,7 @@ const App = () => {
           <AuthRoute path="/signup" component={SignupFormContainer} />
           <AuthRoute path="/login" component={LoginFormContainer} />
           <Route exact path="/products" component={SearchContainer} />
+          <Route path="/products/:id/review/new" component={CreateReviewFormContainer}/>
           <Route path="/products/:id" component={ProductShowContainer} />
           <ProtectedRoute path='/checkout' component={CartContainer}/>
           <ProtectedRoute path='/payment' component={Payment}/>

@@ -21,7 +21,7 @@ const mapDispatchToProps = dispatch => ({
     addToCart: (newItem)=>dispatch(addItem(newItem)),
     updateCart: (item)=>dispatch(updateCart(item)),
     createReview: (review)=>dispatch(createReview(review)),
-    deleteReview: (reviewId)=>dispatch(deleteReview(reviewId)),
+    deleteReview: (reviewIds)=>dispatch(deleteReview(reviewIds)),
     updateReview: (review)=>dispatch(updateReview(review))
 
 })

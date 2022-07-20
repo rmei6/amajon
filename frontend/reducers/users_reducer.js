@@ -1,9 +1,10 @@
 import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER } from "../actions/session_actions";
 import { ADD_CART, RECEIVE_ITEMS, UPDATE_CART } from "../actions/cart_actions";
+import { RECEIVE_REVIEW, REMOVE_REVIEW} from "../actions/review_actions";
 
 const usersReducer = (state = {}, action) => {
     Object.freeze(state)
-    // debugger; 
+    debugger; 
     switch(action.type){
         case RECEIVE_CURRENT_USER: 
             debugger;
@@ -28,11 +29,27 @@ const usersReducer = (state = {}, action) => {
         case UPDATE_CART:
             debugger;
             var nextState = Object.assign({},state);
-            const user_id = action.quantity.id;
-            const quantity = action.quantity.cartCount;
+            var user_id = action.quantity.id;
+            var quantity = action.quantity.cartCount;
             nextState[user_id].cartCount = quantity;
             nextState[user_id].cart = action.quantity.cart;
             //update nextState['cart'] to have quantity and item
+            return nextState;
+        case RECEIVE_REVIEW:
+            var nextState = Object.assign({},state);
+            var user_id = action.review.user_id;
+            var product_id = action.review.product_id;
+            var review_id = action.review.id;
+            nextState[user_id].review_ids.push(review_id);
+            nextState[user_id].reviewed_products.push(product_id);
+            return nextState;
+        case REMOVE_REVIEW:
+            var nextState = Object.assign({},state);
+            var user_id = action.reviewIds[2];
+            var product_id = action.reviewIds[1];
+            var review_id = action.reviewIds[0];
+            nextState[user_id].review_ids = nextState[user_id].review_ids.filter(id => id != review_id);
+            nextState[user_id].reviewed_products = nextState[user_id].reviewed_products.filter(id => id != product_id);
             return nextState;
         default:
             return state; 

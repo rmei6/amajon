@@ -7,6 +7,7 @@ import HeaderContainer from "./header/header_container";
 import SearchContainer from "./product/search_container";
 import ProductShowContainer from "./product/product_show_container";
 import CreateReviewFormContainer from "./product/create_review_form_container";
+import EditReviewFormContainer from "./product/edit_review_form_container";
 import Main from "./main/main";
 import CartContainer from "./cart/cart_container";
 import Payment from "./cart/payment";
@@ -38,6 +39,7 @@ const App = () => {
           <Route exact path="/products" component={SearchContainer} />
           <Route path="/products/:id/review/new" component={CreateReviewFormContainer}/>
           <Route path="/products/:id" component={ProductShowContainer} />
+          <Route path="/reviews/:id/edit" component={EditReviewFormContainer}/>
           <ProtectedRoute path='/checkout' component={CartContainer}/>
           <ProtectedRoute path='/payment' component={Payment}/>
           {/* have /search/:searchterm for searches (replace spaces with +) */}

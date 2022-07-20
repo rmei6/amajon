@@ -175,6 +175,7 @@ class ProductShow extends React.Component {
                         <img className="review-avatar" src={window.avatarUrl}/>
                         <span className="review-username">{review.user_name}</span>
                         {currentUser && review.user_id === currentUser.id ? <button className="delete-review-button" id={review.id} onClick={this.deleteReview}>Delete</button> : ''}
+                        {currentUser && review.user_id === currentUser.id ? <Link to={`/reviews/${review.id}/edit`}><button className="delete-review-button">Edit</button></Link> : ''}
                     </div>
                     <div className="review-rating">
                         {this.getStars(review.stars)}

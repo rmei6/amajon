@@ -9,6 +9,15 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
+  def show
+    @review = Review.find_by(id: params[:id])
+    if @review
+      render :show
+    else
+      render json: ['Review does not exist'], status: 404
+    end
+  end
+
   def update
     @review = Review.find(params[:id])
     @review.update(review_params)

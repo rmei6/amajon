@@ -33,6 +33,7 @@ export const fetchProduct = (product_id) => dispatch => {
 }
 
 export const updateProduct = (product_id) => dispatch => {
+    debugger;
     return ProductsUtil.updateReview(product_id)
         .then(product => dispatch(receiveProduct(product)))
 }

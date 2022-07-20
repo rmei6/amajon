@@ -1,10 +1,12 @@
 import React from "react";
+import { BsTrashFill } from "react-icons/bs";
 import { Link, useHistory } from "react-router-dom";
 import HeaderContainer from "../header/header_container";
 
 class ReviewForm extends React.Component {
   constructor(props){
     super(props);
+    debugger;
     this.state = {
       department: '',
       stars: 1,
@@ -19,7 +21,15 @@ class ReviewForm extends React.Component {
   }
 
   componentDidMount(){
-    this.props.fetchProduct(this.props.match.params.id);
+    if(this.props.formType === 'create'){
+      this.props.fetchProduct(this.props.match.params.id);
+    }else{
+      let that = this;
+      this.props.getReview(this.props.match.params.id)
+        .then(() => that.setState({stars: that.props.review.stars,
+                                  headline: that.props.review.headline,
+                                  body: that.props.review.body}));
+    }
   }
 
   setDepartment(dep){
@@ -51,40 +61,64 @@ class ReviewForm extends React.Component {
   submitReview(e){
       e.preventDefault()
       if(this.state.body != '' && this.state.headline != ''){
-          let review = {
+          let review = this.props.formType === 'create' ?
+          {   'user_name': this.props.currentUser.name,
+              'user_id': this.props.currentUser.id,
+              'product_id': this.props.product.id, //change to this.props.review.product_id later
+              'headline': this.state.headline,
+              'body': this.state.body,
+              'stars': this.state.stars
+          } :
+          {   'id': this.props.review.id,
               'user_name': this.props.currentUser.name,
               'user_id': this.props.currentUser.id,
-              'product_id': this.props.product.id,
+              'product_id': this.props.product.id, //change to this.props.review.product_id later
               'headline': this.state.headline,
               'body': this.state.body,
               'stars': this.state.stars
           }
           let that = this;
-          this.props.createReview(review)
-          .then(() => {
+          debugger;
+          if(this.props.formType === 'create'){
+            this.props.createReview(review)
+            .then(() => {
               that.props.updateProduct(that.props.product.id)
-          })
+            })
+          }else{
+            this.props.updateReview(review)
+            .then(() => {
+              debugger;
+              that.props.updateProduct(that.props.product.id)
+            })
+          }
           this.props.history.push(`/products/${this.props.product.id}`);
       }
   }
 
   render(){
     if(this.props.product){
-      const {product, currentUser} = this.props;
+      const {product, currentUser, formType} = this.props;
       if(currentUser === undefined){
         return (
           <div>
-            <span>Please login to leave a review</span>
+            <span>Please login to {formType === 'create' ? 'leave' : 'edit'} a review</span>
           </div>
         )
       }
-      if(currentUser.reviewed_products.includes(product.id)){
+      if(currentUser.reviewed_products.includes(product.id) && formType === 'create'){
         return (
           <div>
             <span>You already have a review for this product</span>
           </div>
         )
+      }else if(formType === 'edit' && currentUser.review_ids.includes(this.props.match.params.id)){
+        return (
+          <div>
+            <span>You cannot edit another account's review</span>
+          </div>
+        )
       }
+      debugger;
       return (
         <div>
           <HeaderContainer setDepartment={this.setDepartment}/>
@@ -97,7 +131,7 @@ class ReviewForm extends React.Component {
             </div>
             <div className="review-form">
               <div className="review-form-header">
-                <h2 className="primary-title">Create Review</h2>
+                <h2 className="primary-title">{formType === 'create' ? 'Create' : 'Edit'} Review</h2>
                 <div className="review-form-product">
                   <img className="review-form-img" src={`${this.props.product.photoUrl}`}/>
                   {/*max height is 62px, width is auto, set height of review-form-container to 100 vh */}
@@ -109,7 +143,7 @@ class ReviewForm extends React.Component {
               <div className="review-stars">
                 <h3 className="secondary-title">Overall rating</h3>
                 <div className="review-stars-selection">
-                  <select onChange={this.setStars()}>
+                  <select onChange={this.setStars()} value={this.state.stars}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
@@ -121,11 +155,11 @@ class ReviewForm extends React.Component {
               </div>
               <div className="review-headline-container">
                 <h3 className="secondary-title">Add a headline</h3>
-                <input className="review-headline-input" type="text" onChange={this.setHeadline()} placeholder="What's most important to know?"></input>
+                <input className="review-headline-input" type="text" value={this.state.headline} onChange={this.setHeadline()} placeholder="What's most important to know?"></input>
               </div>
               <div className="review-body-container">
                 <h3 className="secondary-title">Add a written review</h3>
-                <textarea className="review-body-input" onChange={this.setText()} placeholder="What did you like or dislike? What did you use this product for?"/>
+                <textarea className="review-body-input" value={this.state.body} onChange={this.setText()} placeholder="What did you like or dislike? What did you use this product for?"/>
               </div>
               <button onClick={this.submitReview} className="review-submit">Submit</button>
             </div>

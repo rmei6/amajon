@@ -229,7 +229,7 @@ class ProductShow extends React.Component {
                     <span className="review-suggestion">Share your thoughts with other customers </span>
                     <Link to={`/products/${product.id}/review/new`}><button className="create-review-button">Write a customer review</button></Link>
                 </div>
-                : currentUser ? '' : <span>Please Login to Leave a Review</span>
+                : currentUser ? '' : <span className="review-suggestion">Please login to leave a review</span>
             return (
                 <div>
                     <HeaderContainer setDepartment={this.setDepartment}/>

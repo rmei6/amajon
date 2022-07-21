@@ -19,6 +19,23 @@
     font-size: 14px;
 }
 
+.search-index-item{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin: 10px 10% 10px 10%;
+    width: 80%;
+    height: 218px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 5px; */
+    box-shadow: 0 1px 2px 0 #d8d8d8;
+    color: #0F1111;
+    font-size: 14px;
+}
+
 .product-index{
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +60,7 @@
 }
 
 .product-index-item-name{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     /* line-height: 1.4; */
     /* font-family: "AmazonEmberRegular"; */
@@ -71,6 +88,20 @@
     margin-right: 3px; */
 }
 
+.search-index-item-img{
+    width: auto;
+    height: 200px;
+}
+
+.search-img-container{
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 1% 0px 1%;
+}
+
 .index-img-container{
     /* background-color: rgb(226, 226, 226); */
     width: 100%;
@@ -93,6 +124,7 @@
     color: #007185;
     margin-left: 5px;
 }
+
 
 .product-index-item-name-container{
     margin-top: 5px;
@@ -127,7 +159,34 @@
     align-items: center;
 }
 
+.results-title{
+    width: 100%;
+    height: 36px;
+    /* margin-left: -30px; */
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 0 0 3px white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.results-title > *{
+    margin-left: 2%;
+}
+
 .result-summary{
     margin-left: 20px;
     font-size: 18px;
 }
+
+.results-header{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.results-message{
+    font-size: 14px;
+    color: #565959;
+}
+

@@ -93,14 +93,16 @@
 .cart-icon-container{
     text-align: center;
     display: flex;
+    align-items: center;
     /* flex-direction: column; */
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .cart-icon{
     width: auto;
-    height: auto;
-    max-height: 15px;
+    height: 30px;
+    /* max-height: 15px; */
     /* position: absolute; */
 }
 

@@ -52,11 +52,14 @@ class ProductIndex extends React.Component {
         //     return null;
         }
         else{
+            let department = location.hash.slice(2).split('-').map(word => word[0].toUpperCase() + word.slice(1)).join(" ")
+            let search_shown = (<span className="searchterm">{department}</span>);
+            debugger;
             return (
                 <div className="index-container">
                     <HeaderContainer setDepartment = {this.setDepartment}/>
                     <div className="result-summary-container">
-                        <span className="result-summary">1 - {this.props.products.length} of {this.props.products.length} results</span>
+                        <span className="result-summary">1 - {this.props.products.length} of {this.props.products.length} results for {search_shown}</span>
                     </div>
                     <div className="product-index">
                         {this.props.products.map(product => (
@@ -66,7 +69,7 @@ class ProductIndex extends React.Component {
                             //     <li key={`price-${product.id}`}>Price: {product.price}</li>
                             //     <br />
                             // </div>
-                            <ProductIndexItem product={product} key={product.id}/>
+                            <ProductIndexItem product={product} search={false} key={product.id}/>
                             ))}
                     </div>
                 </div>

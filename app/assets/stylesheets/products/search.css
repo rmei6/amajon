@@ -1,0 +1,18 @@
+.no-products-found{
+  width: 100vh;
+  height: 100vh;
+}
+
+.searchterm{
+  color: #c45500;
+}
+
+.search-product-index{
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 30px; */
+}
+
+.search-item{
+  width: 200px;
+}

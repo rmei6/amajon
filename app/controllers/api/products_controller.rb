@@ -47,7 +47,7 @@ class Api::ProductsController < ApplicationController
             reviews.each do |item|
                 review_sum += item.stars
             end
-            avg_review = review_sum / review_num
+            avg_review = review_sum / review_num.to_f
         end
         @product.update(review: avg_review,review_num: review_num)
         render :show

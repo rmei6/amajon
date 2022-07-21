@@ -21,9 +21,10 @@ class ReviewForm extends React.Component {
   }
 
   componentDidMount(){
+    debugger;
     if(this.props.formType === 'create'){
       this.props.fetchProduct(this.props.match.params.id);
-    }else{
+    }else if(this.props.currentUser && this.props.currentUser.review_ids.includes(parseInt(this.props.match.params.id))){
       let that = this;
       this.props.getReview(this.props.match.params.id)
         .then(() => that.setState({stars: that.props.review.stars,
@@ -98,27 +99,48 @@ class ReviewForm extends React.Component {
   render(){
     if(this.props.product){
       const {product, currentUser, formType} = this.props;
+      debugger;
       if(currentUser === undefined){
         return (
           <div>
-            <span>Please login to {formType === 'create' ? 'leave' : 'edit'} a review</span>
+            <HeaderContainer setDepartment={this.setDepartment}/>
+            <div className="no-access-message">
+              <span>Please login to {formType === 'create' ? 'leave' : 'edit'} a review</span>
+            </div>
           </div>
         )
       }
-      if(currentUser.reviewed_products.includes(product.id) && formType === 'create'){
+      if(formType === 'create' && currentUser.reviewed_products.includes(product.id)){
         return (
           <div>
-            <span>You already have a review for this product</span>
+            <HeaderContainer setDepartment={this.setDepartment}/>
+            <div className="no-access-message">
+              <span>You already have a review for this product</span>
+            </div>
           </div>
         )
-      }else if(formType === 'edit' && currentUser.review_ids.includes(this.props.match.params.id)){
-        return (
-          <div>
-            <span>You cannot edit another account's review</span>
-          </div>
-        )
-      }
-      debugger;
+      }else if(formType === 'edit'){
+        if(!currentUser.review_ids.includes(parseInt(this.props.match.params.id))){
+          return (
+            <div>
+              <HeaderContainer setDepartment={this.setDepartment}/>
+              <div className="no-access-message">
+                <span>You cannot edit this review</span>
+              </div>
+            </div>
+          )
+        }
+        // else if(this.props.review === undefined){
+        //   return (
+        //     <div>
+        //       <HeaderContainer setDepartment={this.setDepartment}/>
+        //       <div className="no-access-message">
+        //         <span>No review found</span>
+        //       </div>
+        //     </div>
+        //   )
+        // }
+      } 
       return (
         <div>
           <HeaderContainer setDepartment={this.setDepartment}/>

@@ -14,10 +14,13 @@ const removeReview = (reviewIds) => ({
   reviewIds
 })
 
-const fetchReview = (review) => ({
+const fetchReview = (review) => {
+  debugger;
+  return {
   type: GET_REVIEW,
   review
-})
+}
+}
 
 export const createReview = (review) => dispatch => {
   return ReviewsUtil.createReview(review)
@@ -37,5 +40,8 @@ export const updateReview = (review) => dispatch => {
 
 export const getReview = (reviewId) => dispatch => {
   return ReviewsUtil.getReview(reviewId)
-    .then((review) => dispatch(fetchReview(review)))
+    .then((review) => {
+    debugger;
+    dispatch(fetchReview(review))
+  })
 }

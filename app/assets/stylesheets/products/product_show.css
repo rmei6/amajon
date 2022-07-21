@@ -111,6 +111,10 @@
     margin-bottom: 30px;
 }
 
+.product-show-review{
+    color: #007185;
+}
+
 button {
     cursor: pointer;
 }

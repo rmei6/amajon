@@ -255,7 +255,7 @@ class ProductShow extends React.Component {
                                         <p className="product-show-name">{product.name}</p>
                                         {/* <p>overall review info here</p> */}
                                         {stars}
-                                        <p className="product-show-review">{product.review_num} ratings</p>
+                                        <p className="product-show-review">{product.review_num} rating{product.review_num > 1 ? 's' : ''}</p>
                                     </div>
                                     <div className="product-show-price-shipping">
                                         <div className="product-show-item-price-container">
@@ -276,9 +276,9 @@ class ProductShow extends React.Component {
                                         <div className="product-show-description">
                                             {product.description.split('*').map((line,idx) => <span key={`${product.id}-des-line-${idx}`}>{line}<br/></span>)}
                                         </div>
-                                        <div className="product-show-review-info">
+                                        {/* <div className="product-show-review-info">
                                             <p>review info?</p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 <div className="product-show-buy-shipping">
@@ -350,7 +350,7 @@ class ProductShow extends React.Component {
                                     {stars}
                                     <span className="rating-display">{review_shown} out of 5</span>
                                 </div>
-                                <span className="ratings-num">{product.review_num} global ratings</span>
+                                <span className="ratings-num">{product.review_num} global rating{product.review_num > 1 ? 's' : ''}</span>
                             </div>
                             {/* <div className="create-review-option">
                                 <span>Review this product</span>
